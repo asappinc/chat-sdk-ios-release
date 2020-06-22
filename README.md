@@ -1,5 +1,5 @@
-## Chat SDK iOS
+## ASAPP iOS SDK
 
-Please visit [ASAPP Documentation site](https://docs.asapp.com/) for more information.
+Please visit the [ASAPP documentation site](https://docs.asapp.com/) for more information.
 
 © ASAPP, Inc.

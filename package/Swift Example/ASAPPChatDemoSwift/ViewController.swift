@@ -145,7 +145,7 @@ extension ViewController {
 extension ViewController: ASAPPDelegate {
     func chatViewControllerDidDisappear() {}
     
-    func chatViewControlledDidTapDeepLink(name: String, data: [String: Any]?) {
+    func chatViewControllerDidTapDeepLink(name: String, data: [String: Any]?) {
         handleASAPPDeepLink(named: name, with: data)
     }
     

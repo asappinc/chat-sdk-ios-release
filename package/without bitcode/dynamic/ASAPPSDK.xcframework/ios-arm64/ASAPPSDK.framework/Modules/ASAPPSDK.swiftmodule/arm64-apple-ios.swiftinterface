@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
 @_exported import ASAPPSDK
 import AVFoundation
 import Accelerate
@@ -18,10 +18,10 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
-@objc(ASAPPViews) @objcMembers public class ASAPPViews : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPViews) @objcMembers public class ASAPPViews : ObjectiveC.NSObject {
   @objc public var chatTitle: UIKit.UIView?
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 infix operator ←→ : DefaultPrecedence
 @objc(ASAPPCustomImage) @objcMembers public class ASAPPCustomImage : ObjectiveC.NSObject {
@@ -41,10 +41,10 @@ infix operator ←→ : DefaultPrecedence
   @objc public var primaryButton: UIKit.UIColor
   @objc public var secondaryButton: UIKit.UIColor
   @objc public init(background: UIKit.UIColor, text: UIKit.UIColor, placeholderText: UIKit.UIColor, tint: UIKit.UIColor, border: UIKit.UIColor?, primaryButton: UIKit.UIColor, secondaryButton: UIKit.UIColor)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc(ASAPPNavBarStyles) @objcMembers public class ASAPPNavBarStyles : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPNavBarStyles) @objcMembers public class ASAPPNavBarStyles : ObjectiveC.NSObject {
   @objc public var buttonImages: ASAPPSDK.ASAPPNavBarButtonImages
   @objc public var titlePadding: UIKit.UIEdgeInsets
   @objc override dynamic public init()
@@ -59,7 +59,7 @@ infix operator ←→ : DefaultPrecedence
     get
   }
 }
-@objc(ASAPPTextStyles) @objcMembers public class ASAPPTextStyles : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPTextStyles) @objcMembers public class ASAPPTextStyles : ObjectiveC.NSObject {
   @objc public var navButton: ASAPPSDK.ASAPPTextStyle {
     @objc get
     @objc set
@@ -125,7 +125,7 @@ infix operator ←→ : DefaultPrecedence
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(ASAPPFontFamily) @objcMembers public class ASAPPFontFamily : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPFontFamily) @objcMembers public class ASAPPFontFamily : ObjectiveC.NSObject {
   @objc final public let light: UIKit.UIFont
   @objc final public let regular: UIKit.UIFont
   @objc final public let medium: UIKit.UIFont
@@ -136,15 +136,15 @@ infix operator ←→ : DefaultPrecedence
   @objc deinit
 }
 infix operator |> : AdditionPrecedence
-@objc(ASAPPStyles) @objcMembers public class ASAPPStyles : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPStyles) @objcMembers public class ASAPPStyles : ObjectiveC.NSObject {
   @objc public var textStyles: ASAPPSDK.ASAPPTextStyles
   @objc public var colors: ASAPPSDK.ASAPPColors
   @objc public var navBarStyles: ASAPPSDK.ASAPPNavBarStyles
   @objc public var primaryButtonRoundingStyle: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
   @objc public var allowedOrientations: ASAPPSDK.ASAPPAllowedOrientations
   @objc public var isDarkModeAllowed: Swift.Bool
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc public enum ASAPPAllowedOrientations : Swift.Int, Swift.CaseIterable {
   case portraitLocked
@@ -165,8 +165,8 @@ public typealias ASAPPRequestContextProvider = ((Swift.Bool) -> [Swift.String : 
   @objc final public let userIdentifier: Swift.String
   @objc final public let requestContextProvider: ASAPPSDK.ASAPPRequestContextProvider
   @objc public init(userIdentifier: Swift.String?, requestContextProvider: @escaping ASAPPSDK.ASAPPRequestContextProvider)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc public enum ASAPPError : Swift.Int {
   case getChatStatusFailed
@@ -215,7 +215,7 @@ extension _AnyEncodable {
 }
 extension UIActivityIndicatorView.Style {
 }
-@objc public class ComponentViewController : ASAPPSDK.ASAPPViewController {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ComponentViewController : ASAPPSDK.ASAPPViewController {
   @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
@@ -226,7 +226,7 @@ extension UIActivityIndicatorView.Style {
   @objc override dynamic public func viewWillLayoutSubviews()
   @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
-@objc public class ASAPPViewController : UIKit.UIViewController {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ASAPPViewController : UIKit.UIViewController {
   @objc deinit
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewWillLayoutSubviews()
@@ -250,11 +250,11 @@ internal protocol _AnyDecodable {
 @objc public protocol ASAPPDelegate {
   @objc func chatViewControllerDidTapUserLoginButton()
   @objc func chatViewControllerDidDisappear()
-  @objc func chatViewControlledDidTapDeepLink(name: Swift.String, data: [Swift.String : Any]?)
+  @objc func chatViewControllerDidTapDeepLink(name: Swift.String, data: [Swift.String : Any]?)
   @objc func chatViewControllerShouldHandleWebLink(url: Foundation.URL) -> Swift.Bool
   @objc func chatViewControllerDidReceiveChatEvent(name: Swift.String, data: [Swift.String : Any]?)
 }
-@objc(ASAPP) @objcMembers public class ASAPP : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPP) @objcMembers public class ASAPP : ObjectiveC.NSObject {
   @objc @available(*, deprecated, message: "This property will be removed in the next major version.")
   public static let authTokenKey: Swift.String
   @objc @available(*, deprecated, message: "This property will be removed in the next major version.")
@@ -265,7 +265,7 @@ internal protocol _AnyDecodable {
   @objc weak public static var delegate: ASAPPSDK.ASAPPDelegate?
   @objc public static var config: ASAPPSDK.ASAPPConfig! {
     get
-    }
+  }
   @objc public static var user: ASAPPSDK.ASAPPUser! {
     @objc get
     @objc set
@@ -295,10 +295,10 @@ internal protocol _AnyDecodable {
   @objc public class func canHandleNotification(with userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
   @objc public class func clearSavedSession()
   @objc public static func setIntent(_ data: [Swift.String : Any])
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc(ASAPPColors) @objcMembers public class ASAPPColors : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPColors) @objcMembers public class ASAPPColors : ObjectiveC.NSObject {
   @objc public var primary: UIKit.UIColor {
     @objc get
     @objc set
@@ -376,7 +376,7 @@ internal protocol _AnyDecodable {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(ASAPPStrings) @objcMembers public class ASAPPStrings : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPStrings) @objcMembers public class ASAPPStrings : ObjectiveC.NSObject {
   @objc public var accessibilityClose: Swift.String
   @objc public var accessibilityMore: Swift.String
   @objc public var accessibilitySend: Swift.String
@@ -417,13 +417,13 @@ internal protocol _AnyDecodable {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc(ASAPPPrimaryButtonRoundingStyle) @objcMembers public class ASAPPPrimaryButtonRoundingStyle : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers @objc(ASAPPPrimaryButtonRoundingStyle) @objcMembers public class ASAPPPrimaryButtonRoundingStyle : ObjectiveC.NSObject {
   @objc public static var pill: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
   @objc public static func radius(_ value: Swift.Int) -> ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc public class ASAPPChatInsteadViewController : UIKit.UIViewController {
+@objc @_hasMissingDesignatedInitializers public class ASAPPChatInsteadViewController : UIKit.UIViewController {
   @objc override dynamic public var modalPresentationStyle: UIKit.UIModalPresentationStyle {
     @objc get
     @objc set
@@ -434,8 +434,8 @@ internal protocol _AnyDecodable {
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
 extension ASAPPChatInsteadViewController : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
   @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
@@ -475,8 +475,8 @@ internal func _internalInvariant(_ condition: @autoclosure () -> Swift.Bool, _ m
   @objc final public let clientSecret: Swift.String
   @objc final public let regionCode: Swift.String
   @objc public init(appId: Swift.String, apiHostName: Swift.String, clientSecret: Swift.String, regionCode: Swift.String = "US")
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension ASAPPConfig {
   @objc override dynamic public var description: Swift.String {
@@ -486,7 +486,7 @@ extension ASAPPConfig {
     @objc get
   }
 }
-@objc(ASAPPNavBarButtonImages) @objcMembers public class ASAPPNavBarButtonImages : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc(ASAPPNavBarButtonImages) @objcMembers public class ASAPPNavBarButtonImages : ObjectiveC.NSObject {
   @objc public var close: ASAPPSDK.ASAPPCustomImage? {
     @objc get
     @objc set

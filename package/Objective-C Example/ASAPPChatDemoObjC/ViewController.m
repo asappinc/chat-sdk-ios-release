@@ -191,7 +191,7 @@
      */
 }
 
-- (void)chatViewControlledDidTapDeepLinkWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *,id> * _Nullable)data {
+- (void)chatViewControllerDidTapDeepLinkWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *,id> * _Nullable)data {
     [self handleASAPPDeepLink:name withData:data];
 }
 

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
 @_exported import ASAPPSDK
 import AVFoundation
@@ -414,6 +414,10 @@ internal protocol _AnyDecodable {
   @objc public var mediaPermissionsErrorCancelButton: Swift.String
   @objc public var mediaPermissionsErrorSettingsButton: Swift.String
   @objc public var accessibilityCloseChatInstead: Swift.String
+  @objc public var leaveQueueConfirmationTitle: Swift.String
+  @objc public var leaveQueueConfirmationBodyTitle: Swift.String
+  @objc public var leaveQueueConfirmationButton: Swift.String
+  @objc public var leaveQueueConfirmationHideButton: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -423,12 +427,13 @@ internal protocol _AnyDecodable {
   @objc deinit
   @objc override dynamic public init()
 }
-@objc @_hasMissingDesignatedInitializers public class ASAPPChatInsteadViewController : UIKit.UIViewController {
+@_hasMissingDesignatedInitializers @objc public class ASAPPChatInsteadViewController : UIKit.UIViewController {
   @objc override dynamic public var modalPresentationStyle: UIKit.UIModalPresentationStyle {
     @objc get
     @objc set
   }
   public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Swift.String? = nil, chatIcon: UIKit.UIImage? = nil)
+  @objc public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Foundation.NSString?, chatIcon: UIKit.UIImage? = nil)
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewDidLayoutSubviews()
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
@@ -502,10 +507,10 @@ extension ASAPPConfig {
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol ASAPPChannelDelegate : AnyObject {
-  func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
-  func channel(_ channel: ASAPPSDK.ASAPPChannel, didFailToOpenWithErrorDescription errorDescription: Swift.String?)
-  func didSelectASAPPChatChannel()
+@objc public protocol ASAPPChannelDelegate : AnyObject {
+  @objc optional func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
+  @objc func channel(_ channel: ASAPPSDK.ASAPPChannel, didFailToOpenWithErrorDescription errorDescription: Swift.String?)
+  @objc func didSelectASAPPChatChannel()
 }
 extension ASAPPChannelDelegate {
   public func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool

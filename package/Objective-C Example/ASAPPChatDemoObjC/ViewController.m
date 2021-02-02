@@ -10,9 +10,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController () <ASAPPDelegate>
+@interface ViewController () <ASAPPDelegate, ASAPPChannelDelegate>
 @property (nonatomic, strong) UIButton *pushButton;
 @property (nonatomic, strong) UIButton *presentButton;
+@property (nonatomic, strong) UIButton *chatInsteadButton;
+
 @end
 
 @implementation ViewController
@@ -37,6 +39,13 @@
     [self.presentButton setTitleColor:[[UIColor blueColor] colorWithAlphaComponent:0.5] forState:UIControlStateHighlighted];
     [self.presentButton addTarget:self action:@selector(presentASAPPChat) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.presentButton];
+    
+    self.chatInsteadButton = [[UIButton alloc] initWithFrame:CGRectZero];
+    [self.chatInsteadButton setTitle:@"Show Chat Instead" forState:UIControlStateNormal];
+    [self.chatInsteadButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.chatInsteadButton setTitleColor:[[UIColor blueColor] colorWithAlphaComponent:0.5] forState:UIControlStateHighlighted];
+    [self.chatInsteadButton addTarget:self action:@selector(showChatInstead) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.chatInsteadButton];
 }
 
 #pragma mark - ASAPP
@@ -144,6 +153,14 @@
     }
 }
 
+- (void)showChatInstead
+{
+    UIViewController *viewController = [[ASAPPChatInsteadViewController alloc] initWithPhoneNumber:@"1234567" delegate:self title:@"Chat Instead" chatIcon: nil];
+    if (viewController != nil) {
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
+}
+
 #pragma mark - User Identifier (Handled Automatically)
 
 
@@ -177,7 +194,10 @@
     self.pushButton.center = CGPointMake(viewCenter.x, viewCenter.y - buttonSpacing);
     
     self.presentButton.bounds = CGRectMake(0, 0, buttonSize.width, buttonSize.height);
-    self.presentButton.center = CGPointMake(viewCenter.x, viewCenter.y + buttonSpacing);
+    self.presentButton.center = CGPointMake(viewCenter.x, viewCenter.y);
+    
+    self.chatInsteadButton.bounds = CGRectMake(0, 0, buttonSize.width, buttonSize.height);
+    self.chatInsteadButton.center = CGPointMake(viewCenter.x, viewCenter.y + buttonSpacing);
 }
 
 #pragma mark - ASAPPDelegate
@@ -203,6 +223,21 @@
 
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *,id> * _Nullable)data {
     // Application can respond to certain agreed-upon events that can occur during a chat.
+}
+
+#pragma mark - ASAPPChannelDelegate
+
+- (BOOL)shouldOpenChannel:(enum ASAPPChannel)channel {
+    return YES;
+}
+
+- (void)didSelectASAPPChatChannel {
+    UIViewController *viewController = ASAPP.createChatViewControllerForPresentingFromChatInstead;
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (void)channel:(enum ASAPPChannel)channel didFailToOpenWithErrorDescription:(NSString *)errorDescription {
+    NSLog(@"%@", errorDescription);
 }
 
 @end

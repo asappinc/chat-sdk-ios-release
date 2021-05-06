@@ -304,8 +304,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
 + (UIViewController * _Nullable)createChatViewControllerForPushingFromChatInstead SWIFT_WARN_UNUSED_RESULT;
-/// Whether the SDK should request notification authorization shortly after a user’s first interaction,
-/// such as sending a message or pressing a button.
+/// Whether the SDK should request notification authorization. An ASAPP-provided custom UI
+/// is shown before triggering the OS level alert.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL shouldRequestNotificationAuthorization;)
 + (BOOL)shouldRequestNotificationAuthorization SWIFT_WARN_UNUSED_RESULT;
 + (void)setShouldRequestNotificationAuthorization:(BOOL)value;
@@ -456,7 +456,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK20ASAPPChannelDelegate_")
 @class NSBundle;
 
 /// Shows the UI for Chat Instead.
-SWIFT_CLASS("_TtC8ASAPPSDK30ASAPPChatInsteadViewController")
+SWIFT_CLASS_NAMED("ASAPPChatInsteadViewController")
 @interface ASAPPChatInsteadViewController : UIViewController
 /// :nodoc:
 @property (nonatomic) UIModalPresentationStyle modalPresentationStyle;
@@ -877,7 +877,7 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull mediaPermissionsErrorCancelButton;
 /// The text for the go-to-settings button of the alert shown when camera or photo library permission is not granted.
 @property (nonatomic, copy) NSString * _Nonnull mediaPermissionsErrorSettingsButton;
-/// The accessibility label for the close button in Chat Instead.
+/// The accessibility label for the Chat Instead menu’s close button.
 @property (nonatomic, copy) NSString * _Nonnull accessibilityCloseChatInstead;
 /// The title for the alert displayed when leaving the queue.
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationTitle;
@@ -887,6 +887,8 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationButton;
 /// The text for the cancel button of the leave queue alert.
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationHideButton;
+/// The body text for the view shown when the user is already connected to support via a phone call.
+@property (nonatomic, copy) NSString * _Nonnull callInProgressBody;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1024,7 +1026,7 @@ SWIFT_CLASS_NAMED("ASAPPUser")
 
 
 /// :nodoc:
-SWIFT_CLASS("_TtC8ASAPPSDK19ASAPPViewController")
+SWIFT_CLASS_NAMED("ASAPPViewController")
 @interface ASAPPViewController : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
@@ -1435,8 +1437,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
 + (UIViewController * _Nullable)createChatViewControllerForPushingFromChatInstead SWIFT_WARN_UNUSED_RESULT;
-/// Whether the SDK should request notification authorization shortly after a user’s first interaction,
-/// such as sending a message or pressing a button.
+/// Whether the SDK should request notification authorization. An ASAPP-provided custom UI
+/// is shown before triggering the OS level alert.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL shouldRequestNotificationAuthorization;)
 + (BOOL)shouldRequestNotificationAuthorization SWIFT_WARN_UNUSED_RESULT;
 + (void)setShouldRequestNotificationAuthorization:(BOOL)value;
@@ -1587,7 +1589,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK20ASAPPChannelDelegate_")
 @class NSBundle;
 
 /// Shows the UI for Chat Instead.
-SWIFT_CLASS("_TtC8ASAPPSDK30ASAPPChatInsteadViewController")
+SWIFT_CLASS_NAMED("ASAPPChatInsteadViewController")
 @interface ASAPPChatInsteadViewController : UIViewController
 /// :nodoc:
 @property (nonatomic) UIModalPresentationStyle modalPresentationStyle;
@@ -2008,7 +2010,7 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull mediaPermissionsErrorCancelButton;
 /// The text for the go-to-settings button of the alert shown when camera or photo library permission is not granted.
 @property (nonatomic, copy) NSString * _Nonnull mediaPermissionsErrorSettingsButton;
-/// The accessibility label for the close button in Chat Instead.
+/// The accessibility label for the Chat Instead menu’s close button.
 @property (nonatomic, copy) NSString * _Nonnull accessibilityCloseChatInstead;
 /// The title for the alert displayed when leaving the queue.
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationTitle;
@@ -2018,6 +2020,8 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationButton;
 /// The text for the cancel button of the leave queue alert.
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationHideButton;
+/// The body text for the view shown when the user is already connected to support via a phone call.
+@property (nonatomic, copy) NSString * _Nonnull callInProgressBody;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2155,7 +2159,7 @@ SWIFT_CLASS_NAMED("ASAPPUser")
 
 
 /// :nodoc:
-SWIFT_CLASS("_TtC8ASAPPSDK19ASAPPViewController")
+SWIFT_CLASS_NAMED("ASAPPViewController")
 @interface ASAPPViewController : UIViewController
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;

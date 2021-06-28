@@ -281,8 +281,10 @@ internal protocol _AnyDecodable {
   @objc public class func createChatViewControllerForPresenting(withIntent intent: [Swift.String : Any]) -> UIKit.UIViewController?
   @objc public class func createChatViewControllerForPresentingFromChatInstead() -> UIKit.UIViewController?
   @objc public class func createChatViewControllerForPushingFromChatInstead() -> UIKit.UIViewController?
-  public static var shouldRequestCameraAuthorization: Swift.Bool?
-  public static var shouldRequestPhotoLibraryAuthorization: Swift.Bool?
+  @nonobjc public static var shouldRequestCameraAuthorization: Swift.Bool?
+  @objc public static var objcShouldRequestCameraAuthorization: Foundation.NSNumber?
+  @nonobjc public static var shouldRequestPhotoLibraryAuthorization: Swift.Bool?
+  @objc public static var objcShouldRequestPhotoLibraryAuthorization: Foundation.NSNumber?
   @objc public static var shouldRequestNotificationAuthorization: Swift.Bool
   @objc public static var notificationAuthorizationDenied: (() -> Swift.Void)?
   @objc public class func enablePushNotifications(with deviceToken: Foundation.Data)

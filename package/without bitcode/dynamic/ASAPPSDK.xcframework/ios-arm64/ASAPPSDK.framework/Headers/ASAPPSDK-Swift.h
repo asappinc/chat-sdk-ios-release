@@ -217,6 +217,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class ASAPPViews;
 enum ASAPPLogLevel : NSInteger;
 @class UIViewController;
+@class NSNumber;
 enum ASAPPError : NSInteger;
 
 /// The <code>ASAPP</code> class holds references to its various configurable properties and allows you
@@ -302,6 +303,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
 + (UIViewController * _Nullable)createChatViewControllerForPushingFromChatInstead SWIFT_WARN_UNUSED_RESULT;
+/// Only used for Objective-C compatibility. See <code>shouldRequestCameraAuthorization</code> for functionality.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) NSNumber * _Nullable objcShouldRequestCameraAuthorization;)
++ (NSNumber * _Nullable)objcShouldRequestCameraAuthorization SWIFT_WARN_UNUSED_RESULT;
++ (void)setObjcShouldRequestCameraAuthorization:(NSNumber * _Nullable)value;
+/// Only used for Objective-C compatibility. See <code>shouldRequestPhotoLibraryAuthorization</code> for functionality.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) NSNumber * _Nullable objcShouldRequestPhotoLibraryAuthorization;)
++ (NSNumber * _Nullable)objcShouldRequestPhotoLibraryAuthorization SWIFT_WARN_UNUSED_RESULT;
++ (void)setObjcShouldRequestPhotoLibraryAuthorization:(NSNumber * _Nullable)value;
 /// Whether the SDK should request notification authorization. An ASAPP-provided custom UI
 /// is shown before triggering the OS level alert.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) BOOL shouldRequestNotificationAuthorization;)

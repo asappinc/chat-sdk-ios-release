@@ -518,6 +518,42 @@ extension ASAPPConfig {
 extension ASAPPChannelDelegate {
   public func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
 }
+public typealias ulid_t = Darwin.uuid_t
+public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.CustomStringConvertible {
+  public var ulid: (Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8) {
+    get
+  }
+  public init(ulid: ASAPPSDK.ulid_t)
+  public init?(ulidData data: Foundation.Data)
+  public init?(ulidString string: Swift.String)
+  public init<T>(timestamp: Foundation.Date, generator: inout T) where T : Swift.RandomNumberGenerator
+  public init(timestamp: Foundation.Date = Date())
+  public var ulidData: Foundation.Data {
+    get
+  }
+  public var ulidString: Swift.String {
+    get
+  }
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (lhs: ASAPPSDK.ULID, rhs: ASAPPSDK.ULID) -> Swift.Bool
+  public static func < (lhs: ASAPPSDK.ULID, rhs: ASAPPSDK.ULID) -> Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public static let empty: ASAPPSDK.ULID
+  public static let distantPast: ASAPPSDK.ULID
+  public static let distantFuture: ASAPPSDK.ULID
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ULID : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
 extension ASAPPSDK.ASAPPChannel : Swift.Equatable {}
 extension ASAPPSDK.ASAPPChannel : Swift.Hashable {}
 extension ASAPPSDK.ASAPPChannel : Swift.RawRepresentable {}

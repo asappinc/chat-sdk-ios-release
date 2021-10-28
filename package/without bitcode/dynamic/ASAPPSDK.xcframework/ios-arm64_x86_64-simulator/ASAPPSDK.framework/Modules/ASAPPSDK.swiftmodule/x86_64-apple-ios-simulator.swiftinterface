@@ -44,6 +44,12 @@ infix operator ←→ : DefaultPrecedence
   @objc deinit
   @objc override dynamic public init()
 }
+@_hasMissingDesignatedInitializers public class ObserverCollection<T> where T : AnyObject {
+  public func addObserver(_ observer: T)
+  public func removeObserver(_ observer: T?)
+  public func toArray() -> [T?]
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc(ASAPPNavBarStyles) @objcMembers public class ASAPPNavBarStyles : ObjectiveC.NSObject {
   @objc public var buttonImages: ASAPPSDK.ASAPPNavBarButtonImages
   @objc public var titlePadding: UIKit.UIEdgeInsets

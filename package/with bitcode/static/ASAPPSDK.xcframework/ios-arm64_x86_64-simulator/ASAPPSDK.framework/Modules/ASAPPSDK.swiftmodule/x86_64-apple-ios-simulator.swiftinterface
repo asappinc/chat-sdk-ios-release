@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
 @_exported import ASAPPSDK
 import AVFoundation
 import Accelerate
@@ -18,10 +18,11 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import _Concurrency
 @_inheritsConvenienceInitializers @objc(ASAPPViews) @objcMembers public class ASAPPViews : ObjectiveC.NSObject {
   @objc public var chatTitle: UIKit.UIView?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 infix operator ←→ : DefaultPrecedence
 @objc(ASAPPCustomImage) @objcMembers public class ASAPPCustomImage : ObjectiveC.NSObject {
@@ -29,7 +30,6 @@ infix operator ←→ : DefaultPrecedence
   @objc public var size: CoreGraphics.CGSize
   @objc public var insets: UIKit.UIEdgeInsets
   @objc public init(image: UIKit.UIImage, size: CoreGraphics.CGSize, insets: UIKit.UIEdgeInsets = UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0))
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(ASAPPInputColors) @objcMembers public class ASAPPInputColors : ObjectiveC.NSObject {
@@ -42,7 +42,6 @@ infix operator ←→ : DefaultPrecedence
   @objc public var secondaryButton: UIKit.UIColor
   @objc public init(background: UIKit.UIColor, text: UIKit.UIColor, placeholderText: UIKit.UIColor, tint: UIKit.UIColor, border: UIKit.UIColor?, primaryButton: UIKit.UIColor, secondaryButton: UIKit.UIColor)
   @objc deinit
-  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers public class ObserverCollection<T> where T : AnyObject {
   public func addObserver(_ observer: T)
@@ -59,8 +58,8 @@ infix operator ←→ : DefaultPrecedence
 @objc public enum ASAPPChannel : Swift.Int {
   case chat
   case phone
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -149,38 +148,37 @@ infix operator |> : AdditionPrecedence
   @objc public var primaryButtonRoundingStyle: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
   @objc public var allowedOrientations: ASAPPSDK.ASAPPAllowedOrientations
   @objc public var isDarkModeAllowed: Swift.Bool
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum ASAPPAllowedOrientations : Swift.Int, Swift.CaseIterable {
   case portraitLocked
   case iPadLandscapeAllowed
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
-  public var rawValue: Swift.Int {
-    get
-  }
   public typealias AllCases = [ASAPPSDK.ASAPPAllowedOrientations]
+  public typealias RawValue = Swift.Int
   public static var allCases: [ASAPPSDK.ASAPPAllowedOrientations] {
     get
   }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
-public typealias ASAPPRequestContextProvider = ((Swift.Bool) -> [Swift.String : Any])
+public typealias ASAPPRequestContextProvider = ((_ needsRefresh: Swift.Bool) -> [Swift.String : Any])
 @objc(ASAPPUser) @objcMembers public class ASAPPUser : ObjectiveC.NSObject {
   @objc final public let isAnonymous: Swift.Bool
   @objc final public let userIdentifier: Swift.String
   @objc final public let requestContextProvider: ASAPPSDK.ASAPPRequestContextProvider
   @objc public init(userIdentifier: Swift.String?, requestContextProvider: @escaping ASAPPSDK.ASAPPRequestContextProvider)
   @objc deinit
-  @objc override dynamic public init()
 }
 @objc public enum ASAPPError : Swift.Int {
   case getChatStatusFailed
   case pushDeregistrationFailed
   case authenticationFailed
   case openChannelFailed
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -190,14 +188,13 @@ public typealias ASAPPRequestContextProvider = ((Swift.Bool) -> [Swift.String : 
     case upper
     case start
     case original
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
   }
   @objc public init(font: UIKit.UIFont, size: CoreGraphics.CGFloat, letterSpacing: CoreGraphics.CGFloat, color: UIKit.UIColor, case: ASAPPSDK.ASAPPTextStyle.ASAPPCaseStyle = .original)
-  @objc override dynamic public init()
   @objc deinit
 }
 @usableFromInline
@@ -205,48 +202,44 @@ internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension _AnyEncodable {
-}
 @objc public enum ASAPPLogLevel : Swift.Int {
   case none = 0
   case errors = 1
   case warning = 2
   case debug = 3
   case info = 4
+  public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
-  public init?(rawValue: Swift.Int)
 }
-extension UIActivityIndicatorView.Style {
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ComponentViewController : ASAPPSDK.ASAPPViewController {
-  @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
-    @objc get
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ComponentViewController : ASAPPSDK.ASAPPViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
   @objc deinit
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewWillLayoutSubviews()
-  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ASAPPViewController) public class ASAPPViewController : UIKit.UIViewController {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ASAPPViewController) @_Concurrency.MainActor(unsafe) public class ASAPPViewController : UIKit.UIViewController {
   @objc deinit
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewWillLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
 }
-extension ASAPPViewController {
-  @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
-    @objc get
+extension ASAPPSDK.ASAPPViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
-  @objc override dynamic public var preferredStatusBarUpdateAnimation: UIKit.UIStatusBarAnimation {
-    @objc get
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var preferredStatusBarUpdateAnimation: UIKit.UIStatusBarAnimation {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
 }
-extension ASAPPViewController {
-  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+extension ASAPPSDK.ASAPPViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
 @usableFromInline
 internal protocol _AnyDecodable {
@@ -261,10 +254,6 @@ internal protocol _AnyDecodable {
   @objc func chatViewControllerDidReceiveChatEvent(name: Swift.String, data: [Swift.String : Any]?)
 }
 @_inheritsConvenienceInitializers @objc(ASAPP) @objcMembers public class ASAPP : ObjectiveC.NSObject {
-  @objc @available(*, deprecated, message: "This property will be removed in the next major version.")
-  public static let authTokenKey: Swift.String
-  @objc @available(*, deprecated, message: "This property will be removed in the next major version.")
-  public static let analyticsKey: Swift.String
   @objc public static var clientVersion: Swift.String {
     @objc get
   }
@@ -297,14 +286,14 @@ internal protocol _AnyDecodable {
   @objc(enablePushNotificationsWithUUID:) public class func enablePushNotifications(with uuid: Swift.String)
   @objc public class func disablePushNotifications(failure: @escaping ASAPPSDK.ASAPP.FailureHandler)
   @objc public class func skipToBottom()
-  public typealias ChatStatusHandler = ((Swift.Int, Swift.Bool) -> Swift.Void)
-  public typealias FailureHandler = ((ASAPPSDK.ASAPPError) -> Swift.Void)
+  public typealias ChatStatusHandler = ((_ unread: Swift.Int, _ isLiveChat: Swift.Bool) -> Swift.Void)
+  public typealias FailureHandler = ((_ error: ASAPPSDK.ASAPPError) -> Swift.Void)
   @objc public class func getChatStatus(success: @escaping ASAPPSDK.ASAPP.ChatStatusHandler, failure: @escaping ASAPPSDK.ASAPP.FailureHandler)
   @objc public class func canHandleNotification(with userInfo: [Swift.AnyHashable : Any]?) -> Swift.Bool
   @objc public class func clearSavedSession()
   @objc public static func setIntent(_ data: [Swift.String : Any])
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(ASAPPColors) @objcMembers public class ASAPPColors : ObjectiveC.NSObject {
   @objc public var primary: UIKit.UIColor {
@@ -434,40 +423,36 @@ internal protocol _AnyDecodable {
   @objc public static var pill: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
   @objc public static func radius(_ value: Swift.Int) -> ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
   @objc deinit
-  @objc override dynamic public init()
 }
-@_hasMissingDesignatedInitializers @objc(ASAPPChatInsteadViewController) public class ASAPPChatInsteadViewController : UIKit.UIViewController {
-  @objc override dynamic public var modalPresentationStyle: UIKit.UIModalPresentationStyle {
-    @objc get
-    @objc set
+@_hasMissingDesignatedInitializers @objc(ASAPPChatInsteadViewController) @_Concurrency.MainActor(unsafe) public class ASAPPChatInsteadViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var modalPresentationStyle: UIKit.UIModalPresentationStyle {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Swift.String? = nil, chatIcon: UIKit.UIImage? = nil)
-  @objc public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Foundation.NSString?, chatIcon: UIKit.UIImage? = nil)
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewDidLayoutSubviews()
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Swift.String? = nil, chatIcon: UIKit.UIImage? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public init(phoneNumber: Swift.String, delegate: ASAPPSDK.ASAPPChannelDelegate, title: Foundation.NSString?, chatIcon: UIKit.UIImage? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
-extension ASAPPChatInsteadViewController : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
-  @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+extension ASAPPSDK.ASAPPChatInsteadViewController : UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
 }
-extension ASAPPChatInsteadViewController : UIKit.UIViewControllerTransitioningDelegate {
-  @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> UIKit.UIViewControllerAnimatedTransitioning?
-  @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> UIKit.UIViewControllerAnimatedTransitioning?
+extension ASAPPSDK.ASAPPChatInsteadViewController : UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController, source: UIKit.UIViewController) -> UIKit.UIViewControllerAnimatedTransitioning?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationController(forDismissed dismissed: UIKit.UIViewController) -> UIKit.UIViewControllerAnimatedTransitioning?
 }
-extension ASAPPChatInsteadViewController {
-  @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+extension ASAPPSDK.ASAPPChatInsteadViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
-@usableFromInline
-internal func _internalInvariant(_ condition: @autoclosure () -> Swift.Bool, _ message: Swift.StaticString = StaticString(), file: Swift.StaticString = #file, line: Swift.UInt = #line)
 @objc(ASAPPButtonColors) @objcMembers public class ASAPPButtonColors : ObjectiveC.NSObject {
   @objc public var backgroundNormal: UIKit.UIColor
   @objc public var backgroundHighlighted: UIKit.UIColor
@@ -480,7 +465,6 @@ internal func _internalInvariant(_ condition: @autoclosure () -> Swift.Bool, _ m
   @objc public init(textColor: UIKit.UIColor)
   @objc public init(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor)
   @objc public init(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor, border: UIKit.UIColor?)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc(ASAPPConfig) @objcMembers public class ASAPPConfig : ObjectiveC.NSObject {
@@ -490,9 +474,8 @@ internal func _internalInvariant(_ condition: @autoclosure () -> Swift.Bool, _ m
   @objc final public let regionCode: Swift.String
   @objc public init(appId: Swift.String, apiHostName: Swift.String, clientSecret: Swift.String, regionCode: Swift.String = "US")
   @objc deinit
-  @objc override dynamic public init()
 }
-extension ASAPPConfig {
+extension ASAPPSDK.ASAPPConfig {
   @objc override dynamic public var description: Swift.String {
     @objc get
   }
@@ -516,12 +499,12 @@ extension ASAPPConfig {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public protocol ASAPPChannelDelegate : AnyObject {
+@objc public protocol ASAPPChannelDelegate {
   @objc optional func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
   @objc func channel(_ channel: ASAPPSDK.ASAPPChannel, didFailToOpenWithErrorDescription errorDescription: Swift.String?)
   @objc func didSelectASAPPChatChannel()
 }
-extension ASAPPChannelDelegate {
+extension ASAPPSDK.ASAPPChannelDelegate {
   public func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
 }
 public typealias ulid_t = Darwin.uuid_t
@@ -556,7 +539,7 @@ public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.Cu
     get
   }
 }
-extension ULID : Swift.Codable {
+extension ASAPPSDK.ULID : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }

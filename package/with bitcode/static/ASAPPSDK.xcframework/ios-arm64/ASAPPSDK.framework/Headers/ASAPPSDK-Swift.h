@@ -372,8 +372,8 @@ SWIFT_CLASS_NAMED("ASAPPButtonColors")
 @interface ASAPPButtonColors : NSObject
 /// The color of the button’s background.
 @property (nonatomic, strong) UIColor * _Nonnull backgroundNormal;
-/// The color of the button’s background when tapped or otherwise highlighted.
-@property (nonatomic, strong) UIColor * _Nonnull backgroundHighlighted;
+/// The color of the button’s background when tapped or otherwise highlighted. This property has been deprecated and will be removed in the next major version.
+@property (nonatomic, strong) UIColor * _Nonnull backgroundHighlighted SWIFT_DEPRECATED;
 /// The color of the button’s background when disabled.
 @property (nonatomic, strong) UIColor * _Nonnull backgroundDisabled;
 /// The color of the button’s text.
@@ -398,6 +398,18 @@ SWIFT_CLASS_NAMED("ASAPPButtonColors")
 /// \param border The border color. Optional.
 ///
 - (nonnull instancetype)initWithBackgroundNormal:(UIColor * _Nonnull)backgroundNormal backgroundHighlighted:(UIColor * _Nonnull)backgroundHighlighted backgroundDisabled:(UIColor * _Nonnull)backgroundDisabled textNormal:(UIColor * _Nonnull)textNormal textHighlighted:(UIColor * _Nonnull)textHighlighted textDisabled:(UIColor * _Nonnull)textDisabled border:(UIColor * _Nullable)border OBJC_DESIGNATED_INITIALIZER;
+/// Creates an instance of <code>ASAPPButtonColors</code> with the given background colors and textColor. Highlighted and disabled textColors are automatically generated.
+/// \param backgroundNormal The normal background color.
+///
+/// \param backgroundHighlighted The highlighted background color.
+///
+/// \param backgroundDisabled The disabled background color.
+///
+/// \param textColor The normal text color.
+///
+/// \param border The border color. Optional.
+///
+- (nonnull instancetype)initWithBackgroundNormal:(UIColor * _Nonnull)backgroundNormal backgroundHighlighted:(UIColor * _Nonnull)backgroundHighlighted backgroundDisabled:(UIColor * _Nonnull)backgroundDisabled textColor:(UIColor * _Nonnull)textColor border:(UIColor * _Nullable)border OBJC_DESIGNATED_INITIALIZER;
 /// Creates an instance of <code>ASAPPButtonColors</code> with a text color. Highlighted and disabled text colors
 /// are automatically generated. Background colors are set to <code>UIColor.clear</code>.
 /// \param textColor The normal text color.
@@ -603,6 +615,8 @@ SWIFT_CLASS_NAMED("ASAPPConfig")
 @property (nonatomic, readonly, copy) NSString * _Nonnull apiHostName;
 /// Your app’s client secret.
 @property (nonatomic, readonly, copy) NSString * _Nonnull clientSecret;
+/// Your app’s supported languages.
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull supportedLanguages;
 /// Your app’s region code.
 @property (nonatomic, readonly, copy) NSString * _Nonnull regionCode;
 /// Creates an instance of <code>ASAPPConfig</code> with the given parameters.
@@ -612,9 +626,11 @@ SWIFT_CLASS_NAMED("ASAPPConfig")
 ///
 /// \param clientSecret Your app’s client secret used when connecting to the API.
 ///
+/// \param supportedLanguages Your app’s supported languages, in order of preference, as an array of language tag strings. Strings can be in the format “{ISO 639-1 Code}-{ISO 3166-1 Code}” or “{ISO 639-1 Code}”, such as “en-us” or “en”. Defaults to [“en”].
+///
 /// \param regionCode Your app’s region code. Defaults to “US”.
 ///
-- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId apiHostName:(NSString * _Nonnull)apiHostName clientSecret:(NSString * _Nonnull)clientSecret regionCode:(NSString * _Nonnull)regionCode OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId apiHostName:(NSString * _Nonnull)apiHostName clientSecret:(NSString * _Nonnull)clientSecret supportedLanguages:(NSArray<NSString *> * _Nonnull)supportedLanguages regionCode:(NSString * _Nonnull)regionCode OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

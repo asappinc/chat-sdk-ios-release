@@ -145,7 +145,10 @@ infix operator |> : AdditionPrecedence
   @objc public var textStyles: ASAPPSDK.ASAPPTextStyles
   @objc public var colors: ASAPPSDK.ASAPPColors
   @objc public var navBarStyles: ASAPPSDK.ASAPPNavBarStyles
-  @objc public var primaryButtonRoundingStyle: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle
+  @objc public var primaryButtonRoundingStyle: ASAPPSDK.ASAPPPrimaryButtonRoundingStyle {
+    @objc get
+    @objc set
+  }
   @objc public var allowedOrientations: ASAPPSDK.ASAPPAllowedOrientations
   @objc public var isDarkModeAllowed: Swift.Bool
   @objc override dynamic public init()
@@ -455,13 +458,15 @@ extension ASAPPSDK.ASAPPChatInsteadViewController {
 }
 @objc(ASAPPButtonColors) @objcMembers public class ASAPPButtonColors : ObjectiveC.NSObject {
   @objc public var backgroundNormal: UIKit.UIColor
-  @objc public var backgroundHighlighted: UIKit.UIColor
+  @objc @available(*, deprecated)
+  public var backgroundHighlighted: UIKit.UIColor
   @objc public var backgroundDisabled: UIKit.UIColor
   @objc public var textNormal: UIKit.UIColor
   @objc public var textHighlighted: UIKit.UIColor
   @objc public var textDisabled: UIKit.UIColor
   @objc public var border: UIKit.UIColor?
   @objc public init(backgroundNormal: UIKit.UIColor, backgroundHighlighted: UIKit.UIColor, backgroundDisabled: UIKit.UIColor, textNormal: UIKit.UIColor, textHighlighted: UIKit.UIColor, textDisabled: UIKit.UIColor, border: UIKit.UIColor?)
+  @objc public init(backgroundNormal: UIKit.UIColor, backgroundHighlighted: UIKit.UIColor, backgroundDisabled: UIKit.UIColor, textColor: UIKit.UIColor, border: UIKit.UIColor?)
   @objc public init(textColor: UIKit.UIColor)
   @objc public init(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor)
   @objc public init(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor, border: UIKit.UIColor?)
@@ -471,8 +476,9 @@ extension ASAPPSDK.ASAPPChatInsteadViewController {
   @objc final public let appId: Swift.String
   @objc final public let apiHostName: Swift.String
   @objc final public let clientSecret: Swift.String
+  @objc final public let supportedLanguages: [Swift.String]
   @objc final public let regionCode: Swift.String
-  @objc public init(appId: Swift.String, apiHostName: Swift.String, clientSecret: Swift.String, regionCode: Swift.String = "US")
+  @objc public init(appId: Swift.String, apiHostName: Swift.String, clientSecret: Swift.String, supportedLanguages: [Swift.String] = ["en"], regionCode: Swift.String = "US")
   @objc deinit
 }
 extension ASAPPSDK.ASAPPConfig {

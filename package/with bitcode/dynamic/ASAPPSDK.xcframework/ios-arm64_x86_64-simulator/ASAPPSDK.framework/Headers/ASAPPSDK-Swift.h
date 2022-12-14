@@ -1059,10 +1059,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
+
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 
@@ -1100,6 +1100,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 
@@ -2214,10 +2215,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
+
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 
@@ -2255,6 +2256,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 

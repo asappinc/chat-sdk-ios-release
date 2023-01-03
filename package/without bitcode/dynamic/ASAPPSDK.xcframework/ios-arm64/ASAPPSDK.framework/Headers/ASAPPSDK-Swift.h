@@ -1052,6 +1052,7 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 /// Overrides <code>UIViewController.viewDidLoad()</code>.
 - (void)viewDidLoad;
+- (void)didMoveToParentViewController:(UIViewController * _Nullable)parent;
 /// Overrides <code>UIViewController.viewWillLayoutSubviews()</code>.
 - (void)viewWillLayoutSubviews;
 @end

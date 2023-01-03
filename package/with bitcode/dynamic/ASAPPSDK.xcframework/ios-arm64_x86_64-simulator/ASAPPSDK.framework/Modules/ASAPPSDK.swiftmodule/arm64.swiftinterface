@@ -231,6 +231,7 @@ internal protocol _AnyEncodable {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(ASAPPViewController) @_Concurrency.MainActor(unsafe) public class ASAPPViewController : UIKit.UIViewController {
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMove(toParent parent: UIKit.UIViewController?)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
 }
 extension ASAPPSDK.ASAPPViewController {

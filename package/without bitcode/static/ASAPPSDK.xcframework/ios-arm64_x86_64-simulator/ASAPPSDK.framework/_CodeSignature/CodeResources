@@ -18,23 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		KTUS511OoyxmXfDYU07kH9HT1lg=
+		npeYnds9cKcoWAF9lr6JHeB/76Q=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		gYcLD4tARS8zZxiJNEJA78np1c8=
+		yUFpyB8ukFo7J4LS6zs/lwmwTTM=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		gYcLD4tARS8zZxiJNEJA78np1c8=
+		yUFpyB8ukFo7J4LS6zs/lwmwTTM=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		CYWeKSkUxjhZejs/sw/MhPtraC8=
+		MiBjcH/05wR94fGdlZYna7kEE/s=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		CYWeKSkUxjhZejs/sw/MhPtraC8=
+		MiBjcH/05wR94fGdlZYna7kEE/s=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -128,44 +128,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gYcLD4tARS8zZxiJNEJA78np1c8=
+			yUFpyB8ukFo7J4LS6zs/lwmwTTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hjk2TaO6yEaRnA9U7qQms4sIhpMxvexhMMH9ulDBU1M=
+			P6U6NC0skiZhk6Y4YuGLz33O9doP7+DaasAQkW/9CCE=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gYcLD4tARS8zZxiJNEJA78np1c8=
+			yUFpyB8ukFo7J4LS6zs/lwmwTTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hjk2TaO6yEaRnA9U7qQms4sIhpMxvexhMMH9ulDBU1M=
+			P6U6NC0skiZhk6Y4YuGLz33O9doP7+DaasAQkW/9CCE=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CYWeKSkUxjhZejs/sw/MhPtraC8=
+			MiBjcH/05wR94fGdlZYna7kEE/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			2UGM/TLMgiqMpkvW1rFp+NGpMFrnjE76/w6xFndSr4s=
+			hXo4ftCRXY+DdVrEQCqz1Vbu2GEe0pN+pLMCSv/zNNo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CYWeKSkUxjhZejs/sw/MhPtraC8=
+			MiBjcH/05wR94fGdlZYna7kEE/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			2UGM/TLMgiqMpkvW1rFp+NGpMFrnjE76/w6xFndSr4s=
+			hXo4ftCRXY+DdVrEQCqz1Vbu2GEe0pN+pLMCSv/zNNo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>

@@ -6,6 +6,6 @@ framework module ASAPPSDK {
 }
 
 module ASAPPSDK.Swift {
-    header "ASAPPSDK-Swift.h"
-    requires objc
+  header "ASAPPSDK-Swift.h"
+  requires objc
 }

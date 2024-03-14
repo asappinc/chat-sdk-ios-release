@@ -1,7 +1,7 @@
 framework module ASAPPSDK {
   umbrella header "ASAPPSDK.h"
-
   export *
+
   module * { export * }
 }
 

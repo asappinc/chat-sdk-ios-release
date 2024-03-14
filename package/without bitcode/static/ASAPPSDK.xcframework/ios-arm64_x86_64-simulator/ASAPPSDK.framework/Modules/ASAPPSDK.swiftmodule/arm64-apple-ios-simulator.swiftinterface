@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ASAPPSDK
 @_exported import ASAPPSDK
 import AVFoundation
 import AVKit
@@ -26,6 +25,7 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public enum ImageProcessItem {
   case image(ASAPPSDK.KFCrossPlatformImage)
   case data(Foundation.Data)
@@ -1115,7 +1115,7 @@ public protocol Resource {
 extension ASAPPSDK.Resource {
   public func convertToSource(overrideCacheKey: Swift.String? = nil) -> ASAPPSDK.Source
 }
-public struct ImageResource : ASAPPSDK.Resource {
+public struct KFImageResource : ASAPPSDK.Resource {
   public init(downloadURL: Foundation.URL, cacheKey: Swift.String? = nil)
   public let cacheKey: Swift.String
   public let downloadURL: Foundation.URL
@@ -1805,7 +1805,7 @@ public struct ImageCreatingOptions {
 extension ASAPPSDK.ASAPPChannelDelegate {
   public func shouldOpenChannel(_ channel: ASAPPSDK.ASAPPChannel) -> Swift.Bool
 }
-public typealias ulid_t = Darwin.uuid_t
+public typealias ulid_t = Foundation.uuid_t
 public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.CustomStringConvertible {
   public var ulid: (Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8, Swift.UInt8) {
     get

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ASAPPSDK
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ASAPPSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import ASAPPSDK
 import AVFoundation
 import AVKit
@@ -12,7 +13,6 @@ import CommonCrypto
 import Compression
 import CoreGraphics
 import CoreImage
-import Down
 import Foundation
 import ImageIO
 import MobileCoreServices
@@ -26,6 +26,7 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import libcmark
 public enum ImageProcessItem {
   case image(ASAPPSDK.KFCrossPlatformImage)
   case data(Foundation.Data)
@@ -174,6 +175,19 @@ extension ASAPPSDK.ImageDownloaderDelegate {
   public func isValidStatusCode(_ code: Swift.Int, for downloader: ASAPPSDK.ImageDownloader) -> Swift.Bool
   public func imageDownloader(_ downloader: ASAPPSDK.ImageDownloader, didDownload data: Foundation.Data, with task: ASAPPSDK.SessionDataTask) -> Foundation.Data?
   public func imageDownloader(_ downloader: ASAPPSDK.ImageDownloader, didDownload data: Foundation.Data, for url: Foundation.URL) -> Foundation.Data?
+}
+@objc @_Concurrency.MainActor(unsafe) public class DownDebugTextView : ASAPPSDK.DownTextView {
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, styler: any ASAPPSDK.Styler = DownStyler())
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol DownAttributedStringRenderable : ASAPPSDK.DownASTRenderable, ASAPPSDK.DownHTMLRenderable {
+  func toAttributedString(_ options: ASAPPSDK.DownOptions, stylesheet: Swift.String?) throws -> Foundation.NSAttributedString
+  func toAttributedString(_ options: ASAPPSDK.DownOptions, styler: any ASAPPSDK.Styler) throws -> Foundation.NSAttributedString
+}
+extension ASAPPSDK.DownAttributedStringRenderable {
+  public func toAttributedString(_ options: ASAPPSDK.DownOptions = .default, stylesheet: Swift.String? = nil) throws -> Foundation.NSAttributedString
+  public func toAttributedString(_ options: ASAPPSDK.DownOptions = .default, styler: any ASAPPSDK.Styler) throws -> Foundation.NSAttributedString
 }
 public struct ImageProgressive {
   public enum UpdatingStrategy {
@@ -342,6 +356,17 @@ public struct AnyRedirectHandler : ASAPPSDK.ImageDownloadRedirectHandler {
   public func handleHTTPRedirection(for task: ASAPPSDK.SessionDataTask, response: Foundation.HTTPURLResponse, newRequest: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
   public init(handle: @escaping (ASAPPSDK.SessionDataTask, Foundation.HTTPURLResponse, Foundation.URLRequest, @escaping (Foundation.URLRequest?) -> Swift.Void) -> Swift.Void)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class HtmlInline : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.HtmlInline : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @available(*, deprecated, renamed: "AuthenticationChallengeResponsible", message: "Typo. Use `AuthenticationChallengeResponsible` instead")
 public typealias AuthenticationChallengeResponsable = ASAPPSDK.AuthenticationChallengeResponsible
 public protocol AuthenticationChallengeResponsible : AnyObject {
@@ -377,6 +402,38 @@ public protocol DataTransformable {
   @objc override dynamic public init()
   @objc deinit
 }
+public protocol DownGroffRenderable : ASAPPSDK.DownRenderable {
+  func toGroff(_ options: ASAPPSDK.DownOptions, width: Swift.Int32) throws -> Swift.String
+}
+extension ASAPPSDK.DownGroffRenderable {
+  public func toGroff(_ options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
+}
+public struct DownGroffRenderer {
+  public static func astToGroff(_ ast: ASAPPSDK.CMarkNode, options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
+}
+public protocol Styler {
+  func style(document str: Foundation.NSMutableAttributedString)
+  func style(blockQuote str: Foundation.NSMutableAttributedString, nestDepth: Swift.Int)
+  func style(list str: Foundation.NSMutableAttributedString, nestDepth: Swift.Int)
+  func style(listItemPrefix str: Foundation.NSMutableAttributedString)
+  func style(item str: Foundation.NSMutableAttributedString, prefixLength: Swift.Int)
+  func style(codeBlock str: Foundation.NSMutableAttributedString, fenceInfo: Swift.String?)
+  func style(htmlBlock str: Foundation.NSMutableAttributedString)
+  func style(customBlock str: Foundation.NSMutableAttributedString)
+  func style(paragraph str: Foundation.NSMutableAttributedString)
+  func style(heading str: Foundation.NSMutableAttributedString, level: Swift.Int)
+  func style(thematicBreak str: Foundation.NSMutableAttributedString)
+  func style(text str: Foundation.NSMutableAttributedString)
+  func style(softBreak str: Foundation.NSMutableAttributedString)
+  func style(lineBreak str: Foundation.NSMutableAttributedString)
+  func style(code str: Foundation.NSMutableAttributedString)
+  func style(htmlInline str: Foundation.NSMutableAttributedString)
+  func style(customInline str: Foundation.NSMutableAttributedString)
+  func style(emphasis str: Foundation.NSMutableAttributedString)
+  func style(strong str: Foundation.NSMutableAttributedString)
+  func style(link str: Foundation.NSMutableAttributedString, title: Swift.String?, url: Swift.String?)
+  func style(image str: Foundation.NSMutableAttributedString, title: Swift.String?, url: Swift.String?)
+}
 public enum ImageFormat {
   case unknown
   case PNG
@@ -408,7 +465,71 @@ extension ASAPPSDK.KingfisherWrapper where Base == Foundation.Data {
   }
   public func contains(jpeg marker: ASAPPSDK.ImageFormat.JPEGMarker) -> Swift.Bool
 }
+public protocol ListItemPrefixGenerator {
+  init(listType: ASAPPSDK.List.ListType, numberOfItems: Swift.Int, nestDepth: Swift.Int)
+  func next() -> Swift.String?
+}
+extension ASAPPSDK.ListItemPrefixGenerator {
+  public init(list: ASAPPSDK.List)
+}
+public class StaticListItemPrefixGenerator : ASAPPSDK.ListItemPrefixGenerator {
+  required public init(listType: ASAPPSDK.List.ListType, numberOfItems: Swift.Int, nestDepth: Swift.Int)
+  public func next() -> Swift.String?
+  @objc deinit
+}
+public struct QuoteStripeOptions {
+  public var thickness: CoreFoundation.CGFloat
+  public var spacingAfter: CoreFoundation.CGFloat
+  public init(thickness: CoreFoundation.CGFloat = 2, spacingAfter: CoreFoundation.CGFloat = 8)
+}
 infix operator ←→ : DefaultPrecedence
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class List : ASAPPSDK.BaseNode {
+  public var listType: ASAPPSDK.List.ListType {
+    get
+    set
+  }
+  public var numberOfItems: Swift.Int {
+    get
+    set
+  }
+  public var isTight: Swift.Bool {
+    get
+    set
+  }
+  public var delimiter: ASAPPSDK.List.Delimiter? {
+    get
+    set
+  }
+  @objc deinit
+}
+extension ASAPPSDK.List {
+  public enum Delimiter {
+    case period
+    case paren
+    public static func == (a: ASAPPSDK.List.Delimiter, b: ASAPPSDK.List.Delimiter) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ListType : Swift.CustomDebugStringConvertible {
+    case bullet
+    case ordered(start: Swift.Int)
+    public var debugDescription: Swift.String {
+      get
+    }
+  }
+}
+extension ASAPPSDK.List : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension ASAPPSDK.List.Delimiter : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public protocol AsyncImageDownloadRequestModifier {
   func modified(for request: Foundation.URLRequest, reportModified: @escaping (Foundation.URLRequest?) -> Swift.Void)
   var onDownloadTaskStarted: ((ASAPPSDK.DownloadTask?) -> Swift.Void)? { get }
@@ -512,6 +633,17 @@ extension ASAPPSDK.KingfisherWrapper where Base : UIKit.UIApplication {
     get
   }
 }
+public typealias DownFontDescriptor = UIKit.UIFontDescriptor
+@_hasMissingDesignatedInitializers public class BaseNode : ASAPPSDK.Node {
+  final public let cmarkNode: ASAPPSDK.CMarkNode
+  public var children: [any ASAPPSDK.Node] {
+    get
+  }
+  public var nestDepth: Swift.Int {
+    get
+  }
+  @objc deinit
+}
 @objc(ASAPPCustomImage) @objcMembers public class ASAPPCustomImage : ObjectiveC.NSObject {
   @objc public var image: UIKit.UIImage
   @objc public var size: CoreFoundation.CGSize
@@ -542,6 +674,14 @@ public struct AVAssetImageDataProvider : ASAPPSDK.ImageDataProvider {
   final public let originalURL: Foundation.URL?
   final public let task: Foundation.URLSessionDataTask
   @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SoftBreak : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.SoftBreak : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 @available(iOS 14.0, macOS 11.0, tvOS 14.0, watchOS 7.0, *)
 public protocol KFImageProtocol : ASAPPSDK.KFOptionSetter, SwiftUI.View {
@@ -608,11 +748,64 @@ public struct FormatIndicatedCacheSerializer : ASAPPSDK.CacheSerializer {
   public func toArray() -> [T?]
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Link : ASAPPSDK.BaseNode {
+  public var title: Swift.String? {
+    get
+  }
+  public var url: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.Link : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class LineBreak : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.LineBreak : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CustomInline : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.CustomInline : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol DownHTMLRenderable : ASAPPSDK.DownRenderable {
+  func toHTML(_ options: ASAPPSDK.DownOptions) throws -> Swift.String
+}
+extension ASAPPSDK.DownHTMLRenderable {
+  public func toHTML(_ options: ASAPPSDK.DownOptions = .default) throws -> Swift.String
+}
+public struct DownHTMLRenderer {
+  public static func astToHTML(_ ast: ASAPPSDK.CMarkNode, options: ASAPPSDK.DownOptions = .default) throws -> Swift.String
+}
 @_inheritsConvenienceInitializers @objc(ASAPPNavBarStyles) @objcMembers public class ASAPPNavBarStyles : ObjectiveC.NSObject {
   @objc public var buttonImages: ASAPPSDK.ASAPPNavBarButtonImages
   @objc public var titlePadding: UIKit.UIEdgeInsets
   @objc override dynamic public init()
   @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CustomBlock : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.CustomBlock : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 public protocol Placeholder {
   func add(to imageView: ASAPPSDK.KFCrossPlatformImageView)
@@ -774,6 +967,15 @@ extension ASAPPSDK.KF {
     public let completionHandler: (Foundation.URLRequest?) -> Swift.Void
   }
 }
+public protocol DownXMLRenderable : ASAPPSDK.DownRenderable {
+  func toXML(_ options: ASAPPSDK.DownOptions) throws -> Swift.String
+}
+extension ASAPPSDK.DownXMLRenderable {
+  public func toXML(_ options: ASAPPSDK.DownOptions = .default) throws -> Swift.String
+}
+public struct DownXMLRenderer {
+  public static func astToXML(_ ast: ASAPPSDK.CMarkNode, options: ASAPPSDK.DownOptions = .default) throws -> Swift.String
+}
 public typealias KFCrossPlatformImage = UIKit.UIImage
 public typealias KFCrossPlatformColor = UIKit.UIColor
 public typealias KFCrossPlatformImageView = UIKit.UIImageView
@@ -809,6 +1011,14 @@ extension UIKit.NSTextAttachment : ASAPPSDK.KingfisherCompatible {
 }
 @available(iOS 14.0, *)
 extension CarPlay.CPListItem : ASAPPSDK.KingfisherCompatible {
+}
+public struct ListItemOptions {
+  public var maxPrefixDigits: Swift.UInt
+  public var spacingAfterPrefix: CoreFoundation.CGFloat
+  public var spacingAbove: CoreFoundation.CGFloat
+  public var spacingBelow: CoreFoundation.CGFloat
+  public var alignment: UIKit.NSTextAlignment
+  public init(maxPrefixDigits: Swift.UInt = 2, spacingAfterPrefix: CoreFoundation.CGFloat = 8, spacingAbove: CoreFoundation.CGFloat = 4, spacingBelow: CoreFoundation.CGFloat = 8, alignment: UIKit.NSTextAlignment = .natural)
 }
 extension ASAPPSDK.KingfisherWrapper where Base : UIKit.UIButton {
   @discardableResult
@@ -847,6 +1057,41 @@ public struct KFAnimatedImageViewRepresenter : SwiftUI.UIViewRepresentable, ASAP
   public typealias Body = Swift.Never
   public typealias Coordinator = Swift.Void
   public typealias UIViewType = ASAPPSDK.AnimatedImageView
+}
+public protocol DownASTRenderable : ASAPPSDK.DownRenderable {
+  func toAST(_ options: ASAPPSDK.DownOptions) throws -> ASAPPSDK.CMarkNode
+}
+extension ASAPPSDK.DownASTRenderable {
+  public func toAST(_ options: ASAPPSDK.DownOptions = .default) throws -> ASAPPSDK.CMarkNode
+  public func toDocument(_ options: ASAPPSDK.DownOptions = .default) throws -> ASAPPSDK.Document
+}
+public struct DownASTRenderer {
+  public static func stringToAST(_ string: Swift.String, options: ASAPPSDK.DownOptions = .default) throws -> ASAPPSDK.CMarkNode
+}
+public class DebugVisitor : ASAPPSDK.Visitor {
+  public init()
+  public typealias Result = Swift.String
+  public func visit(document node: ASAPPSDK.Document) -> Swift.String
+  public func visit(blockQuote node: ASAPPSDK.BlockQuote) -> Swift.String
+  public func visit(list node: ASAPPSDK.List) -> Swift.String
+  public func visit(item node: ASAPPSDK.Item) -> Swift.String
+  public func visit(codeBlock node: ASAPPSDK.CodeBlock) -> Swift.String
+  public func visit(htmlBlock node: ASAPPSDK.HtmlBlock) -> Swift.String
+  public func visit(customBlock node: ASAPPSDK.CustomBlock) -> Swift.String
+  public func visit(paragraph node: ASAPPSDK.Paragraph) -> Swift.String
+  public func visit(heading node: ASAPPSDK.Heading) -> Swift.String
+  public func visit(thematicBreak node: ASAPPSDK.ThematicBreak) -> Swift.String
+  public func visit(text node: ASAPPSDK.Text) -> Swift.String
+  public func visit(softBreak node: ASAPPSDK.SoftBreak) -> Swift.String
+  public func visit(lineBreak node: ASAPPSDK.LineBreak) -> Swift.String
+  public func visit(code node: ASAPPSDK.Code) -> Swift.String
+  public func visit(htmlInline node: ASAPPSDK.HtmlInline) -> Swift.String
+  public func visit(customInline node: ASAPPSDK.CustomInline) -> Swift.String
+  public func visit(emphasis node: ASAPPSDK.Emphasis) -> Swift.String
+  public func visit(strong node: ASAPPSDK.Strong) -> Swift.String
+  public func visit(link node: ASAPPSDK.Link) -> Swift.String
+  public func visit(image node: ASAPPSDK.DownImage) -> Swift.String
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(ASAPPFontFamily) @objcMembers public class ASAPPFontFamily : ObjectiveC.NSObject {
   @objc final public let light: UIKit.UIFont
@@ -926,6 +1171,26 @@ public struct AlignmentRectInsetsImageModifier : ASAPPSDK.ImageModifier {
   public init(alignmentInsets: UIKit.UIEdgeInsets)
   public func modify(_ image: ASAPPSDK.KFCrossPlatformImage) -> ASAPPSDK.KFCrossPlatformImage
 }
+extension Swift.String {
+  public func toHTML(_ options: ASAPPSDK.DownOptions = .default) throws -> Swift.String
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Item : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.Item : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol DownLaTeXRenderable : ASAPPSDK.DownRenderable {
+  func toLaTeX(_ options: ASAPPSDK.DownOptions, width: Swift.Int32) throws -> Swift.String
+}
+extension ASAPPSDK.DownLaTeXRenderable {
+  public func toLaTeX(_ options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
+}
+public struct DownLaTeXRenderer {
+  public static func astToLaTeX(_ ast: ASAPPSDK.CMarkNode, options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
+}
 public typealias IndicatorView = UIKit.UIView
 public enum IndicatorType {
   case none
@@ -980,6 +1245,16 @@ extension ASAPPSDK.KFImage {
   @available(*, deprecated, message: "This is not necessary anymore since `@StateObject` is used. It does nothing now and please just remove it.")
   public func loadImmediately(_ start: Swift.Bool = true) -> ASAPPSDK.KFImage
 }
+public enum DownErrors : Swift.Error {
+  case markdownToASTError
+  case astRenderingError
+  case htmlDataConversionError
+  public static func == (a: ASAPPSDK.DownErrors, b: ASAPPSDK.DownErrors) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc public enum ASAPPError : Swift.Int {
   case getChatStatusFailed
   case pushDeregistrationFailed
@@ -1005,10 +1280,41 @@ extension ASAPPSDK.KFImage {
   @objc public init(font: UIKit.UIFont, size: CoreFoundation.CGFloat, letterSpacing: CoreFoundation.CGFloat, color: UIKit.UIColor, case: ASAPPSDK.ASAPPTextStyle.ASAPPCaseStyle = .original)
   @objc deinit
 }
+public typealias TextView = UIKit.UITextView
+@objc @_Concurrency.MainActor(unsafe) open class DownTextView : ASAPPSDK.TextView {
+  @_Concurrency.MainActor(unsafe) open var styler: any ASAPPSDK.Styler {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(frame: CoreFoundation.CGRect, styler: any ASAPPSDK.Styler = DownStyler())
+  @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, styler: any ASAPPSDK.Styler, layoutManager: UIKit.NSLayoutManager)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func render() throws
+  @objc deinit
+}
+public struct Down : ASAPPSDK.DownASTRenderable, ASAPPSDK.DownHTMLRenderable, ASAPPSDK.DownXMLRenderable, ASAPPSDK.DownLaTeXRenderable, ASAPPSDK.DownGroffRenderable, ASAPPSDK.DownCommonMarkRenderable {
+  public var markdownString: Swift.String
+  public init(markdownString: Swift.String)
+}
+extension ASAPPSDK.Down : ASAPPSDK.DownAttributedStringRenderable {
+}
 @usableFromInline
 internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
+}
+public protocol DownCommonMarkRenderable : ASAPPSDK.DownRenderable {
+  func toCommonMark(_ options: ASAPPSDK.DownOptions, width: Swift.Int32) throws -> Swift.String
+}
+extension ASAPPSDK.DownCommonMarkRenderable {
+  public func toCommonMark(_ options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
+}
+public struct DownCommonMarkRenderer {
+  public static func astToCommonMark(_ ast: ASAPPSDK.CMarkNode, options: ASAPPSDK.DownOptions = .default, width: Swift.Int32 = 0) throws -> Swift.String
 }
 @objc public enum ASAPPLogLevel : Swift.Int {
   case none = 0
@@ -1021,6 +1327,20 @@ internal protocol _AnyEncodable {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Code : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.Code : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol DownRenderable {
+  var markdownString: Swift.String { get set }
 }
 public struct ImageLoadingResult {
   public let image: ASAPPSDK.KFCrossPlatformImage
@@ -1075,6 +1395,36 @@ extension ASAPPSDK.ImageDownloader : ASAPPSDK.ImageDownloaderDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Text : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.Text : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Heading : ASAPPSDK.BaseNode {
+  public var headingLevel: Swift.Int {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.Heading : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Paragraph : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.Paragraph : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public typealias Transformer = (CoreImage.CIImage) -> CoreImage.CIImage?
 public protocol CIImageProcessor : ASAPPSDK.ImageProcessor {
   var filter: ASAPPSDK.Filter { get }
@@ -1107,6 +1457,11 @@ extension ASAPPSDK.ASAPPViewController {
 }
 extension ASAPPSDK.ASAPPViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+}
+public struct ThematicBreakOptions {
+  public var thickness: CoreFoundation.CGFloat
+  public var indentation: CoreFoundation.CGFloat
+  public init(thickness: CoreFoundation.CGFloat = 1, indentation: CoreFoundation.CGFloat = 0)
 }
 public protocol Resource {
   var cacheKey: Swift.String { get }
@@ -1255,6 +1610,20 @@ extension ASAPPSDK.KingfisherWrapper where Base == CoreFoundation.CGSize {
   public func filling(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGSize
   public func constrainedRect(for size: CoreFoundation.CGSize, anchor: CoreFoundation.CGPoint) -> CoreFoundation.CGRect
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class DownImage : ASAPPSDK.BaseNode {
+  public var title: Swift.String? {
+    get
+  }
+  public var url: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.DownImage : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 @usableFromInline
 internal protocol _AnyDecodable {
   var value: Any { get }
@@ -1290,6 +1659,36 @@ extension ASAPPSDK.SessionDelegate : Foundation.URLSessionDataDelegate {
   @objc dynamic open func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc dynamic open func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc dynamic open func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
+}
+@objc @_inheritsConvenienceInitializers public class DownLayoutManager : UIKit.NSLayoutManager {
+  @objc override dynamic public func drawGlyphs(forGlyphRange glyphsToShow: Foundation.NSRange, at origin: CoreFoundation.CGPoint)
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct DownOptions : Swift.OptionSet {
+  public let rawValue: Swift.Int32
+  public init(rawValue: Swift.Int32)
+  public static let `default`: ASAPPSDK.DownOptions
+  public static let sourcePos: ASAPPSDK.DownOptions
+  public static let hardBreaks: ASAPPSDK.DownOptions
+  public static let safe: ASAPPSDK.DownOptions
+  public static let unsafe: ASAPPSDK.DownOptions
+  public static let normalize: ASAPPSDK.DownOptions
+  public static let validateUTF8: ASAPPSDK.DownOptions
+  public static let smart: ASAPPSDK.DownOptions
+  public static let smartUnsafe: ASAPPSDK.DownOptions
+  public typealias ArrayLiteralElement = ASAPPSDK.DownOptions
+  public typealias Element = ASAPPSDK.DownOptions
+  public typealias RawValue = Swift.Int32
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BlockQuote : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.BlockQuote : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 @objc public protocol ASAPPDelegate {
   @objc func chatViewControllerDidTapUserLoginButton()
@@ -1418,7 +1817,73 @@ extension ASAPPSDK.SessionDelegate : Foundation.URLSessionDataDelegate {
   @objc override dynamic public init()
   @objc deinit
 }
+public protocol Visitor {
+  associatedtype Result
+  func visit(document node: ASAPPSDK.Document) -> Self.Result
+  func visit(blockQuote node: ASAPPSDK.BlockQuote) -> Self.Result
+  func visit(list node: ASAPPSDK.List) -> Self.Result
+  func visit(item node: ASAPPSDK.Item) -> Self.Result
+  func visit(codeBlock node: ASAPPSDK.CodeBlock) -> Self.Result
+  func visit(htmlBlock node: ASAPPSDK.HtmlBlock) -> Self.Result
+  func visit(customBlock node: ASAPPSDK.CustomBlock) -> Self.Result
+  func visit(paragraph node: ASAPPSDK.Paragraph) -> Self.Result
+  func visit(heading node: ASAPPSDK.Heading) -> Self.Result
+  func visit(thematicBreak node: ASAPPSDK.ThematicBreak) -> Self.Result
+  func visit(text node: ASAPPSDK.Text) -> Self.Result
+  func visit(softBreak node: ASAPPSDK.SoftBreak) -> Self.Result
+  func visit(lineBreak node: ASAPPSDK.LineBreak) -> Self.Result
+  func visit(code node: ASAPPSDK.Code) -> Self.Result
+  func visit(htmlInline node: ASAPPSDK.HtmlInline) -> Self.Result
+  func visit(customInline node: ASAPPSDK.CustomInline) -> Self.Result
+  func visit(emphasis node: ASAPPSDK.Emphasis) -> Self.Result
+  func visit(strong node: ASAPPSDK.Strong) -> Self.Result
+  func visit(link node: ASAPPSDK.Link) -> Self.Result
+  func visit(image node: ASAPPSDK.DownImage) -> Self.Result
+  func visitChildren(of node: any ASAPPSDK.Node) -> [Self.Result]
+}
+extension ASAPPSDK.Visitor {
+  public func visitChildren(of node: any ASAPPSDK.Node) -> [Self.Result]
+}
 extension Swift.String : ASAPPSDK.KingfisherCompatibleValue {
+}
+public typealias ListPrefixGeneratorBuilder = (ASAPPSDK.List) -> any ASAPPSDK.ListItemPrefixGenerator
+public class AttributedStringVisitor {
+  public init(styler: any ASAPPSDK.Styler, options: ASAPPSDK.DownOptions = .default, listPrefixGeneratorBuilder: @escaping ASAPPSDK.ListPrefixGeneratorBuilder = { StaticListItemPrefixGenerator(list: $0) })
+  @objc deinit
+}
+extension ASAPPSDK.AttributedStringVisitor : ASAPPSDK.Visitor {
+  public typealias Result = Foundation.NSMutableAttributedString
+  public func visit(document node: ASAPPSDK.Document) -> Foundation.NSMutableAttributedString
+  public func visit(blockQuote node: ASAPPSDK.BlockQuote) -> Foundation.NSMutableAttributedString
+  public func visit(list node: ASAPPSDK.List) -> Foundation.NSMutableAttributedString
+  public func visit(item node: ASAPPSDK.Item) -> Foundation.NSMutableAttributedString
+  public func visit(codeBlock node: ASAPPSDK.CodeBlock) -> Foundation.NSMutableAttributedString
+  public func visit(htmlBlock node: ASAPPSDK.HtmlBlock) -> Foundation.NSMutableAttributedString
+  public func visit(customBlock node: ASAPPSDK.CustomBlock) -> Foundation.NSMutableAttributedString
+  public func visit(paragraph node: ASAPPSDK.Paragraph) -> Foundation.NSMutableAttributedString
+  public func visit(heading node: ASAPPSDK.Heading) -> Foundation.NSMutableAttributedString
+  public func visit(thematicBreak node: ASAPPSDK.ThematicBreak) -> Foundation.NSMutableAttributedString
+  public func visit(text node: ASAPPSDK.Text) -> Foundation.NSMutableAttributedString
+  public func visit(softBreak node: ASAPPSDK.SoftBreak) -> Foundation.NSMutableAttributedString
+  public func visit(lineBreak node: ASAPPSDK.LineBreak) -> Foundation.NSMutableAttributedString
+  public func visit(code node: ASAPPSDK.Code) -> Foundation.NSMutableAttributedString
+  public func visit(htmlInline node: ASAPPSDK.HtmlInline) -> Foundation.NSMutableAttributedString
+  public func visit(customInline node: ASAPPSDK.CustomInline) -> Foundation.NSMutableAttributedString
+  public func visit(emphasis node: ASAPPSDK.Emphasis) -> Foundation.NSMutableAttributedString
+  public func visit(strong node: ASAPPSDK.Strong) -> Foundation.NSMutableAttributedString
+  public func visit(link node: ASAPPSDK.Link) -> Foundation.NSMutableAttributedString
+  public func visit(image node: ASAPPSDK.DownImage) -> Foundation.NSMutableAttributedString
+}
+public class ListItemParagraphStyler {
+  public var indentation: CoreFoundation.CGFloat {
+    get
+  }
+  public var trailingParagraphStyle: UIKit.NSParagraphStyle {
+    get
+  }
+  public init(options: ASAPPSDK.ListItemOptions, prefixFont: ASAPPSDK.DownFont)
+  public func leadingParagraphStyle(prefixWidth: CoreFoundation.CGFloat) -> UIKit.NSParagraphStyle
+  @objc deinit
 }
 public enum ImageTransition {
   case none
@@ -1533,6 +1998,26 @@ extension ASAPPSDK.KFImage.Context : Swift.Hashable {
 extension ASAPPSDK.KFAnimatedImage {
   public typealias Context = ASAPPSDK.KFImage.Context
 }
+public struct DownStylerConfiguration {
+  public var fonts: any ASAPPSDK.FontCollection
+  public var colors: any ASAPPSDK.ColorCollection
+  public var paragraphStyles: any ASAPPSDK.ParagraphStyleCollection
+  public var listItemOptions: ASAPPSDK.ListItemOptions
+  public var quoteStripeOptions: ASAPPSDK.QuoteStripeOptions
+  public var thematicBreakOptions: ASAPPSDK.ThematicBreakOptions
+  public var codeBlockOptions: ASAPPSDK.CodeBlockOptions
+  public init(fonts: any ASAPPSDK.FontCollection = StaticFontCollection(), colors: any ASAPPSDK.ColorCollection = StaticColorCollection(), paragraphStyles: any ASAPPSDK.ParagraphStyleCollection = StaticParagraphStyleCollection(), listItemOptions: ASAPPSDK.ListItemOptions = ListItemOptions(), quoteStripeOptions: ASAPPSDK.QuoteStripeOptions = QuoteStripeOptions(), thematicBreakOptions: ASAPPSDK.ThematicBreakOptions = ThematicBreakOptions(), codeBlockOptions: ASAPPSDK.CodeBlockOptions = CodeBlockOptions())
+}
+public struct ChildSequence : Swift.Sequence {
+  public func makeIterator() -> ASAPPSDK.ChildSequence.Iterator
+  public typealias Element = any ASAPPSDK.Node
+}
+extension ASAPPSDK.ChildSequence {
+  public struct Iterator : Swift.IteratorProtocol {
+    public mutating func next() -> (any ASAPPSDK.Node)?
+    public typealias Element = any ASAPPSDK.Node
+  }
+}
 @_inheritsConvenienceInitializers @objc(ASAPPStrings) @objcMembers public class ASAPPStrings : ObjectiveC.NSObject {
   @objc public var accessibilityClose: Swift.String
   @objc public var accessibilityMore: Swift.String
@@ -1638,6 +2123,12 @@ extension ASAPPSDK.ASAPPChatInsteadViewController : UIKit.UIViewControllerTransi
 extension ASAPPSDK.ASAPPChatInsteadViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
+@objc @_inheritsConvenienceInitializers public class DownDebugLayoutManager : ASAPPSDK.DownLayoutManager {
+  @objc override dynamic public func drawGlyphs(forGlyphRange glyphsToShow: Foundation.NSRange, at origin: CoreFoundation.CGPoint)
+  @objc override dynamic public init()
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
 public class Delegate<Input, Output> {
   public init()
   public func delegate<T>(on target: T, block: ((T, Input) -> Output)?) where T : AnyObject
@@ -1675,6 +2166,38 @@ extension ASAPPSDK.KingfisherWrapper where Base : CarPlay.CPListItem {
 }
 extension ASAPPSDK.KingfisherWrapper where Base : CarPlay.CPListItem {
   public var taskIdentifier: ASAPPSDK.Source.Identifier.Value? {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Document : ASAPPSDK.BaseNode {
+  @objc deinit
+  @discardableResult
+  public func accept<T>(_ visitor: T) -> T.Result where T : ASAPPSDK.Visitor
+}
+extension ASAPPSDK.Document : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Strong : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.Strong : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class CodeBlock : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  public var fenceInfo: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.CodeBlock : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
     get
   }
 }
@@ -1716,6 +2239,14 @@ public struct RawImageDataProvider : ASAPPSDK.ImageDataProvider {
   public var cacheKey: Swift.String
   public func data(handler: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ThematicBreak : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.ThematicBreak : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public enum Source {
   public enum Identifier {
     public typealias Value = Swift.UInt
@@ -1735,6 +2266,10 @@ extension ASAPPSDK.Source : Swift.Hashable {
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct CodeBlockOptions {
+  public var containerInset: CoreFoundation.CGFloat
+  public init(containerInset: CoreFoundation.CGFloat = 8)
 }
 @objc(ASAPPButtonColors) @objcMembers public class ASAPPButtonColors : ObjectiveC.NSObject {
   @objc public var backgroundNormal: UIKit.UIColor
@@ -1780,6 +2315,40 @@ public struct ImageCreatingOptions {
   public static func getFrameDuration(from gifInfo: [Swift.String : Any]?) -> Foundation.TimeInterval
   public static func getFrameDuration(from imageSource: ImageIO.CGImageSource, at index: Swift.Int) -> Foundation.TimeInterval
   @objc deinit
+}
+public typealias DownColor = UIKit.UIColor
+public protocol ColorCollection {
+  var heading1: ASAPPSDK.DownColor { get }
+  var heading2: ASAPPSDK.DownColor { get }
+  var heading3: ASAPPSDK.DownColor { get }
+  var heading4: ASAPPSDK.DownColor { get }
+  var heading5: ASAPPSDK.DownColor { get }
+  var heading6: ASAPPSDK.DownColor { get }
+  var body: ASAPPSDK.DownColor { get }
+  var code: ASAPPSDK.DownColor { get }
+  var link: ASAPPSDK.DownColor { get }
+  var quote: ASAPPSDK.DownColor { get }
+  var quoteStripe: ASAPPSDK.DownColor { get }
+  var thematicBreak: ASAPPSDK.DownColor { get }
+  var listItemPrefix: ASAPPSDK.DownColor { get }
+  var codeBlockBackground: ASAPPSDK.DownColor { get }
+}
+public struct StaticColorCollection : ASAPPSDK.ColorCollection {
+  public var heading1: ASAPPSDK.DownColor
+  public var heading2: ASAPPSDK.DownColor
+  public var heading3: ASAPPSDK.DownColor
+  public var heading4: ASAPPSDK.DownColor
+  public var heading5: ASAPPSDK.DownColor
+  public var heading6: ASAPPSDK.DownColor
+  public var body: ASAPPSDK.DownColor
+  public var code: ASAPPSDK.DownColor
+  public var link: ASAPPSDK.DownColor
+  public var quote: ASAPPSDK.DownColor
+  public var quoteStripe: ASAPPSDK.DownColor
+  public var thematicBreak: ASAPPSDK.DownColor
+  public var listItemPrefix: ASAPPSDK.DownColor
+  public var codeBlockBackground: ASAPPSDK.DownColor
+  public init(heading1: ASAPPSDK.DownColor = .black, heading2: ASAPPSDK.DownColor = .black, heading3: ASAPPSDK.DownColor = .black, heading4: ASAPPSDK.DownColor = .black, heading5: ASAPPSDK.DownColor = .black, heading6: ASAPPSDK.DownColor = .black, body: ASAPPSDK.DownColor = .black, code: ASAPPSDK.DownColor = .black, link: ASAPPSDK.DownColor = .blue, quote: ASAPPSDK.DownColor = .darkGray, quoteStripe: ASAPPSDK.DownColor = .darkGray, thematicBreak: ASAPPSDK.DownColor = .init(white: 0.9, alpha: 1), listItemPrefix: ASAPPSDK.DownColor = .lightGray, codeBlockBackground: ASAPPSDK.DownColor = .init(red: 0.96, green: 0.97, blue: 0.98, alpha: 1))
 }
 @_inheritsConvenienceInitializers @objc(ASAPPNavBarButtonImages) @objcMembers public class ASAPPNavBarButtonImages : ObjectiveC.NSObject {
   @objc public var close: ASAPPSDK.ASAPPCustomImage? {
@@ -1840,6 +2409,101 @@ public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.Cu
 extension ASAPPSDK.ULID : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class HtmlBlock : ASAPPSDK.BaseNode {
+  public var literal: Swift.String? {
+    get
+  }
+  @objc deinit
+}
+extension ASAPPSDK.HtmlBlock : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public protocol ParagraphStyleCollection {
+  var heading1: UIKit.NSParagraphStyle { get }
+  var heading2: UIKit.NSParagraphStyle { get }
+  var heading3: UIKit.NSParagraphStyle { get }
+  var heading4: UIKit.NSParagraphStyle { get }
+  var heading5: UIKit.NSParagraphStyle { get }
+  var heading6: UIKit.NSParagraphStyle { get }
+  var body: UIKit.NSParagraphStyle { get }
+  var code: UIKit.NSParagraphStyle { get }
+}
+public struct StaticParagraphStyleCollection : ASAPPSDK.ParagraphStyleCollection {
+  public var heading1: UIKit.NSParagraphStyle
+  public var heading2: UIKit.NSParagraphStyle
+  public var heading3: UIKit.NSParagraphStyle
+  public var heading4: UIKit.NSParagraphStyle
+  public var heading5: UIKit.NSParagraphStyle
+  public var heading6: UIKit.NSParagraphStyle
+  public var body: UIKit.NSParagraphStyle
+  public var code: UIKit.NSParagraphStyle
+  public init()
+}
+public typealias DownFont = UIKit.UIFont
+public protocol FontCollection {
+  var heading1: ASAPPSDK.DownFont { get }
+  var heading2: ASAPPSDK.DownFont { get }
+  var heading3: ASAPPSDK.DownFont { get }
+  var heading4: ASAPPSDK.DownFont { get }
+  var heading5: ASAPPSDK.DownFont { get }
+  var heading6: ASAPPSDK.DownFont { get }
+  var body: ASAPPSDK.DownFont { get }
+  var code: ASAPPSDK.DownFont { get }
+  var listItemPrefix: ASAPPSDK.DownFont { get }
+}
+public struct StaticFontCollection : ASAPPSDK.FontCollection {
+  public var heading1: ASAPPSDK.DownFont
+  public var heading2: ASAPPSDK.DownFont
+  public var heading3: ASAPPSDK.DownFont
+  public var heading4: ASAPPSDK.DownFont
+  public var heading5: ASAPPSDK.DownFont
+  public var heading6: ASAPPSDK.DownFont
+  public var body: ASAPPSDK.DownFont
+  public var code: ASAPPSDK.DownFont
+  public var listItemPrefix: ASAPPSDK.DownFont
+  public init(heading1: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 28), heading2: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 24), heading3: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 20), heading4: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 20), heading5: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 20), heading6: ASAPPSDK.DownFont = .boldSystemFont(ofSize: 20), body: ASAPPSDK.DownFont = .systemFont(ofSize: 17), code: ASAPPSDK.DownFont = DownFont(name: "menlo", size: 17) ?? .systemFont(ofSize: 17), listItemPrefix: ASAPPSDK.DownFont = DownFont.monospacedDigitSystemFont(ofSize: 17, weight: .regular))
+}
+open class DownStyler : ASAPPSDK.Styler {
+  final public let fonts: any ASAPPSDK.FontCollection
+  final public let colors: any ASAPPSDK.ColorCollection
+  final public let paragraphStyles: any ASAPPSDK.ParagraphStyleCollection
+  final public let quoteStripeOptions: ASAPPSDK.QuoteStripeOptions
+  final public let thematicBreakOptions: ASAPPSDK.ThematicBreakOptions
+  final public let codeBlockOptions: ASAPPSDK.CodeBlockOptions
+  public init(configuration: ASAPPSDK.DownStylerConfiguration = DownStylerConfiguration())
+  open func style(document str: Foundation.NSMutableAttributedString)
+  open func style(blockQuote str: Foundation.NSMutableAttributedString, nestDepth: Swift.Int)
+  open func style(list str: Foundation.NSMutableAttributedString, nestDepth: Swift.Int)
+  open func style(listItemPrefix str: Foundation.NSMutableAttributedString)
+  open func style(item str: Foundation.NSMutableAttributedString, prefixLength: Swift.Int)
+  open func style(codeBlock str: Foundation.NSMutableAttributedString, fenceInfo: Swift.String?)
+  open func style(htmlBlock str: Foundation.NSMutableAttributedString)
+  open func style(customBlock str: Foundation.NSMutableAttributedString)
+  open func style(paragraph str: Foundation.NSMutableAttributedString)
+  open func style(heading str: Foundation.NSMutableAttributedString, level: Swift.Int)
+  open func style(thematicBreak str: Foundation.NSMutableAttributedString)
+  open func style(text str: Foundation.NSMutableAttributedString)
+  open func style(softBreak str: Foundation.NSMutableAttributedString)
+  open func style(lineBreak str: Foundation.NSMutableAttributedString)
+  open func style(code str: Foundation.NSMutableAttributedString)
+  open func style(htmlInline str: Foundation.NSMutableAttributedString)
+  open func style(customInline str: Foundation.NSMutableAttributedString)
+  open func style(emphasis str: Foundation.NSMutableAttributedString)
+  open func style(strong str: Foundation.NSMutableAttributedString)
+  open func style(link str: Foundation.NSMutableAttributedString, title: Swift.String?, url: Swift.String?)
+  open func style(image str: Foundation.NSMutableAttributedString, title: Swift.String?, url: Swift.String?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Emphasis : ASAPPSDK.BaseNode {
+  @objc deinit
+}
+extension ASAPPSDK.Emphasis : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 extension ASAPPSDK.KingfisherWrapper where Base : UIKit.UIImageView {
   @discardableResult
@@ -1950,10 +2614,58 @@ extension ASAPPSDK.DiskStorage {
     public init(name: Swift.String, sizeLimit: Swift.UInt, fileManager: Foundation.FileManager = .default, directory: Foundation.URL? = nil)
   }
 }
+public protocol Node {
+  var cmarkNode: ASAPPSDK.CMarkNode { get }
+  var children: [any ASAPPSDK.Node] { get }
+}
+extension ASAPPSDK.Node {
+  public var hasSuccessor: Swift.Bool {
+    get
+  }
+  public var childSequence: ASAPPSDK.ChildSequence {
+    get
+  }
+}
+public typealias CMarkNode = Swift.UnsafeMutablePointer<libcmark.cmark_node>
+extension Swift.UnsafeMutablePointer where Pointee == libcmark.cmark_node {
+  public func wrap() -> (any ASAPPSDK.Node)?
+  public var parent: ASAPPSDK.CMarkNode? {
+    get
+  }
+  public var type: libcmark.cmark_node_type {
+    get
+  }
+  public var literal: Swift.String? {
+    get
+  }
+  public var fenceInfo: Swift.String? {
+    get
+  }
+  public var headingLevel: Swift.Int {
+    get
+  }
+  public var listType: libcmark.cmark_list_type {
+    get
+  }
+  public var listStart: Swift.Int {
+    get
+  }
+  public var listDelimiter: libcmark.cmark_delim_type {
+    get
+  }
+  public var url: Swift.String? {
+    get
+  }
+  public var title: Swift.String? {
+    get
+  }
+}
 extension ASAPPSDK.ContentMode : Swift.Equatable {}
 extension ASAPPSDK.ContentMode : Swift.Hashable {}
 extension ASAPPSDK.ImageFormat : Swift.Equatable {}
 extension ASAPPSDK.ImageFormat : Swift.Hashable {}
+extension ASAPPSDK.List.Delimiter : Swift.Equatable {}
+extension ASAPPSDK.List.Delimiter : Swift.Hashable {}
 extension ASAPPSDK.CacheType : Swift.Equatable {}
 extension ASAPPSDK.CacheType : Swift.Hashable {}
 extension ASAPPSDK.ASAPPChannel : Swift.Equatable {}
@@ -1962,6 +2674,8 @@ extension ASAPPSDK.ASAPPChannel : Swift.RawRepresentable {}
 extension ASAPPSDK.ASAPPAllowedOrientations : Swift.Equatable {}
 extension ASAPPSDK.ASAPPAllowedOrientations : Swift.Hashable {}
 extension ASAPPSDK.ASAPPAllowedOrientations : Swift.RawRepresentable {}
+extension ASAPPSDK.DownErrors : Swift.Equatable {}
+extension ASAPPSDK.DownErrors : Swift.Hashable {}
 extension ASAPPSDK.ASAPPError : Swift.Equatable {}
 extension ASAPPSDK.ASAPPError : Swift.Hashable {}
 extension ASAPPSDK.ASAPPError : Swift.RawRepresentable {}

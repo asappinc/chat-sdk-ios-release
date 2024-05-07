@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -1208,6 +1209,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 
 
 
+
 /// :nodoc:
 SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 @interface ComponentViewController : ASAPPViewController
@@ -1222,6 +1224,85 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
+
+
+
+
+
+
+
+/// A layout manager capable of drawing the custom attributes set by the <code>DownStyler</code>.
+/// Insert this into a TextKit stack manually, or use the provided <code>DownTextView</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK17DownLayoutManager")
+@interface DownLayoutManager : NSLayoutManager
+- (void)drawGlyphsForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// A layout manager that draws the line fragments.
+/// Line fragments are the areas with a document that contain lines of text. There
+/// are two types.
+/// <ol>
+///   <li>
+///     A <em>line rect</em> (drawn in red) indicates the maximum rect enclosing the line.
+///     This inlcudes not only the textual content, but also the padding (if any) around that text.
+///   </li>
+///   <li>
+///     A <em>line used rect</em> (drawn in blue) is the smallest rect enclosing the textual content.
+///   </li>
+/// </ol>
+/// The visualization of these rects is useful when determining the paragraph styles
+/// of a <code>DownStyler</code>.
+/// Insert this into a TextKit stack manually, or use the provided <code>DownDebugTextView</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK22DownDebugLayoutManager")
+@interface DownDebugLayoutManager : DownLayoutManager
+- (void)drawGlyphsForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSTextContainer;
+
+/// A text view capable of parsing and rendering markdown via the AST.
+SWIFT_CLASS("_TtC8ASAPPSDK12DownTextView")
+@interface DownTextView : UITextView
+@property (nonatomic, copy) NSString * _Null_unspecified text;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer SWIFT_UNAVAILABLE;
+@end
+
+
+/// A text view capable of parsing and rendering markdown via the AST, as well as line fragments.
+/// See <code>DownDebugLayoutManager</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK17DownDebugTextView")
+@interface DownDebugTextView : DownTextView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class WKWebViewConfiguration;
+
+SWIFT_CLASS("_TtC8ASAPPSDK8DownView")
+@interface DownView : WKWebView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
+@end
+
+@class WKNavigationResponse;
+@class WKNavigationAction;
+@class WKNavigation;
+
+@interface DownView (SWIFT_EXTENSION(ASAPPSDK)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+@end
+
+
 
 
 
@@ -1255,6 +1336,8 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
 
 
 
@@ -1590,6 +1673,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import ObjectiveC;
 @import UIKit;
+@import WebKit;
 #endif
 
 #endif
@@ -2517,6 +2601,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 
 
 
+
 /// :nodoc:
 SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 @interface ComponentViewController : ASAPPViewController
@@ -2531,6 +2616,85 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
+
+
+
+
+
+
+
+/// A layout manager capable of drawing the custom attributes set by the <code>DownStyler</code>.
+/// Insert this into a TextKit stack manually, or use the provided <code>DownTextView</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK17DownLayoutManager")
+@interface DownLayoutManager : NSLayoutManager
+- (void)drawGlyphsForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+/// A layout manager that draws the line fragments.
+/// Line fragments are the areas with a document that contain lines of text. There
+/// are two types.
+/// <ol>
+///   <li>
+///     A <em>line rect</em> (drawn in red) indicates the maximum rect enclosing the line.
+///     This inlcudes not only the textual content, but also the padding (if any) around that text.
+///   </li>
+///   <li>
+///     A <em>line used rect</em> (drawn in blue) is the smallest rect enclosing the textual content.
+///   </li>
+/// </ol>
+/// The visualization of these rects is useful when determining the paragraph styles
+/// of a <code>DownStyler</code>.
+/// Insert this into a TextKit stack manually, or use the provided <code>DownDebugTextView</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK22DownDebugLayoutManager")
+@interface DownDebugLayoutManager : DownLayoutManager
+- (void)drawGlyphsForGlyphRange:(NSRange)glyphsToShow atPoint:(CGPoint)origin;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSTextContainer;
+
+/// A text view capable of parsing and rendering markdown via the AST.
+SWIFT_CLASS("_TtC8ASAPPSDK12DownTextView")
+@interface DownTextView : UITextView
+@property (nonatomic, copy) NSString * _Null_unspecified text;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame textContainer:(NSTextContainer * _Nullable)textContainer SWIFT_UNAVAILABLE;
+@end
+
+
+/// A text view capable of parsing and rendering markdown via the AST, as well as line fragments.
+/// See <code>DownDebugLayoutManager</code>.
+SWIFT_CLASS("_TtC8ASAPPSDK17DownDebugTextView")
+@interface DownDebugTextView : DownTextView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class WKWebViewConfiguration;
+
+SWIFT_CLASS("_TtC8ASAPPSDK8DownView")
+@interface DownView : WKWebView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
+@end
+
+@class WKNavigationResponse;
+@class WKNavigationAction;
+@class WKNavigation;
+
+@interface DownView (SWIFT_EXTENSION(ASAPPSDK)) <WKNavigationDelegate>
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+@end
+
+
 
 
 
@@ -2564,6 +2728,8 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
 
 
 

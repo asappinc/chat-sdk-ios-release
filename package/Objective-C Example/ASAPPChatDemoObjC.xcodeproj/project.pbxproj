@@ -13,7 +13,7 @@
 		3087DD6D1D53D01800C8C327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3087DD6C1D53D01800C8C327 /* Assets.xcassets */; };
 		3087DD701D53D01800C8C327 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3087DD6E1D53D01800C8C327 /* LaunchScreen.storyboard */; };
 		3A2DA7A825BB277800A99873 /* ASAPPSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2DA7A725BB277800A99873 /* ASAPPSDK.xcframework */; };
-		3A2DA7A925BB277800A99873 /* ASAPPSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2DA7A725BB277800A99873 /* ASAPPSDK.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A2DA7A925BB277800A99873 /* ASAPPSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2DA7A725BB277800A99873 /* ASAPPSDK.xcframework */; settings = {ATTRIBUTES = ( ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */

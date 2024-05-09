@@ -4,50 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/Down.framework/Down</key>
-		<data>
-		lMCc/zoFcjI8iGzbBTT4VYirTCw=
-		</data>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/css/down.min.css</key>
-		<data>
-		g0mYzwGZNdTgctb++IMm8cyK0aI=
-		</data>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/index.html</key>
-		<data>
-		9QaDWT3BNNFS1bEWHNW28L8aSJo=
-		</data>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/js/down.js</key>
-		<data>
-		8LrOO017xH/QGyMZQE+V/XKMo2k=
-		</data>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/js/highlight.min.js</key>
-		<data>
-		UQUTJbuDx1qlfkOMBSncX1A/YR8=
-		</data>
-		<key>Frameworks/Down.framework/DownView.bundle/css/down.min.css</key>
-		<data>
-		UsbfB49HAkf5DmzhVacGg9ESopc=
-		</data>
-		<key>Frameworks/Down.framework/DownView.bundle/index.html</key>
-		<data>
-		rXr20cRxF9zNgx+BGU656IMReGE=
-		</data>
-		<key>Frameworks/Down.framework/DownView.bundle/js/down.js</key>
-		<data>
-		Uk3FfQUzfvIuSVgbAowGQJ5XC0M=
-		</data>
-		<key>Frameworks/Down.framework/DownView.bundle/js/highlight.min.js</key>
-		<data>
-		UQUTJbuDx1qlfkOMBSncX1A/YR8=
-		</data>
-		<key>Frameworks/Down.framework/Info.plist</key>
-		<data>
-		zlSEqFq56yWmpLdD3TbqJqrFqJ4=
-		</data>
-		<key>Frameworks/Down.framework/_CodeSignature/CodeResources</key>
-		<data>
-		b26L68HhFeyXeeDj+ThgUaUDO/Q=
-		</data>
 		<key>Headers/ASAPPSDK-Swift.h</key>
 		<data>
 		DPdscRRCBZ8nXrjitEtcl/QPw6I=
@@ -62,23 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		1jKk0ctVmbcOlmCdj/RQrubP2ns=
+		+Aqb+U4zXr7Awejv4bRGnfY3aoU=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		YuotepfkE5I2RT6KfeuZUFNt/nQ=
+		ngwqEmAiHAYnu1qS5QzkImslkww=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		E/OiCiOfME/98F59fApumz49k/o=
+		XvTvlUyhE44gZ5AZeNFn2zUSHc8=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8WcF1Z+iJVP8/y6W/NocmYU2MNs=
+		5Fzu9kaVICOugxeJ90Znpn7apyg=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		S3Jg/GBADsvV6F8I3oz6IUc+FB0=
+		tMdcQ7ODLJnmtEQOrV0sZdCpOWA=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,19 +42,19 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		S3Jg/GBADsvV6F8I3oz6IUc+FB0=
+		tMdcQ7ODLJnmtEQOrV0sZdCpOWA=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		35mFtexHvADH3oRanwhEXutEgOs=
+		ualrp1ZfEQfK7xYFVMeK/um47gc=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8WcF1Z+iJVP8/y6W/NocmYU2MNs=
+		5Fzu9kaVICOugxeJ90Znpn7apyg=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0/li0FJJ7kSly1G1mOLIApioIxo=
+		YBBeE5j3v56v57/aXr6WigDLj0c=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -106,11 +62,11 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0/li0FJJ7kSly1G1mOLIApioIxo=
+		YBBeE5j3v56v57/aXr6WigDLj0c=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vyp2uRo9EiN/80YjjEyZ3N2Z/F0=
+		EStg+EjescEBG0cS/ELL17qpOAg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,127 +75,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/Down.framework/Down</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lMCc/zoFcjI8iGzbBTT4VYirTCw=
-			</data>
-			<key>hash2</key>
-			<data>
-			NbsXKIbQH5rdUwXIP1LzeKBwUzQibNUuXQKt7mUXhWY=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/css/down.min.css</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g0mYzwGZNdTgctb++IMm8cyK0aI=
-			</data>
-			<key>hash2</key>
-			<data>
-			2tGCB8Vtb/eBR/odLC1m5TWnT9v8naS3yDmZC4JYuRg=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/index.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9QaDWT3BNNFS1bEWHNW28L8aSJo=
-			</data>
-			<key>hash2</key>
-			<data>
-			pi1q7V0m+B/BpgBxfczCKTvC2MxlYcfZTvdCv/U81O0=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/js/down.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			8LrOO017xH/QGyMZQE+V/XKMo2k=
-			</data>
-			<key>hash2</key>
-			<data>
-			YHeVqd2WLa0J3wk2gF0P0CdqsJNz6yjuGXqoFPs6uaY=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView (macOS).bundle/js/highlight.min.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UQUTJbuDx1qlfkOMBSncX1A/YR8=
-			</data>
-			<key>hash2</key>
-			<data>
-			hDjviO7sEznduRttN/RkycPlUG5N4V2DZ1H9ZeNmh8Q=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView.bundle/css/down.min.css</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UsbfB49HAkf5DmzhVacGg9ESopc=
-			</data>
-			<key>hash2</key>
-			<data>
-			nPs+mLZOFsLctHaiJM/M6B5nA4SB5KVNp8bGHafw+7o=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView.bundle/index.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rXr20cRxF9zNgx+BGU656IMReGE=
-			</data>
-			<key>hash2</key>
-			<data>
-			kcED26H1Au79DqF7znftoVJN2AibvQpyC4PSsglNaGQ=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView.bundle/js/down.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Uk3FfQUzfvIuSVgbAowGQJ5XC0M=
-			</data>
-			<key>hash2</key>
-			<data>
-			nP0EI9B9ad8IoFUti2q7EQBabcE5MS5v0nkvRfUbYnM=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/DownView.bundle/js/highlight.min.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			UQUTJbuDx1qlfkOMBSncX1A/YR8=
-			</data>
-			<key>hash2</key>
-			<data>
-			hDjviO7sEznduRttN/RkycPlUG5N4V2DZ1H9ZeNmh8Q=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zlSEqFq56yWmpLdD3TbqJqrFqJ4=
-			</data>
-			<key>hash2</key>
-			<data>
-			KqgzNQU/R6cJfKnIeSHGkGzHgw2wpnC+/FAdM2JwXYc=
-			</data>
-		</dict>
-		<key>Frameworks/Down.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			b26L68HhFeyXeeDj+ThgUaUDO/Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			7cD03Agns22Tb74IsLb3PgBsgc6ApBuqlbZacT982CE=
-			</data>
-		</dict>
 		<key>Headers/ASAPPSDK-Swift.h</key>
 		<dict>
 			<key>hash</key>
@@ -277,44 +112,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YuotepfkE5I2RT6KfeuZUFNt/nQ=
+			ngwqEmAiHAYnu1qS5QzkImslkww=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZJlkNrdF1h3N8/53kmuV2l+1MR8geUdT2KM+q+momY=
+			+c1B4dhbm9Lb3yTfTStAitP8gpyXxwCVypAUXCacy68=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E/OiCiOfME/98F59fApumz49k/o=
+			XvTvlUyhE44gZ5AZeNFn2zUSHc8=
 			</data>
 			<key>hash2</key>
 			<data>
-			2ARzRTbG3eeCaNaxRZettDL6YTDomEOeN6R5+xbi874=
+			QLOiC66ahGe/VOiYJmLUMBwXlU8TgDlTbNeThMrMqi0=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8WcF1Z+iJVP8/y6W/NocmYU2MNs=
+			5Fzu9kaVICOugxeJ90Znpn7apyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			oEWfJOgxXwohAUr92JyJz6tyS/53Vk4Yu7sEudPwIgs=
+			odnICSta1WR2CisX5wv5JzeVThbH8nMCSI2OT5y969w=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S3Jg/GBADsvV6F8I3oz6IUc+FB0=
+			tMdcQ7ODLJnmtEQOrV0sZdCpOWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rprb4pnp4cEOOXrHYF9UhHhTrOGcgDEZJqLIZj+WFt8=
+			fdPWQ6Xv7I42FjYLPt6p9jfyuPHlFwBT2SOTZV6QFL0=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -332,44 +167,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S3Jg/GBADsvV6F8I3oz6IUc+FB0=
+			tMdcQ7ODLJnmtEQOrV0sZdCpOWA=
 			</data>
 			<key>hash2</key>
 			<data>
-			rprb4pnp4cEOOXrHYF9UhHhTrOGcgDEZJqLIZj+WFt8=
+			fdPWQ6Xv7I42FjYLPt6p9jfyuPHlFwBT2SOTZV6QFL0=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			35mFtexHvADH3oRanwhEXutEgOs=
+			ualrp1ZfEQfK7xYFVMeK/um47gc=
 			</data>
 			<key>hash2</key>
 			<data>
-			m5rYiE6NOhlKq22zxB63mIHJNlxfH1FElM2jWY4+WmU=
+			1z7kAnr6jOF2o19+DQ3AuXi29t8QXc8gmDetlFcW+Mw=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8WcF1Z+iJVP8/y6W/NocmYU2MNs=
+			5Fzu9kaVICOugxeJ90Znpn7apyg=
 			</data>
 			<key>hash2</key>
 			<data>
-			oEWfJOgxXwohAUr92JyJz6tyS/53Vk4Yu7sEudPwIgs=
+			odnICSta1WR2CisX5wv5JzeVThbH8nMCSI2OT5y969w=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0/li0FJJ7kSly1G1mOLIApioIxo=
+			YBBeE5j3v56v57/aXr6WigDLj0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			2HblDuOZQnQyD9iKCNpp5zen513N/Qq65Ji74HsqSfk=
+			v1H8mk/X0rw73IYvC0s9digGllyuFYZxySju7TFEDQo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -387,22 +222,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0/li0FJJ7kSly1G1mOLIApioIxo=
+			YBBeE5j3v56v57/aXr6WigDLj0c=
 			</data>
 			<key>hash2</key>
 			<data>
-			2HblDuOZQnQyD9iKCNpp5zen513N/Qq65Ji74HsqSfk=
+			v1H8mk/X0rw73IYvC0s9digGllyuFYZxySju7TFEDQo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vyp2uRo9EiN/80YjjEyZ3N2Z/F0=
+			EStg+EjescEBG0cS/ELL17qpOAg=
 			</data>
 			<key>hash2</key>
 			<data>
-			0uLIlbkc+mru3vUqEyUjl0YnMv9Y5h9YWwAXv7tt16Q=
+			S3Y5gXpcu1I43i0DSQ1cubnCAuxBbdX4nQhL0ehDGOk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

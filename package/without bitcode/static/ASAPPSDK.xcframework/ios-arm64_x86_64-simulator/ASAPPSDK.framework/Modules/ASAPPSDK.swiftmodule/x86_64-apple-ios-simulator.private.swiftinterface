@@ -13,7 +13,6 @@ import CommonCrypto
 import Compression
 import CoreGraphics
 import CoreImage
-import Down
 import Foundation
 import ImageIO
 import MobileCoreServices

@@ -42,19 +42,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HyVXk1F4vElQU66fQeKaAhxsMuw=
+		DvKF/CKz9WKoRM0B1tiSb43aNBQ=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		WqNjKukokmaxuvzbrwt/vV966IM=
+		20nyEjhpFvu+D4+XTOvTXe9AhgE=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		Qb3kiSNOeHNPiNaA41IeHITSMeg=
+		iRh3LYlb5KLjVfw4Mg8y2XHytQ8=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		C94J9hz44gLxUbh8SJ1Z+YtdCZM=
+		VBRBebBv5EBLgs76zQxJI9QQ9nY=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sXCb+0EHZ0IW3YOsfMtkBbHnL/s=
+		PeUreP7Mkgd1I5Dv0ggv8U3l0zs=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		C94J9hz44gLxUbh8SJ1Z+YtdCZM=
+		VBRBebBv5EBLgs76zQxJI9QQ9nY=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oB9cWsbUMZdtvAyuqeN6F6d6Gag=
+		L5xz18hI5PvnqDdT/6YnXb6DzqM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		L5pY58CtE+zAfBcY9PhsVE2Hj1Y=
+		vX0ouZwFlmw7HbyYTIkYi+luI6k=
 		</data>
 		<key>arrow_down.png</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m+qZ5NS5hD3sysCszNPLofOwQ8I=
+			PPKup0RQ+qoo5Hpfo8gvA8NfVyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,7 +161,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jqy0/WpILxxRfS78beCVT47/tKo=
+			KP+SLJzE38cj31voZW4r/mKQCrY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr-CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kFo4WNpABmwLJkPbHrxO3rqSyIQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -776,21 +785,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wur6dYKW0Fm4qv8D4i/uMwD+Cf/dtf0p66YDCFBw2j4=
+			CznlFEF1Z9hnF8UlpAjP20TYGkw2JYW4FievlHMpfP8=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mnups8wo0VIHWeYueVfnbpIThM/j8Dtp1NfbVl19XLs=
+			WOrX27JMXNzJ+NmgC5XlM7rSqYz9W4L4q+n9zUoXFGA=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOipyGNvNBqDENIJVBu8zMvyxwzisLH3ugQaZej6mUs=
+			nxSRfpNnt7lRSFhx+KpJhYhOmcobPGzhL7JTlI9a2dw=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -818,14 +827,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sqAC9GZpr/tkLxuWy9dVoVeVVnWzwqc3luXquPqjfH8=
+			2RdqJyN2OJuBXG+bT4q2HuQyUedqfKYSVdmoQiOF9YI=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOipyGNvNBqDENIJVBu8zMvyxwzisLH3ugQaZej6mUs=
+			nxSRfpNnt7lRSFhx+KpJhYhOmcobPGzhL7JTlI9a2dw=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -853,7 +862,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vCroAs769XqZaE3XBpWZtDBh3YgIr2Bl3AIDE+9SYOM=
+			G8Vqqmw7lZMF8Ojr2sjW/Y1uM0GOfaOusTZSndvDdqo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -867,7 +876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zbNhLwHehjAAK9UD2Eyya/b5AAW1TfCdZ066R/tpr4A=
+			aXOo34gaE0bVyhZeqI96ZSr3BCt36gfsQqXfnF/tNK4=
 			</data>
 		</dict>
 		<key>arrow_down.png</key>
@@ -958,7 +967,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N86KVseSHWRncXJFr4P9rTWzd8DDw1Qk70p1qgwmTDM=
+			xnwETBZ2Apq3lL9FfPSc1vEMUwCs1Hx7YTgJlHLurQY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -967,7 +976,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UanL+eXBC8yQJQXN2WpP3q9dB4qk7DWsGdMSEVwguf4=
+			8TNMabhCeYtUznIxFV3pCB8fDRGYoE+9wbBDHKl9hF0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr-CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q4uor23a7mrF8opZAHytYrnmarrGFQDHrQCxQr+IBKU=
 			</data>
 			<key>optional</key>
 			<true/>

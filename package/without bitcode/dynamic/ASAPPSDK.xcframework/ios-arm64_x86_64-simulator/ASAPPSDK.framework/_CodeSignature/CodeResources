@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Lqq1NyAFgXTP99vsV6Dg2ePR6zI=
+		hobEVLu648NP76OrgDNFKRXxS1Y=
 		</data>
 		<key>FUNDING.yml</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HyVXk1F4vElQU66fQeKaAhxsMuw=
+		DvKF/CKz9WKoRM0B1tiSb43aNBQ=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		66q5i8jE0rICALk/wd8M5fYKx70=
+		bQuYAmTKhuUXmfzcwkR5937X8rs=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		G4AG5Z96guX8N2BsxFeVimbDPM0=
+		8FzCwqDuGhrORveUt0RlEhb3nW4=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		C94J9hz44gLxUbh8SJ1Z+YtdCZM=
+		VBRBebBv5EBLgs76zQxJI9QQ9nY=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7SAtccPwInWcjrOCUaOlSyJMDo8=
+		Pv2w2LwNu/hyzxKb0MfoLXuygLM=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		C94J9hz44gLxUbh8SJ1Z+YtdCZM=
+		VBRBebBv5EBLgs76zQxJI9QQ9nY=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZW56lDvW/iw6W5y5El87vxUIAuc=
+		pu/divHu7q7sYTkn6IoDdAdwh38=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
-		L5pY58CtE+zAfBcY9PhsVE2Hj1Y=
+		vX0ouZwFlmw7HbyYTIkYi+luI6k=
 		</data>
 		<key>arrow_down.png</key>
 		<data>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m+qZ5NS5hD3sysCszNPLofOwQ8I=
+			PPKup0RQ+qoo5Hpfo8gvA8NfVyM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -161,7 +161,16 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jqy0/WpILxxRfS78beCVT47/tKo=
+			KP+SLJzE38cj31voZW4r/mKQCrY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr-CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kFo4WNpABmwLJkPbHrxO3rqSyIQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -734,7 +743,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lphgbGJTDwAEPVOzjSMWwTbn2RYx8MAMY0OjB5FLq0c=
+			z2IhlyUDyhYqOC9ONvZFDEKVoS8Q03Ol4ASvrVf0wSQ=
 			</data>
 		</dict>
 		<key>FUNDING.yml</key>
@@ -776,21 +785,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ATA3umQnu3Kbe/9i9JC6Lrw7Y9W2uRkzIu2xiI0P3i8=
+			4hhxSB2oBQsYpMtzGxUgbZB+hHdKc0mGHAuvupOfB3w=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UXS+Cy9scwiYppUfQXXgrtXbNJgq5f1EViKd+QAI0w0=
+			oCHikVlLjhx1K/P+1ULENHHiU9Zr5VGWGdcqIKVQFvc=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOipyGNvNBqDENIJVBu8zMvyxwzisLH3ugQaZej6mUs=
+			nxSRfpNnt7lRSFhx+KpJhYhOmcobPGzhL7JTlI9a2dw=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -818,14 +827,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9GXhZCqcU0ZP7C/uDsOeDJMZ7GULqrONe5EKPyfRvLk=
+			chXbtn5sE2IiXuH3YMV9u2Ec8DvOoxf9O0KI1coYNiQ=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nOipyGNvNBqDENIJVBu8zMvyxwzisLH3ugQaZej6mUs=
+			nxSRfpNnt7lRSFhx+KpJhYhOmcobPGzhL7JTlI9a2dw=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -853,7 +862,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EIeKjtC+DPoJ2X+3MgGR3oc4TtMg7CBBMAqajjD6qgk=
+			fyI3DIBt0skNoFDc8tjpvvlqkSy6JHK5wsT+GB7bt5A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -867,7 +876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zbNhLwHehjAAK9UD2Eyya/b5AAW1TfCdZ066R/tpr4A=
+			aXOo34gaE0bVyhZeqI96ZSr3BCt36gfsQqXfnF/tNK4=
 			</data>
 		</dict>
 		<key>arrow_down.png</key>
@@ -958,7 +967,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N86KVseSHWRncXJFr4P9rTWzd8DDw1Qk70p1qgwmTDM=
+			xnwETBZ2Apq3lL9FfPSc1vEMUwCs1Hx7YTgJlHLurQY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -967,7 +976,16 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UanL+eXBC8yQJQXN2WpP3q9dB4qk7DWsGdMSEVwguf4=
+			8TNMabhCeYtUznIxFV3pCB8fDRGYoE+9wbBDHKl9hF0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>fr-CA.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q4uor23a7mrF8opZAHytYrnmarrGFQDHrQCxQr+IBKU=
 			</data>
 			<key>optional</key>
 			<true/>

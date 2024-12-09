@@ -1247,6 +1247,7 @@ extension ASAPPSDK.KFImageProtocol {
   public func fade(duration: Foundation.TimeInterval) -> Self
   public func startLoadingBeforeViewAppear(_ flag: Swift.Bool = true) -> Self
 }
+
 extension CoreFoundation.CGSize : ASAPPSDK.KingfisherCompatibleValue {
 }
 extension ASAPPSDK.KingfisherWrapper where Base == CoreFoundation.CGSize {

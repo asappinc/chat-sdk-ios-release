@@ -1001,6 +1001,26 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationHideButton;
 /// The body text for the view shown when the user is already connected to support via a phone call.
 @property (nonatomic, copy) NSString * _Nonnull callInProgressBody;
+/// The text shown for Viewing Image
+@property (nonatomic, copy) NSString * _Nonnull viewImage;
+/// The text shown for downloading PDF
+@property (nonatomic, copy) NSString * _Nonnull downloadPDF;
+/// The text shown for validation failure related to file size
+@property (nonatomic, copy) NSString * _Nonnull fileSizeExceedErrorAlert;
+/// The text shown for validation failure related to supported file type
+@property (nonatomic, copy) NSString * _Nonnull unsupportedFileErrorAlert;
+/// The text shown for File upload API success
+@property (nonatomic, copy) NSString * _Nonnull fileUploadedSuccessfullMessage;
+/// The text shown for API error in File Upload process
+@property (nonatomic, copy) NSString * _Nonnull errorInUploadingMessage;
+/// The text shown for API error when user taps the uploaded file
+@property (nonatomic, copy) NSString * _Nonnull errorInViewingFile;
+/// The text shown for API error in SendPictureMessageAPI
+@property (nonatomic, copy) NSString * _Nonnull errorMessageInSendPictureMessageAPI;
+/// The text shown for validation failure related to supported file type
+@property (nonatomic, copy) NSString * _Nonnull unsupportedFile;
+/// The text shown for displaying image or downloading PDF when user taps on the uploaded file cell
+@property (nonatomic, copy) NSString * _Nonnull fetchingFileMesage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1150,10 +1170,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
-
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 
@@ -1233,6 +1253,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 
 
 
+
 SWIFT_CLASS_NAMED("SessionDelegate")
 @interface KFSessionDelegate : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1255,6 +1276,8 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
 
 
 
@@ -2310,6 +2333,26 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull leaveQueueConfirmationHideButton;
 /// The body text for the view shown when the user is already connected to support via a phone call.
 @property (nonatomic, copy) NSString * _Nonnull callInProgressBody;
+/// The text shown for Viewing Image
+@property (nonatomic, copy) NSString * _Nonnull viewImage;
+/// The text shown for downloading PDF
+@property (nonatomic, copy) NSString * _Nonnull downloadPDF;
+/// The text shown for validation failure related to file size
+@property (nonatomic, copy) NSString * _Nonnull fileSizeExceedErrorAlert;
+/// The text shown for validation failure related to supported file type
+@property (nonatomic, copy) NSString * _Nonnull unsupportedFileErrorAlert;
+/// The text shown for File upload API success
+@property (nonatomic, copy) NSString * _Nonnull fileUploadedSuccessfullMessage;
+/// The text shown for API error in File Upload process
+@property (nonatomic, copy) NSString * _Nonnull errorInUploadingMessage;
+/// The text shown for API error when user taps the uploaded file
+@property (nonatomic, copy) NSString * _Nonnull errorInViewingFile;
+/// The text shown for API error in SendPictureMessageAPI
+@property (nonatomic, copy) NSString * _Nonnull errorMessageInSendPictureMessageAPI;
+/// The text shown for validation failure related to supported file type
+@property (nonatomic, copy) NSString * _Nonnull unsupportedFile;
+/// The text shown for displaying image or downloading PDF when user taps on the uploaded file cell
+@property (nonatomic, copy) NSString * _Nonnull fetchingFileMesage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2459,10 +2502,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
-
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 
@@ -2542,6 +2585,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 
 
 
+
 SWIFT_CLASS_NAMED("SessionDelegate")
 @interface KFSessionDelegate : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2564,6 +2608,8 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
 
 
 

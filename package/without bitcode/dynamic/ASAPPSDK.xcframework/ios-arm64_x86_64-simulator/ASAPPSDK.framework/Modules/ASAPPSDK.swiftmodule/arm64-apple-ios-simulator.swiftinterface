@@ -1578,6 +1578,16 @@ extension ASAPPSDK.KFAnimatedImage {
   @objc public var leaveQueueConfirmationButton: Swift.String
   @objc public var leaveQueueConfirmationHideButton: Swift.String
   @objc public var callInProgressBody: Swift.String
+  @objc public var viewImage: Swift.String
+  @objc public var downloadPDF: Swift.String
+  @objc public var fileSizeExceedErrorAlert: Swift.String
+  @objc public var unsupportedFileErrorAlert: Swift.String
+  @objc public var fileUploadedSuccessfullMessage: Swift.String
+  @objc public var errorInUploadingMessage: Swift.String
+  @objc public var errorInViewingFile: Swift.String
+  @objc public var errorMessageInSendPictureMessageAPI: Swift.String
+  @objc public var unsupportedFile: Swift.String
+  @objc public var fetchingFileMesage: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

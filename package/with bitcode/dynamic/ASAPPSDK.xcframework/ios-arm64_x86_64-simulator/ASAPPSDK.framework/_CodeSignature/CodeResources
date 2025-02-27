@@ -42,19 +42,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		V9V//Sy9qvXIZLSEqjykbZivCsY=
+		IMxwF3ALlmp2gnDnQhve3/SfgIA=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		QW1O47K4JpBuq5Nk1lj/gRADhXY=
+		LupRY9R5qIW3yq+9aLyt2lIsjI8=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		WCOASdkKyTpEOtLhjyHgwlst4Sg=
+		x7IJ0OSHiaUliQs3slK2ej4K2T0=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		228WHjYu7sJi+r9AOL5w2qiogQM=
+		OxKrXDohF64OqAxH30PS+j9YhRc=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		228WHjYu7sJi+r9AOL5w2qiogQM=
+		OxKrXDohF64OqAxH30PS+j9YhRc=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -785,21 +785,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvs/HHRZgkH8feybC1Cu4em3Q4HHmlPmW7r0aUVuJ6A=
+			Sxn2fP91XX3YfEyjJ+n5f3M1f9NAyhUOurxGustm4Xo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SNd1awsM/PHAUv0IbLIU4ul6Gilqi79YCrFLfT0p5kI=
+			l0yV3qL6JYX6R1ZL7lrrOvLBmsCgn8pyhdyPZjRWXg0=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGnzD/YUnPG/1pSuDB7K+mOwZxhcQmIh0jjgCClALzQ=
+			bwpWiSgJwCHG9sw1TFF+NDKqjUo/KwScfneziFE4JQM=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -834,7 +834,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nGnzD/YUnPG/1pSuDB7K+mOwZxhcQmIh0jjgCClALzQ=
+			bwpWiSgJwCHG9sw1TFF+NDKqjUo/KwScfneziFE4JQM=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

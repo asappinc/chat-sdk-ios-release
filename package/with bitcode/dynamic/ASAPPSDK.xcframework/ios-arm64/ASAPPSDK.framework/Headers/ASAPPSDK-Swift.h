@@ -308,6 +308,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class ASAPPStyles;
 @class ASAPPStrings;
 @class ASAPPViews;
+@class ASAPPBanner;
 enum ASAPPLogLevel : NSInteger;
 @class UIViewController;
 @class NSNumber;
@@ -344,6 +345,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ASAPPStrings * _Nonnul
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) ASAPPViews * _Nonnull views;)
 + (ASAPPViews * _Nonnull)views SWIFT_WARN_UNUSED_RESULT;
 + (void)setViews:(ASAPPViews * _Nonnull)value;
+/// To set banner theme
+@property (nonatomic, strong) ASAPPBanner * _Nullable bannerViews;
 /// Verbosity of the debugging log. Defaults to <code>.errors</code>.
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLevel;)
 + (enum ASAPPLogLevel)debugLogLevel SWIFT_WARN_UNUSED_RESULT;
@@ -358,7 +361,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 ///
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
-+ (UIViewController * _Nullable)createChatViewControllerForPushingFromNotificationWith:(NSDictionary * _Nullable)userInfo SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nullable)createChatViewControllerForPushingFromNotificationWith:(NSDictionary * _Nullable)userInfo themeData:(ASAPP * _Nullable)themeData SWIFT_WARN_UNUSED_RESULT;
 /// Creates a chat view controller, ready to be pushed onto a navigation stack. Starts a conversation with the provided intent.
 /// \param intent A dictionary containing intent data
 ///
@@ -456,6 +459,14 @@ typedef SWIFT_ENUM(NSInteger, ASAPPAllowedOrientations, open) {
 /// Only portait on iPhone, but allows landscape left/right and portrait on iPad.
   ASAPPAllowedOrientationsIPadLandscapeAllowed = 1,
 };
+
+
+/// Used for creating custom banner UI for customers
+SWIFT_CLASS_NAMED("ASAPPBanner")
+@interface ASAPPBanner : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 @class UIColor;
 
@@ -592,13 +603,13 @@ SWIFT_CLASS_NAMED("ASAPPChatInsteadViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
-
 @class UITraitCollection;
 
 @interface ASAPPChatInsteadViewController (SWIFT_EXTENSION(ASAPPSDK))
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
+
 
 
 @protocol UIViewControllerAnimatedTransitioning;
@@ -1172,10 +1183,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
+
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 
@@ -1278,6 +1289,7 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
 
 
 

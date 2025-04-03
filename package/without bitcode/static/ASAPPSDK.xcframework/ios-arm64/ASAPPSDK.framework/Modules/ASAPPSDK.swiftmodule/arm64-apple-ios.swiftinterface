@@ -352,6 +352,29 @@ extension ASAPPSDK.AuthenticationChallengeResponsible {
   public func downloader(_ downloader: ASAPPSDK.ImageDownloader, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   public func downloader(_ downloader: ASAPPSDK.ImageDownloader, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
 }
+public enum ThemeBannerStyle {
+  case success
+  case warning
+  case failure
+  public static func == (a: ASAPPSDK.ThemeBannerStyle, b: ASAPPSDK.ThemeBannerStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct BannerViewData {
+  public var bgColor: UIKit.UIColor
+  public var labelTextColor: UIKit.UIColor
+  public var labelFont: UIKit.UIFont
+  public var iconImage: UIKit.UIImage
+  public var iconImageSize: CoreFoundation.CGSize
+  public var bannerStyle: ASAPPSDK.ThemeBannerStyle
+  public init(bgColor: UIKit.UIColor, labelTextColor: UIKit.UIColor, labelFont: UIKit.UIFont, iconImage: UIKit.UIImage, iconImageSize: CoreFoundation.CGSize, bannerStyle: ASAPPSDK.ThemeBannerStyle)
+}
+@objc(ASAPPBanner) @objcMembers public class ASAPPBanner : ObjectiveC.NSObject {
+  public init(bannerViewDataArray: [ASAPPSDK.BannerViewData])
+  @objc deinit
+}
 public enum StorageExpiration {
   case never
   case seconds(Foundation.TimeInterval)
@@ -374,6 +397,7 @@ public protocol DataTransformable {
 }
 @_inheritsConvenienceInitializers @objc(ASAPPViews) @objcMembers public class ASAPPViews : ObjectiveC.NSObject {
   @objc public var chatTitle: UIKit.UIView?
+  public var customViewStyle: ASAPPSDK.ASAPPCustomViewStyles?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1075,6 +1099,16 @@ extension ASAPPSDK.ImageDownloader : ASAPPSDK.ImageDownloaderDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillLayoutSubviews()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
 }
+public enum ButtonWidthType : CoreFoundation.CGFloat {
+  case wrapContent
+  case matchParent
+  case custom
+  public init?(rawValue: CoreFoundation.CGFloat)
+  public typealias RawValue = CoreFoundation.CGFloat
+  public var rawValue: CoreFoundation.CGFloat {
+    get
+  }
+}
 public typealias Transformer = (CoreImage.CIImage) -> CoreImage.CIImage?
 public protocol CIImageProcessor : ASAPPSDK.ImageProcessor {
   var filter: ASAPPSDK.Filter { get }
@@ -1292,6 +1326,101 @@ extension ASAPPSDK.SessionDelegate : Foundation.URLSessionDataDelegate {
   @objc dynamic open func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc dynamic open func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, willPerformHTTPRedirection response: Foundation.HTTPURLResponse, newRequest request: Foundation.URLRequest, completionHandler: @escaping (Foundation.URLRequest?) -> Swift.Void)
 }
+public class ASAPPCustomViewStyles {
+  public struct TitleBar {
+    public var container: ASAPPSDK.OptionalViewTypeConfig
+    public var actionBackButton: ASAPPSDK.OptionalButtonTypeConfig
+    public var actionMoreButton: ASAPPSDK.OptionalButtonTypeConfig
+    public var primaryText: ASAPPSDK.OptionalTextTypeConfig
+    public var icon: ASAPPSDK.OptionalImageViewTypeConfig
+  }
+  public struct ChatComposerBar {
+    public var container: ASAPPSDK.OptionalViewTypeConfig
+    public var btnSend: ASAPPSDK.OptionalButtonTypeConfig
+  }
+  public struct EWTBarViewGroup {
+    public var container: ASAPPSDK.OptionalViewTypeConfig
+    public var progressBar: ASAPPSDK.OptionalProgressBarTypeConfig
+    public var txtEwtTitle: ASAPPSDK.OptionalTextTypeConfig
+    public var txtEwtValue: ASAPPSDK.OptionalTextTypeConfig
+    public var btnLeave: ASAPPSDK.OptionalButtonTypeConfig
+  }
+  public struct QuickRepliesViewGroup {
+    public var container: ASAPPSDK.OptionalViewTypeConfig
+  }
+  public struct RestartButtonBar {
+    public var primaryText: ASAPPSDK.OptionalButtonTypeConfig?
+    public var icon: ASAPPSDK.OptionalImageViewTypeConfig?
+  }
+  public struct ConnectionBar {
+  }
+  public var maxQuickReplyViewHeight: Swift.Double
+  public var titleBar: ASAPPSDK.ASAPPCustomViewStyles.TitleBar
+  public var connectionBar: ASAPPSDK.ConnectionBarGroup
+  public var ewtBar: ASAPPSDK.ASAPPCustomViewStyles.EWTBarViewGroup
+  public var chatComposerBar: ASAPPSDK.ASAPPCustomViewStyles.ChatComposerBar
+  public var bottomSheetConfirmationDialog: ASAPPSDK.BottomSheetConfirmDialog
+  public var quickRepliesViewGroup: ASAPPSDK.ASAPPCustomViewStyles.QuickRepliesViewGroup
+  public var restartButtonBar: ASAPPSDK.ASAPPCustomViewStyles.RestartButtonBar
+  public init()
+  @objc deinit
+}
+public class ConnectionBarGroup {
+  public var success: ASAPPSDK.ConnectionBar
+  public var warn: ASAPPSDK.ConnectionBar
+  public var error: ASAPPSDK.ConnectionBar
+  public init()
+  @objc deinit
+}
+public struct ConnectionBar {
+  public init(container: ASAPPSDK.OptionalViewTypeConfig, primaryText: ASAPPSDK.OptionalTextTypeConfig, icon: ASAPPSDK.OptionalImageViewTypeConfig)
+}
+public struct ButtonProgressContainer {
+  public var button: ASAPPSDK.OptionalButtonTypeConfig
+}
+public class BottomSheetConfirmDialog {
+  public var confirmButtonBar: ASAPPSDK.ButtonProgressContainer
+  public var cancelButtonBar: ASAPPSDK.ButtonProgressContainer
+  public var title: ASAPPSDK.OptionalTextTypeConfig
+  public var bodyText: ASAPPSDK.OptionalTextTypeConfig
+  public init(container: ASAPPSDK.OptionalViewTypeConfig, confirmButtonBar: ASAPPSDK.ButtonProgressContainer, cancelButtonBar: ASAPPSDK.ButtonProgressContainer, title: ASAPPSDK.OptionalTextTypeConfig, bodyText: ASAPPSDK.OptionalTextTypeConfig, errorText: ASAPPSDK.OptionalTextTypeConfig)
+  @objc deinit
+}
+public enum FeedbackType {
+  case success
+  case warning
+  case error
+  public var iconResource: UIKit.UIImage? {
+    get
+  }
+  public func getTextColor() -> UIKit.UIColor
+  public func getBackgroundColor() -> UIKit.UIColor
+  public static func == (a: ASAPPSDK.FeedbackType, b: ASAPPSDK.FeedbackType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class OptionalButtonTypeConfig : ASAPPSDK.OptionalViewTypeConfig {
+  public init(tintColorNormal: UIKit.UIColor? = nil, typeface: UIKit.UIFont? = nil, textColorNormal: UIKit.UIColor? = nil, textColorHighlighted: UIKit.UIColor? = nil, width: CoreFoundation.CGFloat? = nil, margin: CoreFoundation.CGFloat? = nil)
+  @objc deinit
+}
+public class OptionalTextTypeConfig {
+  public init(typeface: UIKit.UIFont? = nil, letterSpacing: CoreFoundation.CGFloat? = nil, color: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
+public class OptionalImageViewTypeConfig : ASAPPSDK.OptionalViewTypeConfig {
+  public init(width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, maxHeight: CoreFoundation.CGFloat? = nil, margin: CoreFoundation.CGFloat? = nil, padding: CoreFoundation.CGFloat? = nil, src: UIKit.UIImage? = nil, tintColor: UIKit.UIColor? = nil, backgroundColor: UIKit.UIColor? = nil, isVisible: Swift.Bool? = true)
+  @objc deinit
+}
+public class OptionalProgressBarTypeConfig : ASAPPSDK.OptionalViewTypeConfig {
+  public init(width: CoreFoundation.CGFloat? = nil, margin: CoreFoundation.CGFloat? = nil, padding: CoreFoundation.CGFloat? = nil, isVisible: Swift.Bool? = nil, backgroundColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
+public class OptionalViewTypeConfig {
+  public init(width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, maxHeight: CoreFoundation.CGFloat? = nil, margin: CoreFoundation.CGFloat? = nil, padding: CoreFoundation.CGFloat? = nil, radius: CoreFoundation.CGFloat? = nil, isVisible: Swift.Bool? = nil, backgroundColor: UIKit.UIColor? = nil)
+  @objc deinit
+}
 @objc public protocol ASAPPDelegate {
   @objc func chatViewControllerDidTapUserLoginButton()
   @objc func chatViewControllerDidDisappear()
@@ -1315,9 +1444,10 @@ extension ASAPPSDK.SessionDelegate : Foundation.URLSessionDataDelegate {
   @objc public static var styles: ASAPPSDK.ASAPPStyles
   @objc public static var strings: ASAPPSDK.ASAPPStrings
   @objc public static var views: ASAPPSDK.ASAPPViews
+  @objc public var bannerViews: ASAPPSDK.ASAPPBanner?
   @objc public static var debugLogLevel: ASAPPSDK.ASAPPLogLevel
   @objc public class func initialize(with config: ASAPPSDK.ASAPPConfig)
-  @objc public class func createChatViewControllerForPushing(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?) -> UIKit.UIViewController?
+  @objc public class func createChatViewControllerForPushing(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?, themeData: ASAPPSDK.ASAPP? = nil) -> UIKit.UIViewController?
   @objc public class func createChatViewControllerForPushing(withIntent intent: [Swift.String : Any]) -> UIKit.UIViewController?
   @objc public class func createChatViewControllerForPresenting(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?) -> UIKit.UIViewController?
   @objc public class func createChatViewControllerForPresenting(withIntent intent: [Swift.String : Any]) -> UIKit.UIViewController?
@@ -1964,6 +2094,8 @@ extension ASAPPSDK.DiskStorage {
 }
 extension ASAPPSDK.ContentMode : Swift.Equatable {}
 extension ASAPPSDK.ContentMode : Swift.Hashable {}
+extension ASAPPSDK.ThemeBannerStyle : Swift.Equatable {}
+extension ASAPPSDK.ThemeBannerStyle : Swift.Hashable {}
 extension ASAPPSDK.ImageFormat : Swift.Equatable {}
 extension ASAPPSDK.ImageFormat : Swift.Hashable {}
 extension ASAPPSDK.CacheType : Swift.Equatable {}
@@ -1983,3 +2115,8 @@ extension ASAPPSDK.ASAPPTextStyle.ASAPPCaseStyle : Swift.RawRepresentable {}
 extension ASAPPSDK.ASAPPLogLevel : Swift.Equatable {}
 extension ASAPPSDK.ASAPPLogLevel : Swift.Hashable {}
 extension ASAPPSDK.ASAPPLogLevel : Swift.RawRepresentable {}
+extension ASAPPSDK.ButtonWidthType : Swift.Equatable {}
+extension ASAPPSDK.ButtonWidthType : Swift.Hashable {}
+extension ASAPPSDK.ButtonWidthType : Swift.RawRepresentable {}
+extension ASAPPSDK.FeedbackType : Swift.Equatable {}
+extension ASAPPSDK.FeedbackType : Swift.Hashable {}

@@ -785,6 +785,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 - (BOOL)chatViewControllerShouldHandleWebLinkWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
+@optional
 /// Called when user ends chat
 - (void)chatViewControllerDidReceiveEndChatEvent;
 @end
@@ -2131,6 +2132,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 - (BOOL)chatViewControllerShouldHandleWebLinkWithUrl:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
+@optional
 /// Called when user ends chat
 - (void)chatViewControllerDidReceiveEndChatEvent;
 @end

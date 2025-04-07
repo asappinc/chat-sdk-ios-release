@@ -1355,7 +1355,7 @@ public class ASAPPCustomViewStyles {
   }
   public struct ConnectionBar {
   }
-  public var maxQuickReplyViewHeight: Swift.Double
+  public var maxQuickReplyViewHeight: Swift.Double?
   public var titleBar: ASAPPSDK.ASAPPCustomViewStyles.TitleBar
   public var connectionBar: ASAPPSDK.ConnectionBarGroup
   public var ewtBar: ASAPPSDK.ASAPPCustomViewStyles.EWTBarViewGroup

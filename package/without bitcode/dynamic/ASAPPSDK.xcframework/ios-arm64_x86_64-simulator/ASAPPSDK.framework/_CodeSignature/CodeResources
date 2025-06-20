@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		hobEVLu648NP76OrgDNFKRXxS1Y=
+		Lqq1NyAFgXTP99vsV6Dg2ePR6zI=
 		</data>
 		<key>FUNDING.yml</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LB9v8Kc6R7a2AmSDGC0NdVfbd4g=
+		mkT6zjBheXyJngGkChPGL6/7wtw=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		P276YKYFcj+ocWCxRDd0h1cIFH8=
+		gsPJ3QWVAVWljFs0rH8pffs3DHM=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		FRbV5Or1pYsnNAfpeSZkWx1DRuA=
+		KWqc7mApTkNYUBC7WBPYA0b+n5k=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bV3Ydtpw2VNeS/Sqwuyqz7LyhBw=
+		mVLEqOpchVfp8c6sy1o98jB0O8k=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bV3Ydtpw2VNeS/Sqwuyqz7LyhBw=
+		mVLEqOpchVfp8c6sy1o98jB0O8k=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -743,7 +743,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z2IhlyUDyhYqOC9ONvZFDEKVoS8Q03Ol4ASvrVf0wSQ=
+			lphgbGJTDwAEPVOzjSMWwTbn2RYx8MAMY0OjB5FLq0c=
 			</data>
 		</dict>
 		<key>FUNDING.yml</key>
@@ -785,21 +785,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JjdqYPuVVDrjt2NZK1LWkLOsxkfjVPSvItA8eVryu/s=
+			D/N9fCbKI9SerFO9sCdqiWtw4AumyYUHHoEoq3+QYu8=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CVgbpYZZ7Ev5KSTr3voA4UC0rkQxMGuKf0TcWJGoRII=
+			boWZtTbeRGHA704hpYKDiIwF6TMGp5q19/0jdeb3f2I=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5kpbR9k+S34xoCX5x6bhxiRNeaSARWOKn7vN5LJUs5g=
+			HwLN/mu1c/UMlcG8+fKg1KEH0Mvz8HbWzA++YIHK0IQ=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -834,7 +834,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5kpbR9k+S34xoCX5x6bhxiRNeaSARWOKn7vN5LJUs5g=
+			HwLN/mu1c/UMlcG8+fKg1KEH0Mvz8HbWzA++YIHK0IQ=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

@@ -1427,7 +1427,7 @@ public class OptionalViewTypeConfig {
   @objc func chatViewControllerDidTapDeepLink(name: Swift.String, data: [Swift.String : Any]?)
   @objc func chatViewControllerShouldHandleWebLink(url: Foundation.URL) -> Swift.Bool
   @objc func chatViewControllerDidReceiveChatEvent(name: Swift.String, data: [Swift.String : Any]?)
-  @objc optional func chatViewControllerDidReceiveEndChatEvent()
+  @objc optional func chatViewControllerDidReceiveEndChatEvent(eventData: [Swift.String : Any]?)
 }
 @_inheritsConvenienceInitializers @objc(ASAPP) @objcMembers public class ASAPP : ObjectiveC.NSObject {
   @objc public static var clientVersion: Swift.String {

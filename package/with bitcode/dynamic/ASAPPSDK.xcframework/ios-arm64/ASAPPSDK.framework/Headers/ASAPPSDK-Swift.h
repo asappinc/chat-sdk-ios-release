@@ -787,7 +787,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
 @optional
 /// Called when user ends chat
-- (void)chatViewControllerDidReceiveEndChatEvent;
+- (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
 @end
 
 /// An enum defining common errors that can occur

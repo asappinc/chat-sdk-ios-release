@@ -786,7 +786,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
 @optional
-/// Called when user ends chat
+/// Called when user ends chat. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
 - (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
 @end
 
@@ -2134,7 +2134,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
 @optional
-/// Called when user ends chat
+/// Called when user ends chat. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
 - (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
 @end
 

@@ -4,25 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.gitignore</key>
-		<data>
-		pDPYzvIqibYuomD02erOoHl8x/g=
-		</data>
-		<key>.ruby-version</key>
-		<data>
-		gCzyTU9iObyXOgtNJ+wIggm1FKk=
-		</data>
-		<key>.spi.yml</key>
-		<data>
-		Ys89MU+S6z3cDGn0yAsM5lvWQ6Q=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		Lqq1NyAFgXTP99vsV6Dg2ePR6zI=
-		</data>
-		<key>FUNDING.yml</key>
-		<data>
-		Se3/8jxeY3FfId/q12eknCgt1bY=
+		hobEVLu648NP76OrgDNFKRXxS1Y=
 		</data>
 		<key>FileUploadProgressView.nib</key>
 		<data>
@@ -30,7 +14,7 @@
 		</data>
 		<key>Headers/ASAPPSDK-Swift.h</key>
 		<data>
-		pcgHbeXp4xKmumbDVc50pwZINrM=
+		GruIuGMsqlXsiqGgig+fJEv0hSg=
 		</data>
 		<key>Headers/ASAPPSDK.h</key>
 		<data>
@@ -40,61 +24,57 @@
 		<data>
 		dKt7fPvOe3eiSUDqF1icP7kNvJ0=
 		</data>
-		<key>ISSUE_TEMPLATE.md</key>
-		<data>
-		EyJJ9+20xzE7zpC34k9ZuE/cL1o=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		IwvEls4YYKHn41WEnL/sj6mQqgo=
+		C80hDYRME2Hqc5C6l4lJvlIpG6k=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		TrHDOMrzRGrgin0UXZ5Cwi3sHfM=
+		aNwJES96NIOEK744P1RJh9QlZkc=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		XuDB0etJcUZsT1u0Du14gsbzUmY=
+		ksYCs+VZZOPOrgCzg3tafcS25OM=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yDmXbfHQPgoYAtwkbUrkKgOKNoM=
+		NsQIPkv4abDYrUEtcijMh0oC3jo=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CgKuG1BZJCuk3yiNYL/MA5KA7Lg=
+		UsaYhlKB2ppaC7VpjfgeN9LKXrg=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GiTNX0eHxJRyBx+YOy7KvWghX1Q=
+		tMJqPjah8dszGi67zzrAHsJes/U=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CgKuG1BZJCuk3yiNYL/MA5KA7Lg=
+		UsaYhlKB2ppaC7VpjfgeN9LKXrg=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y8jncHcJ/YHPZDXmZwRVRzIkbis=
+		U39hMw31mUmFZQFxj7Dng7oQR7k=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yDmXbfHQPgoYAtwkbUrkKgOKNoM=
+		NsQIPkv4abDYrUEtcijMh0oC3jo=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KHQFNarjStgq/JQn3pkEwwnQahk=
+		GBMpbSwyoqePg/o3DGg7eZv2Lt4=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XnJcjCUgBF1Xfti+JZWWwy6mWZE=
+		l3e+zFeDIFKA33FScmb+t9bU+7U=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KHQFNarjStgq/JQn3pkEwwnQahk=
+		GBMpbSwyoqePg/o3DGg7eZv2Lt4=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GAQqWI40UiCBSaGRjvNeuQCwPlI=
+		ls84RWtzfGzlPWipueVU4vVFMo4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -115,10 +95,6 @@
 		<key>arrow_down@3x.png</key>
 		<data>
 		ghUswz++i7rq2PXkYQY4RGafRps=
-		</data>
-		<key>build.yaml</key>
-		<data>
-		Qjmx1us+Vp8lRHHf1Chk/vbme6I=
 		</data>
 		<key>button-bg-close.png</key>
 		<data>
@@ -151,10 +127,6 @@
 		<key>docSaveIcon@3x.png</key>
 		<data>
 		7J4vBF+Z/BU6YRpbI74EOTtg7Xw=
-		</data>
-		<key>documentation.yaml</key>
-		<data>
-		iVzj/Km0QIsnfJO+8xofItOhHC8=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -730,39 +702,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>.gitignore</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rKO9jc/bT5oT7f2/W5ALUSvv8EBWW/Y+GxEEZhXpau8=
-			</data>
-		</dict>
-		<key>.ruby-version</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mIUhPMFRDxi6u4bfUE4R1TeC+fJchnpPcmcN1eXieFw=
-			</data>
-		</dict>
-		<key>.spi.yml</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YjIa+37SVEQ4lHbazQO9Fk6Rojy5tZn0VwV5HOYh2Os=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lphgbGJTDwAEPVOzjSMWwTbn2RYx8MAMY0OjB5FLq0c=
-			</data>
-		</dict>
-		<key>FUNDING.yml</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Qc7SUHN11VlWBT39JMX1qtd/RPqVbGo15s837quad1I=
+			z2IhlyUDyhYqOC9ONvZFDEKVoS8Q03Ol4ASvrVf0wSQ=
 			</data>
 		</dict>
 		<key>FileUploadProgressView.nib</key>
@@ -776,7 +720,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uk434UDh26c0a6M3pU60CARkgikAF/aLEt/3UuWuor4=
+			e38E882kBQON2G3GVflzuhGJcLE6gv/2fMuko32dAMw=
 			</data>
 		</dict>
 		<key>Headers/ASAPPSDK.h</key>
@@ -793,95 +737,88 @@
 			+BGTKkvsR3coDPxXw3KbnI74zjmwaHglM0NJ44AkSQQ=
 			</data>
 		</dict>
-		<key>ISSUE_TEMPLATE.md</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5ANyjcV3+32ZUk5KSRzS7hjuqIj+2kqhsBZNA0spdQo=
-			</data>
-		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LU0JpFr8sFmv0cUcykqpByousy6CxcRqvkYf0SItUbo=
+			pRPHA38BYDt6O82hEjPvLYskdpzcYicox5r1ts0XKAo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yZnx/hEYUvjH+1zlEYmqYAbjLW1zE8hOODi+0QROaFM=
+			OQZi+DS/Y8MLL4cC3qxsUA3+54HjrdI7onxAglxmauI=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A2y2NvZB7Kc8b0GEW2VQndKUCr9WHa3qWoM1vNBse+A=
+			bsfAyYzw1mfUwjR94M4ho/uXs1DvDuVVZ0ZQ12HDr/c=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xbdwKxjLKPIn8btT/jipSwFYWhZT1NRLu8/EflF4Drw=
+			yyoR/GOHLnQbVfE4AyiAUBIdWlmYqrpAJRgojdRDU+M=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vZ+/lelYRpRnRCl7e4mUMmTCGp28qqJNMi+J6QQnRsk=
+			Z/WJwntPAZTBAcx7nJhyfJnRflvKCs0fGA+ykhuSHoo=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xbdwKxjLKPIn8btT/jipSwFYWhZT1NRLu8/EflF4Drw=
+			yyoR/GOHLnQbVfE4AyiAUBIdWlmYqrpAJRgojdRDU+M=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHrRTVhqggPUFVGOEMbZzk73SGfaaOK1cRx9D8y5xZ0=
+			ITUhKJsEeJZ8Iax0CrCr7tpcMJFEji1x5KnVYSPZTlk=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A2y2NvZB7Kc8b0GEW2VQndKUCr9WHa3qWoM1vNBse+A=
+			bsfAyYzw1mfUwjR94M4ho/uXs1DvDuVVZ0ZQ12HDr/c=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mv5Bmb+KJltwHe9SBE6ZSPxSDJs8rOQqs9DNAES0UEk=
+			Ptq9rNGXIkhA0AeL6fZOuZVwV4iEwX5lDJj/A8UTcGU=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4GL98CRjk2BW/LxKxq6JlmSqjfNF0dSyUf8zx1RtMMQ=
+			mEgzyGd08mZUq6aBqVWjZjpYdUIuXuRbRBD1DW5/h+o=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mv5Bmb+KJltwHe9SBE6ZSPxSDJs8rOQqs9DNAES0UEk=
+			Ptq9rNGXIkhA0AeL6fZOuZVwV4iEwX5lDJj/A8UTcGU=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ys9CeHbvTVpEAnJCWC+43OQgDP7rb51b2HJWUMHGbQM=
+			rIzO+w0Por7RZIs6ZGlGGPbP1kM2VwiNzHB/QjcsTRg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -917,13 +854,6 @@
 			<key>hash2</key>
 			<data>
 			CL7NXbBLFnS59CvXbRxfJrmHIicsnIXXwnGgJ1uG2Yo=
-			</data>
-		</dict>
-		<key>build.yaml</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JcRrKfrfBQMh6WSZ/bE7E4fEG0v5cir8efnsuw/OYKU=
 			</data>
 		</dict>
 		<key>button-bg-close.png</key>
@@ -980,13 +910,6 @@
 			<key>hash2</key>
 			<data>
 			W4zG2caGPL+idhfmIFjs1rXuchPvOea0bkkfJD7XaXs=
-			</data>
-		</dict>
-		<key>documentation.yaml</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YuHgrpbqNjpAcyPj2g+fMs44P051L/1Ypb+Z+4EPspQ=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

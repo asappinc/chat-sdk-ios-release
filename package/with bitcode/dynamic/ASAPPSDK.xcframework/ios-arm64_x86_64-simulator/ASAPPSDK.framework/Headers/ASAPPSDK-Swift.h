@@ -426,6 +426,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable notifi
 + (void)disablePushNotificationsWithFailure:(void (^ _Nonnull)(enum ASAPPError))failure;
 /// Skips to the bottom of the chat such that the latest message is visible.
 + (void)skipToBottom;
+/// API to update the customerInfo object at any time. This API is primarily used to send information that is used to show a proactive chat prompt.
++ (void)updateCustomerDataInfoWithCustomerParams:(NSDictionary<NSString *, id> * _Nonnull)customerParams;
 /// Gets the number of messages the user received while offline as well as whether user is currently in a live chat.
 /// \param success A <code>ChatStatusHandler</code> that receives the number of unread ASAPP push notifications and the live chat status.
 ///
@@ -603,13 +605,13 @@ SWIFT_CLASS_NAMED("ASAPPChatInsteadViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
 @class UITraitCollection;
 
 @interface ASAPPChatInsteadViewController (SWIFT_EXTENSION(ASAPPSDK))
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 @protocol UIViewControllerAnimatedTransitioning;
@@ -1184,10 +1186,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
+
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 
@@ -1209,23 +1211,22 @@ SWIFT_CLASS_NAMED("ASAPPViews")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class CALayer;
 
-/// Represents a subclass of <code>UIImageView</code> for displaying animated image.
-/// Different from showing animated image in a normal <code>UIImageView</code> (which load all frames at one time),
-/// <code>AnimatedImageView</code> only tries to load several frames (defined by <code>framePreloadCount</code>) to reduce memory usage.
-/// It provides a tradeoff between memory usage and CPU time. If you have a memory issue when using a normal image
-/// view to load GIF data, you could give this class a try.
-/// Kingfisher supports setting GIF animated data to either <code>UIImageView</code> and <code>AnimatedImageView</code> out of box. So
+/// Represents a subclass of <code>UIImageView</code> for displaying animated images.
+/// Different from showing an animated image in a normal <code>UIImageView</code> (which loads all frames at one time),
+/// <code>AnimatedImageView</code> only tries to load several frames (defined by <code>AnimatedImageView/framePreloadCount</code>) to
+/// reduce memory usage. It provides a tradeoff between memory usage and CPU time. If you have a memory issue when
+/// using a normal image view to load GIF data, you could give this class a try.
+/// Kingfisher supports setting GIF animated data to either <code>UIImageView</code> or <code>AnimatedImageView</code> out of the box. So
 /// it would be fairly easy to switch between them.
 SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 @interface AnimatedImageView : UIImageView
 @property (nonatomic, strong) UIImage * _Nullable image;
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (nonatomic, readonly, getter=isAnimating) BOOL animating;
-/// Starts the animation.
 - (void)startAnimating;
-/// Stops the animation.
 - (void)stopAnimating;
 - (void)displayLayer:(CALayer * _Nonnull)layer;
 - (void)didMoveToWindow;
@@ -1235,6 +1236,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -1268,6 +1270,8 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 
 
 
+/// Represents the delegate object of the downloader session.
+/// It also behaves like a task manager for downloading.
 SWIFT_CLASS_NAMED("SessionDelegate")
 @interface KFSessionDelegate : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1290,6 +1294,10 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
+
+
 
 
 
@@ -1774,6 +1782,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable notifi
 + (void)disablePushNotificationsWithFailure:(void (^ _Nonnull)(enum ASAPPError))failure;
 /// Skips to the bottom of the chat such that the latest message is visible.
 + (void)skipToBottom;
+/// API to update the customerInfo object at any time. This API is primarily used to send information that is used to show a proactive chat prompt.
++ (void)updateCustomerDataInfoWithCustomerParams:(NSDictionary<NSString *, id> * _Nonnull)customerParams;
 /// Gets the number of messages the user received while offline as well as whether user is currently in a live chat.
 /// \param success A <code>ChatStatusHandler</code> that receives the number of unread ASAPP push notifications and the live chat status.
 ///
@@ -1951,13 +1961,13 @@ SWIFT_CLASS_NAMED("ASAPPChatInsteadViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
 @class UITraitCollection;
 
 @interface ASAPPChatInsteadViewController (SWIFT_EXTENSION(ASAPPSDK))
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 @protocol UIViewControllerAnimatedTransitioning;
@@ -2532,10 +2542,10 @@ SWIFT_CLASS_NAMED("ASAPPViewController")
 @end
 
 
+
 @interface ASAPPViewController (SWIFT_EXTENSION(ASAPPSDK))
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @end
-
 
 
 
@@ -2557,23 +2567,22 @@ SWIFT_CLASS_NAMED("ASAPPViews")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
 @class CALayer;
 
-/// Represents a subclass of <code>UIImageView</code> for displaying animated image.
-/// Different from showing animated image in a normal <code>UIImageView</code> (which load all frames at one time),
-/// <code>AnimatedImageView</code> only tries to load several frames (defined by <code>framePreloadCount</code>) to reduce memory usage.
-/// It provides a tradeoff between memory usage and CPU time. If you have a memory issue when using a normal image
-/// view to load GIF data, you could give this class a try.
-/// Kingfisher supports setting GIF animated data to either <code>UIImageView</code> and <code>AnimatedImageView</code> out of box. So
+/// Represents a subclass of <code>UIImageView</code> for displaying animated images.
+/// Different from showing an animated image in a normal <code>UIImageView</code> (which loads all frames at one time),
+/// <code>AnimatedImageView</code> only tries to load several frames (defined by <code>AnimatedImageView/framePreloadCount</code>) to
+/// reduce memory usage. It provides a tradeoff between memory usage and CPU time. If you have a memory issue when
+/// using a normal image view to load GIF data, you could give this class a try.
+/// Kingfisher supports setting GIF animated data to either <code>UIImageView</code> or <code>AnimatedImageView</code> out of the box. So
 /// it would be fairly easy to switch between them.
 SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 @interface AnimatedImageView : UIImageView
 @property (nonatomic, strong) UIImage * _Nullable image;
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (nonatomic, readonly, getter=isAnimating) BOOL animating;
-/// Starts the animation.
 - (void)startAnimating;
-/// Stops the animation.
 - (void)stopAnimating;
 - (void)displayLayer:(CALayer * _Nonnull)layer;
 - (void)didMoveToWindow;
@@ -2583,6 +2592,7 @@ SWIFT_CLASS("_TtC8ASAPPSDK17AnimatedImageView")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -2616,6 +2626,8 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 
 
 
+/// Represents the delegate object of the downloader session.
+/// It also behaves like a task manager for downloading.
 SWIFT_CLASS_NAMED("SessionDelegate")
 @interface KFSessionDelegate : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2638,6 +2650,10 @@ SWIFT_CLASS_NAMED("SessionDelegate")
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 @end
+
+
+
+
 
 
 

@@ -788,8 +788,10 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
 @optional
-/// Called when user ends chat. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
-- (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
+/// Called when user ends chat, new issue raised and new agent got assigned. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
+- (void)chatViewControllerDidReceiveChatCustomEventsWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
+/// Please use  chatViewControllerDidReceiveChatCustomEvents(eventData: [String: Any]?) method from 13.8.6 onwards. This method is Called when user ends chat, new issue raised and new agent got assigned.
+- (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData SWIFT_DEPRECATED;
 @end
 
 /// An enum defining common errors that can occur

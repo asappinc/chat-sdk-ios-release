@@ -166,6 +166,253 @@
       },
       {
         "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKSentry",
+        "printedName": "SDKSentry",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setupIfNeeded",
+            "printedName": "setupIfNeeded(dsn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC13setupIfNeeded3dsnySSSg_tFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC13setupIfNeeded3dsnySSSg_tFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC3logyySSFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC3logyySSFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC3log_5errorySS_s5Error_ptFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC3log_5errorySS_s5Error_ptFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC3log_7contextySS_SDySSypGtFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC3log_7contextySS_SDySSypGtFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logError",
+            "printedName": "logError(_:message:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC8logError_7message7contextys0D0_p_SSSgSDySSypGSgtFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC8logError_7message7contextys0D0_p_SSSgSDySSypGSgtFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:8ASAPPSDK9SDKSentryC",
+        "mangledName": "$s8ASAPPSDK9SDKSentryC",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10916,6 +11163,13 @@
       },
       {
         "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -15522,6 +15776,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "ASAPPDelegate",
         "printedName": "ASAPPDelegate",
@@ -15839,8 +16100,8 @@
         "usr": "c:@M@ASAPPSDK@objc(pl)ASAPPDelegate",
         "mangledName": "$s8ASAPPSDK13ASAPPDelegateP",
         "moduleName": "ASAPPSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
         "declAttributes": [
           "AccessControl",
           "ObjC",
@@ -80760,6 +81021,13 @@
       },
       {
         "kind": "Import",
+        "name": "Sentry",
+        "printedName": "Sentry",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -88572,6 +88840,13 @@
             "printedName": "KingfisherCompatible",
             "usr": "s:8ASAPPSDK20KingfisherCompatibleP",
             "mangledName": "$s8ASAPPSDK20KingfisherCompatibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SentryApplication",
+            "printedName": "SentryApplication",
+            "usr": "c:@M@Sentry@objc(pl)SentryApplication",
+            "mangledName": "$s6Sentry0A11ApplicationP"
           }
         ]
       },
@@ -88899,6 +89174,27 @@
       "offset": 303,
       "length": 13,
       "value": "\"SyncBarrier\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 220,
+      "length": 5,
+      "value": "\"sdk\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 15,
+      "value": "\"ASAPP-iOS-SDK\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 13,
+      "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded First-Party Code\/ComponentUIKit\/Views\/Component Collections\/StackView.swift",
@@ -96246,21 +96542,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1423,
+      "offset": 1437,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "StringLiteral",
-      "offset": 1472,
+      "offset": 1486,
       "length": 13,
       "value": "\"ASAPPDevice\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2822,
+      "offset": 2836,
       "length": 5,
       "value": "false"
     },
@@ -96624,7 +96920,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "BooleanLiteral",
-      "offset": 11257,
+      "offset": 11333,
       "length": 4,
       "value": "true"
     },
@@ -98311,198 +98607,212 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 922,
       "length": 32,
       "value": "\"ASAPPNotificationsPermissionUI\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 956,
+      "offset": 987,
       "length": 24,
       "value": "\"GlobalRequestTimeoutMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 1059,
       "length": 33,
       "value": "\"ShowSendingIndicatorThresholdMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1130,
       "length": 17,
       "value": "\"BlockingMessage\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1147,
+      "offset": 1178,
       "length": 16,
       "value": "\"RedactionRules\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 1235,
       "length": 26,
       "value": "\"IsClientRedactionEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 1301,
       "length": 25,
       "value": "\"IsPhotoUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1338,
+      "offset": 1369,
       "length": 28,
       "value": "\"IsDocumentUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1407,
+      "offset": 1438,
       "length": 26,
       "value": "\"SupportedUploadMIMETypes\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1513,
       "length": 25,
       "value": "\"IsDuplicateEventHandled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1544,
+      "offset": 1575,
       "length": 22,
       "value": "\"HistoryDurationHours\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1630,
       "length": 18,
       "value": "\"ShowAutocomplete\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1667,
+      "offset": 1698,
       "length": 35,
       "value": "\"ShowAutocompleteInGenerativeAgent\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1771,
       "length": 23,
       "value": "\"IsV2FileUploadEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 1826,
+      "length": 17,
+      "value": "\"IsSentryEnabled\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
+      "kind": "StringLiteral",
+      "offset": 922,
       "length": 32,
       "value": "\"ASAPPNotificationsPermissionUI\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 956,
+      "offset": 987,
       "length": 24,
       "value": "\"GlobalRequestTimeoutMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1028,
+      "offset": 1059,
       "length": 33,
       "value": "\"ShowSendingIndicatorThresholdMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1130,
       "length": 17,
       "value": "\"BlockingMessage\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1147,
+      "offset": 1178,
       "length": 16,
       "value": "\"RedactionRules\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 1235,
       "length": 26,
       "value": "\"IsClientRedactionEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1270,
+      "offset": 1301,
       "length": 25,
       "value": "\"IsPhotoUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1338,
+      "offset": 1369,
       "length": 28,
       "value": "\"IsDocumentUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1407,
+      "offset": 1438,
       "length": 26,
       "value": "\"SupportedUploadMIMETypes\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1513,
       "length": 25,
       "value": "\"IsDuplicateEventHandled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1544,
+      "offset": 1575,
       "length": 22,
       "value": "\"HistoryDurationHours\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1599,
+      "offset": 1630,
       "length": 18,
       "value": "\"ShowAutocomplete\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1667,
+      "offset": 1698,
       "length": 35,
       "value": "\"ShowAutocompleteInGenerativeAgent\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1771,
       "length": 23,
       "value": "\"IsV2FileUploadEnabled\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
+      "kind": "StringLiteral",
+      "offset": 1826,
+      "length": 17,
+      "value": "\"IsSentryEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/Common\/Button.swift",
@@ -100803,161 +101113,161 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1815,
+      "offset": 1829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1861,
+      "offset": 1875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1901,
+      "offset": 1915,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2049,
+      "offset": 2063,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2167,
+      "offset": 2181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2215,
+      "offset": 2229,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2462,
+      "offset": 2476,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2526,
+      "offset": 2540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "Dictionary",
-      "offset": 2756,
+      "offset": 2770,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2804,
+      "offset": 2818,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2849,
+      "offset": 2863,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2936,
+      "offset": 2950,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "Array",
-      "offset": 3003,
+      "offset": 3017,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3054,
+      "offset": 3068,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3147,
+      "offset": 3161,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6411,
+      "offset": 6425,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6709,
+      "offset": 6723,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5928,
+      "offset": 5942,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "StringLiteral",
-      "offset": 187,
+      "offset": 201,
       "length": 18,
       "value": "\"ASAPPSDK.ChatViewController\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 46417,
+      "offset": 46431,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 51259,
+      "offset": 51273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 88994,
+      "offset": 91113,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 95197,
+      "offset": 100750,
       "length": 5,
       "value": "false"
     },
@@ -101083,56 +101393,70 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1251,
+      "offset": 1227,
+      "length": 17,
+      "value": "\"isSentryEnabled\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1287,
+      "length": 26,
+      "value": "\"lastAgentAssignedIssueId\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
       "length": 10,
       "value": "\"document\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1288,
+      "offset": 1408,
       "length": 7,
       "value": "\"image\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1330,
+      "offset": 1450,
       "length": 10,
       "value": "\"saveIcon\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1377,
+      "offset": 1497,
       "length": 23,
       "value": "\"isNewFileMessageEvent\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1558,
       "length": 21,
       "value": "\"isFileUploadEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1499,
+      "offset": 1619,
       "length": 23,
       "value": "\"isV2FileUploadEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1569,
+      "offset": 1689,
       "length": 4,
       "value": "1450"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1602,
+      "offset": 1722,
       "length": 7,
       "value": "1048576"
     },

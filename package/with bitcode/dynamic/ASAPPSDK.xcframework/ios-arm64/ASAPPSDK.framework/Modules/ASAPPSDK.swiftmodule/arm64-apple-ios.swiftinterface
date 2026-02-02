@@ -20,6 +20,7 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import SafariServices
+import Sentry
 import Swift
 import SwiftUI
 import SystemConfiguration
@@ -29,6 +30,14 @@ import UserNotifications
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers final public class SDKSentry {
+  public static func setupIfNeeded(dsn: Swift.String? = nil)
+  public static func log(_ message: Swift.String)
+  public static func log(_ message: Swift.String, error: any Swift.Error)
+  public static func log(_ message: Swift.String, context: [Swift.String : Any])
+  public static func logError(_ error: any Swift.Error, message: Swift.String? = nil, context: [Swift.String : Any]? = nil)
+  @objc deinit
+}
 public enum ThemeBannerStyle {
   case success
   case warning
@@ -389,7 +398,7 @@ public class OptionalViewTypeConfig {
   public init(width: CoreFoundation.CGFloat? = nil, height: CoreFoundation.CGFloat? = nil, maxHeight: CoreFoundation.CGFloat? = nil, margin: CoreFoundation.CGFloat? = nil, padding: CoreFoundation.CGFloat? = nil, radius: CoreFoundation.CGFloat? = nil, isVisible: Swift.Bool? = nil, backgroundColor: UIKit.UIColor? = nil)
   @objc deinit
 }
-@objc public protocol ASAPPDelegate {
+@objc public protocol ASAPPDelegate : ObjectiveC.NSObjectProtocol {
   @objc func chatViewControllerDidTapUserLoginButton()
   @objc func chatViewControllerDidDisappear()
   @objc func chatViewControllerDidTapDeepLink(name: Swift.String, data: [Swift.String : Any]?)

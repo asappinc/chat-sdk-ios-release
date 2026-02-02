@@ -776,7 +776,7 @@ SWIFT_CLASS_NAMED("ASAPPCustomImage")
 
 /// A protocol defining functions that can be called by the framework.
 SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
-@protocol ASAPPDelegate
+@protocol ASAPPDelegate <NSObject>
 /// Called when a user taps on a login button. Please set <code>ASAPP.user</code> once the user has logged in.
 - (void)chatViewControllerDidTapUserLoginButton;
 /// Called when the ASAPP view controller has disappeared.
@@ -2134,7 +2134,7 @@ SWIFT_CLASS_NAMED("ASAPPCustomImage")
 
 /// A protocol defining functions that can be called by the framework.
 SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
-@protocol ASAPPDelegate
+@protocol ASAPPDelegate <NSObject>
 /// Called when a user taps on a login button. Please set <code>ASAPP.user</code> once the user has logged in.
 - (void)chatViewControllerDidTapUserLoginButton;
 /// Called when the ASAPP view controller has disappeared.

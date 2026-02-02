@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		M1cE9rzFySegVmqfIvIEMIhFdcM=
+		U+J+lGAFQ6fw7nx1GWwyeUPBL8g=
 		</data>
 		<key>FileUploadProgressView.nib</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/ASAPPSDK-Swift.h</key>
 		<data>
-		Fk+et7mItRXoTMXfDVVXliNQGh4=
+		OGFUP24Fa3Oewx7lFlLHCex2p+Q=
 		</data>
 		<key>Headers/ASAPPSDK.h</key>
 		<data>
@@ -26,55 +26,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cDxdfDB7qspnpK6ZT/TwMHu8S64=
+		g1lcH29AEpXtqpcqbwgvq1+Ra+Q=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0XVOC4y1Zp6pzZPf0bblOQMPK8k=
+		QogsZpbit9odaqK2XcDTYMECH1g=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		M5Nyw5Z9414+f6shQUe5j2fqrJY=
+		PTQNj5fdJgTcjIQYJUM+PHpyIUU=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Y4grrzQQVbQFvG7mtvVqgHFdKl4=
+		X90j0ipV+l0AtKxWKUQNGQhVXpU=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		t/TK1aLM6A3p3IAGKCddvE576Hw=
+		uyjZKbOPhgqELl9wfLYWy1HP7iE=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vNse2oi+er9EM9Kpb2xXrdCp6nQ=
+		C0SCTxb+9VcXFyRIdRFWt6Sl36M=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		t/TK1aLM6A3p3IAGKCddvE576Hw=
+		uyjZKbOPhgqELl9wfLYWy1HP7iE=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7NATMEzOlaF1Ml+XWNpILwb5QWw=
+		jULxvSPvRRjxJWzYrgje/cesHPc=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Y4grrzQQVbQFvG7mtvVqgHFdKl4=
+		X90j0ipV+l0AtKxWKUQNGQhVXpU=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wZp8ugz2kPKvmpcvKl2KW04YAfM=
+		aQgAnovEeAzkYGuIMBZoZd/jloI=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		bY51ZLB3JQcDxgHH48B3dT2y6fY=
+		wmJByHu8Yr+y/3WjCpA4QAv2Gto=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wZp8ugz2kPKvmpcvKl2KW04YAfM=
+		aQgAnovEeAzkYGuIMBZoZd/jloI=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vwPynL/lJqBPAysedRfA7asgKi8=
+		GkkP2vKfX2x09xvIhldqOUNbpb4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -706,7 +706,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u8s6s73rKHEoHKQdstHdirbPj8phdDZQL2Juac4ZBxI=
+			mciJpGHPGQkFNXgANAL3bStRyhjbSdaloAA6WL48eUQ=
 			</data>
 		</dict>
 		<key>FileUploadProgressView.nib</key>
@@ -720,7 +720,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ODhZ60g3XDJ/rWdqbPi0wR/htzJ1TCfHEh533AjnpkM=
+			vcUSnIatGODgo+4M+7BF8DorNim9LMqmbX7JwfOjkvQ=
 			</data>
 		</dict>
 		<key>Headers/ASAPPSDK.h</key>
@@ -741,84 +741,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WO5s2v5cZbRNbfiMADHI16/aKehsNoYxR2Vr3POsO+E=
+			YuT8OKlUZ2HY8+xsg8ZzO2gWd+Jl1IloKWtxVPH73SY=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uWbIolCdQNbFwTeDS9u9tCeJMM3c2kUGLpEGjZulLJM=
+			KkPhFuCpA3ZPaL73NMjniwIhBG9NEjIh7sH7SP8QswM=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FuiVMbjGIICMihJ5GqoZNj64HOTC5Pr7qAMvX03yqoE=
+			WblhBqC/H79T7W0T7/uRiVpT7DLwmkPG/DRdpOexBkA=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qH/j+9R+RPphh1VjB0lCdDfX/RMe+nNeb3YjjatwVJ8=
+			7Dftv9oWeqLYCWDdUTwctTMLRsMM5EpBD92G2HA+514=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWtEl6PUj+nkrPBhhgDaZiZ/e3wpirgCXLsBRg41lz8=
+			JlwM7RB5qjAMeP86S3TAhs/i0725e0z/aKj/zoduSYM=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qH/j+9R+RPphh1VjB0lCdDfX/RMe+nNeb3YjjatwVJ8=
+			7Dftv9oWeqLYCWDdUTwctTMLRsMM5EpBD92G2HA+514=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			deMYi16HgFzWhDuyd2DCyWzIDYAMzFIJpCMEO1fUCLk=
+			SX/Nv0YOwsWBmIDASqZs58n+F2xGjbXIcLwJZ3Jiw2Q=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FuiVMbjGIICMihJ5GqoZNj64HOTC5Pr7qAMvX03yqoE=
+			WblhBqC/H79T7W0T7/uRiVpT7DLwmkPG/DRdpOexBkA=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIkEbCGLw6W/dlLduei9ynOx3ypKxfXMOkeaathKiIU=
+			VG4K7KbB65Xt+e09rh00h6DC7gZlTdNuzA6Ru1OSo6A=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UQMhWroX8OuhSL2bG2vpx06JhCMpIvdIOR55VszVGP4=
+			BrB+hpaCOiMmiIbti6t5XYRIny7QgCtZaIzx7ODfJqk=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FIkEbCGLw6W/dlLduei9ynOx3ypKxfXMOkeaathKiIU=
+			VG4K7KbB65Xt+e09rh00h6DC7gZlTdNuzA6Ru1OSo6A=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y+hv+4aojNX0IctFQsBGbzpyMCzSNmkP1+Hiwislj8A=
+			vAlKEbhuJ1F4UoLrZwq9mbYZ8fDZFmrH6PZld4+xXFk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -360,6 +360,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// \param config An <code>ASAPPConfig</code> instance used to configure the SDK.
 ///
 + (void)initializeWith:(ASAPPConfig * _Nonnull)config;
+/// Sets the <code>config</code> property.
+/// \param config An <code>ASAPPConfig</code> instance used to configure the SDK.
+///
++ (void)initializeConfigWith:(ASAPPConfig * _Nonnull)config completion:(void (^ _Nonnull)(BOOL))completion;
 /// Creates a chat view controller, ready to be pushed onto a navigation stack.
 /// \param userInfo A user info dictionary containing notification metadata
 ///

@@ -482,6 +482,7 @@ public class OptionalViewTypeConfig {
   @objc public var bannerViews: ASAPPSDK.ASAPPBanner?
   @objc public static var debugLogLevel: ASAPPSDK.ASAPPLogLevel
   @objc public class func initialize(with config: ASAPPSDK.ASAPPConfig)
+  @objc public class func initializeConfig(with config: ASAPPSDK.ASAPPConfig, completion: @escaping (Swift.Bool) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func createChatViewControllerForPushing(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?, themeData: ASAPPSDK.ASAPP? = nil) -> UIKit.UIViewController?
   #endif

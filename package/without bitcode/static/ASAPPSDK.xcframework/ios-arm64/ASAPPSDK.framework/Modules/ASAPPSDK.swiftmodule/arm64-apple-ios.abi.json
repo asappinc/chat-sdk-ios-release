@@ -396,7 +396,8 @@
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -407,7 +408,8 @@
         "moduleName": "ASAPPSDK",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -17698,6 +17700,53 @@
             "declKind": "Func",
             "usr": "c:@M@ASAPPSDK@objc(cs)ASAPP(cm)initializeWith:",
             "mangledName": "$s8ASAPPSDK5ASAPPC10initialize4withyAA11ASAPPConfigC_tFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializeConfig",
+            "printedName": "initializeConfig(with:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPConfig",
+                "printedName": "ASAPPSDK.ASAPPConfig",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPConfig"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPP(cm)initializeConfigWith:completion:",
+            "mangledName": "$s8ASAPPSDK5ASAPPC16initializeConfig4with10completionyAA11ASAPPConfigC_ySbctFZ",
             "moduleName": "ASAPPSDK",
             "static": true,
             "declAttributes": [
@@ -93057,21 +93106,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 220,
+      "offset": 272,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 263,
+      "offset": 342,
       "length": 15,
       "value": "\"ASAPP-iOS-SDK\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 318,
+      "offset": 426,
       "length": 13,
       "value": "\"sdk_version\""
     },
@@ -93414,63 +93463,63 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1513,
+      "offset": 1592,
       "length": 12,
       "value": "\"CustomerId\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1555,
+      "offset": 1634,
       "length": 15,
       "value": "\"EphemeralType\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1597,
+      "offset": 1676,
       "length": 12,
       "value": "\"EventFlags\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1629,
+      "offset": 1708,
       "length": 9,
       "value": "\"EventId\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1738,
       "length": 11,
       "value": "\"EventJSON\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1775,
       "length": 11,
       "value": "\"EventTime\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1733,
+      "offset": 1812,
       "length": 11,
       "value": "\"EventType\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1768,
+      "offset": 1847,
       "length": 9,
       "value": "\"IssueId\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/Event.swift",
       "kind": "StringLiteral",
-      "offset": 1804,
+      "offset": 1883,
       "length": 17,
       "value": "\"EventIdPrevious\""
     },
@@ -95647,28 +95696,28 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2275,
       "length": 11,
       "value": "\"issue:end\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2261,
+      "offset": 2307,
       "length": 11,
       "value": "\"issue:new\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2298,
+      "offset": 2344,
       "length": 16,
       "value": "\"agent:assigned\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2334,
+      "offset": 2380,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -100101,89 +100150,89 @@
       "kind": "StringLiteral",
       "offset": 2232,
       "length": 8,
-      "value": "\"14.0.2\""
+      "value": "\"14.0.3\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "BooleanLiteral",
-      "offset": 11333,
+      "offset": 12775,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17003,
+      "offset": 18445,
       "length": 16,
       "value": "\"ASAPPResources\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17036,
+      "offset": 18478,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17458,
+      "offset": 18900,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17559,
+      "offset": 19001,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17774,
+      "offset": 19216,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17784,
+      "offset": 19226,
       "length": 8,
       "value": "\"tablet\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17795,
+      "offset": 19237,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17919,
+      "offset": 19361,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17950,
+      "offset": 19392,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 17984,
+      "offset": 19426,
       "length": 1,
       "value": "\"; \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18007,
+      "offset": 19449,
       "length": 1,
       "value": "\"\""
     },
@@ -103963,7 +104012,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 100750,
+      "offset": 100914,
       "length": 5,
       "value": "false"
     },

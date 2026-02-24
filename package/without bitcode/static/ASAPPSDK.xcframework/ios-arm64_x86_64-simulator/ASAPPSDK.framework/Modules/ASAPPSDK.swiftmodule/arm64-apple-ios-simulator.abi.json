@@ -3659,6 +3659,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -100150,7 +100160,7 @@
       "kind": "StringLiteral",
       "offset": 2232,
       "length": 8,
-      "value": "\"14.0.4\""
+      "value": "\"14.0.5\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",

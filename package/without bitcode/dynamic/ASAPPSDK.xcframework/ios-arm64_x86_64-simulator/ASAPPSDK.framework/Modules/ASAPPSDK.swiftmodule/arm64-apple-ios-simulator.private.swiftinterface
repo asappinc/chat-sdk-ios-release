@@ -21,7 +21,6 @@ import MobileCoreServices
 import Photos
 import PhotosUI
 import SafariServices
-import Sentry
 import Swift
 import SwiftUI
 import SystemConfiguration

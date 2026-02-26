@@ -165,16 +165,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Sentry",
-        "printedName": "Sentry",
-        "declKind": "Import",
-        "moduleName": "ASAPPSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "SDKSentry",
         "printedName": "SDKSentry",
@@ -11552,13 +11542,6 @@
       },
       {
         "kind": "Import",
-        "name": "Sentry",
-        "printedName": "Sentry",
-        "declKind": "Import",
-        "moduleName": "ASAPPSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -16433,13 +16416,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Sentry",
-        "printedName": "Sentry",
-        "declKind": "Import",
-        "moduleName": "ASAPPSDK"
       },
       {
         "kind": "TypeDecl",
@@ -84327,13 +84303,6 @@
       },
       {
         "kind": "Import",
-        "name": "Sentry",
-        "printedName": "Sentry",
-        "declKind": "Import",
-        "moduleName": "ASAPPSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -89012,13 +88981,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "SentryAttributeValue",
-            "printedName": "SentryAttributeValue",
-            "usr": "s:6Sentry0A14AttributeValueP",
-            "mangledName": "$s6Sentry0A14AttributeValueP"
-          },
-          {
-            "kind": "Conformance",
             "name": "KingfisherCompatibleValue",
             "printedName": "KingfisherCompatibleValue",
             "usr": "s:8ASAPPSDK25KingfisherCompatibleValueP",
@@ -92799,13 +92761,6 @@
             "printedName": "KingfisherCompatible",
             "usr": "s:8ASAPPSDK20KingfisherCompatibleP",
             "mangledName": "$s8ASAPPSDK20KingfisherCompatibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SentryApplication",
-            "printedName": "SentryApplication",
-            "usr": "c:@M@Sentry@objc(pl)SentryApplication",
-            "mangledName": "$s6Sentry0A11ApplicationP"
           }
         ]
       },
@@ -93144,21 +93099,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 272,
+      "offset": 274,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 344,
       "length": 15,
       "value": "\"ASAPP-iOS-SDK\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 426,
+      "offset": 428,
       "length": 13,
       "value": "\"sdk_version\""
     },
@@ -99710,21 +99665,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1437,
+      "offset": 1439,
       "length": 3,
       "value": "600"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1488,
       "length": 13,
       "value": "\"ASAPPDevice\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/PushNotificationsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2836,
+      "offset": 2838,
       "length": 5,
       "value": "false"
     },
@@ -100179,98 +100134,98 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 2136,
+      "offset": 2138,
       "length": 23,
       "value": "\"ASAPPSDKVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 2232,
+      "offset": 2234,
       "length": 8,
-      "value": "\"14.0.5\""
+      "value": "\"14.0.6\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "BooleanLiteral",
-      "offset": 12902,
+      "offset": 12908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18572,
+      "offset": 18578,
       "length": 16,
       "value": "\"ASAPPResources\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18605,
+      "offset": 18611,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19027,
+      "offset": 19033,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19128,
+      "offset": 19134,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19343,
+      "offset": 19349,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19353,
+      "offset": 19359,
       "length": 8,
       "value": "\"tablet\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19364,
+      "offset": 19370,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19488,
+      "offset": 19494,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19519,
+      "offset": 19525,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19553,
+      "offset": 19559,
       "length": 1,
       "value": "\"; \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19576,
+      "offset": 19582,
       "length": 1,
       "value": "\"\""
     },
@@ -103896,161 +103851,161 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1829,
+      "offset": 1831,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1875,
+      "offset": 1877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1915,
+      "offset": 1917,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2063,
+      "offset": 2065,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2181,
+      "offset": 2183,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2229,
+      "offset": 2231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2476,
+      "offset": 2478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2540,
+      "offset": 2542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "Dictionary",
-      "offset": 2770,
+      "offset": 2772,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2818,
+      "offset": 2820,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2863,
+      "offset": 2865,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2950,
+      "offset": 2952,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "Array",
-      "offset": 3017,
+      "offset": 3019,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3068,
+      "offset": 3070,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3161,
+      "offset": 3163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3319,
+      "offset": 3321,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6425,
+      "offset": 6427,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6723,
+      "offset": 6725,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 5942,
+      "offset": 5944,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 46431,
+      "offset": 46433,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 51273,
+      "offset": 51275,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 91113,
+      "offset": 91115,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 100914,
+      "offset": 100922,
       "length": 5,
       "value": "false"
     },

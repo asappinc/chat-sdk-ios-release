@@ -446,7 +446,7 @@ public class OptionalViewTypeConfig {
   #endif
   @objc deinit
 }
-@objc public protocol ASAPPDelegate : ObjectiveC.NSObjectProtocol {
+@objc public protocol ASAPPDelegate {
   @objc func chatViewControllerDidTapUserLoginButton()
   @objc func chatViewControllerDidDisappear()
   #if compiler(>=5.3) && $NonescapableTypes

@@ -165,6 +165,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "SDKSentry",
         "printedName": "SDKSentry",
@@ -172,32 +182,17 @@
           {
             "kind": "Function",
             "name": "setupIfNeeded",
-            "printedName": "setupIfNeeded(dsn:)",
+            "printedName": "setupIfNeeded()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8ASAPPSDK9SDKSentryC13setupIfNeeded3dsnySSSg_tFZ",
-            "mangledName": "$s8ASAPPSDK9SDKSentryC13setupIfNeeded3dsnySSSg_tFZ",
+            "usr": "s:8ASAPPSDK9SDKSentryC13setupIfNeededyyFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC13setupIfNeededyyFZ",
             "moduleName": "ASAPPSDK",
             "static": true,
             "declAttributes": [
@@ -239,42 +234,7 @@
           {
             "kind": "Function",
             "name": "log",
-            "printedName": "log(_:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ASAPPSDK9SDKSentryC3log_5errorySS_s5Error_ptFZ",
-            "mangledName": "$s8ASAPPSDK9SDKSentryC3log_5errorySS_s5Error_ptFZ",
-            "moduleName": "ASAPPSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "log",
-            "printedName": "log(_:context:)",
+            "printedName": "log(_:tags:context:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -290,7 +250,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
+                "printedName": "[Swift.String : Swift.String]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -300,55 +260,13 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ASAPPSDK9SDKSentryC3log_7contextySS_SDySSypGtFZ",
-            "mangledName": "$s8ASAPPSDK9SDKSentryC3log_7contextySS_SDySSypGtFZ",
-            "moduleName": "ASAPPSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "logError",
-            "printedName": "logError(_:message:context:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:SD"
               },
               {
                 "kind": "TypeNominal",
@@ -380,8 +298,101 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8ASAPPSDK9SDKSentryC8logError_7message7contextys0D0_p_SSSgSDySSypGSgtFZ",
-            "mangledName": "$s8ASAPPSDK9SDKSentryC8logError_7message7contextys0D0_p_SSSgSDySSypGSgtFZ",
+            "usr": "s:8ASAPPSDK9SDKSentryC3log_4tags7contextySS_SDyS2SGSDySSypGSgtFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC3log_4tags7contextySS_SDyS2SGSDySSypGSgtFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logError",
+            "printedName": "logError(_:message:tags:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK9SDKSentryC8logError_7message4tags7contextys0D0_p_SSSgSDyS2SGSDySSypGSgtFZ",
+            "mangledName": "$s8ASAPPSDK9SDKSentryC8logError_7message4tags7contextys0D0_p_SSSgSDyS2SGSDySSypGSgtFZ",
             "moduleName": "ASAPPSDK",
             "static": true,
             "declAttributes": [
@@ -93071,23 +93082,72 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 274,
+      "offset": 467,
+      "length": 87,
+      "value": "\"https:\/\/71851156ed7cf2d386eaa0a855ba1a72@o326333.ingest.us.sentry.io\/4510522147078144\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 631,
       "length": 5,
       "value": "\"sdk\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 344,
+      "offset": 716,
       "length": 15,
       "value": "\"ASAPP-iOS-SDK\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "StringLiteral",
-      "offset": 428,
+      "offset": 816,
       "length": 13,
       "value": "\"sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 1148,
+      "length": 44,
+      "value": "\"https:\/\/\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 1164,
+      "length": 1,
+      "value": "\"\/api\/\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 1181,
+      "length": 1,
+      "value": "\"\/envelope\/\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "StringLiteral",
+      "offset": 1400,
+      "length": 18,
+      "value": "\"com.asapp.sentry\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "Dictionary",
+      "offset": 1987,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
+      "kind": "Dictionary",
+      "offset": 2384,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded First-Party Code\/ComponentUIKit\/Views\/Component Collections\/StackView.swift",
@@ -100106,98 +100166,98 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 2120,
+      "offset": 2104,
       "length": 23,
       "value": "\"ASAPPSDKVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 2216,
+      "offset": 2200,
       "length": 8,
-      "value": "\"14.0.7\""
+      "value": "\"14.0.8\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "BooleanLiteral",
-      "offset": 12890,
+      "offset": 12844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18560,
+      "offset": 18514,
       "length": 16,
       "value": "\"ASAPPResources\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18593,
+      "offset": 18547,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19015,
+      "offset": 18969,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19116,
+      "offset": 19070,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19331,
+      "offset": 19285,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19341,
+      "offset": 19295,
       "length": 8,
       "value": "\"tablet\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19352,
+      "offset": 19306,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19476,
+      "offset": 19430,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19507,
+      "offset": 19461,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19541,
+      "offset": 19495,
       "length": 1,
       "value": "\"; \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19564,
+      "offset": 19518,
       "length": 1,
       "value": "\"\""
     },
@@ -103977,7 +104037,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 100928,
+      "offset": 99719,
       "length": 5,
       "value": "false"
     },

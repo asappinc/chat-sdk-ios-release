@@ -31,14 +31,13 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers final public class SDKSentry {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func setupIfNeeded(dsn: Swift.String? = nil)
-  #endif
+  public static func setupIfNeeded()
   public static func log(_ message: Swift.String)
-  public static func log(_ message: Swift.String, error: any Swift.Error)
-  public static func log(_ message: Swift.String, context: [Swift.String : Any])
   #if compiler(>=5.3) && $NonescapableTypes
-  public static func logError(_ error: any Swift.Error, message: Swift.String? = nil, context: [Swift.String : Any]? = nil)
+  public static func log(_ message: Swift.String, tags: [Swift.String : Swift.String] = [:], context: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func logError(_ error: any Swift.Error, message: Swift.String? = nil, tags: [Swift.String : Swift.String] = [:], context: [Swift.String : Any]? = nil)
   #endif
   @objc deinit
 }

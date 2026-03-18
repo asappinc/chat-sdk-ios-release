@@ -32,7 +32,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_hasMissingDesignatedInitializers final public class SDKSentry {
   public static func setupIfNeeded()
-  public static func log(_ message: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   public static func log(_ message: Swift.String, tags: [Swift.String : Swift.String] = [:], context: [Swift.String : Any]? = nil)
   #endif

@@ -205,35 +205,6 @@
           {
             "kind": "Function",
             "name": "log",
-            "printedName": "log(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8ASAPPSDK9SDKSentryC3logyySSFZ",
-            "mangledName": "$s8ASAPPSDK9SDKSentryC3logyySSFZ",
-            "moduleName": "ASAPPSDK",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "log",
             "printedName": "log(_:tags:context:)",
             "children": [
               {
@@ -93138,14 +93109,14 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "Dictionary",
-      "offset": 1987,
+      "offset": 1730,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "Dictionary",
-      "offset": 2384,
+      "offset": 2127,
       "length": 3,
       "value": "[]"
     },
@@ -100175,7 +100146,7 @@
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 8,
-      "value": "\"14.0.8\""
+      "value": "\"14.0.9\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -104037,7 +104008,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 99719,
+      "offset": 99526,
       "length": 5,
       "value": "false"
     },

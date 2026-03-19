@@ -100146,7 +100146,7 @@
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 8,
-      "value": "\"14.0.9\""
+      "value": "\"14.1.0\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -104001,14 +104001,14 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 91115,
+      "offset": 91895,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 99526,
+      "offset": 100453,
       "length": 5,
       "value": "false"
     },

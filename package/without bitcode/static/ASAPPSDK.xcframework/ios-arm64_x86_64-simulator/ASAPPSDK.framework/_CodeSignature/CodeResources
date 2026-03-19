@@ -18,19 +18,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Cb70kUPRsZK1xXonyJxsnbpyccs=
+		LpRJCVB1YegXIqxoSU3FcVrum5w=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		7Ku7hfoex2WuJLBqitudsdtIZYU=
+		6y4GBjpuFDXUZIsdqr1Wfnhpf+c=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		lMZVSZeU9Xh3Tp5dcrBwRe4HqJk=
+		PLbxLWKd5qouBakR+/nkATGpVLI=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		fHOPXgB9g+/LniC7wSLzzpbWXHo=
+		Rvub9qqFgTqr/lgt/15nROK/ndA=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		fHOPXgB9g+/LniC7wSLzzpbWXHo=
+		Rvub9qqFgTqr/lgt/15nROK/ndA=
 		</data>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -112,33 +112,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Ku7hfoex2WuJLBqitudsdtIZYU=
+			6y4GBjpuFDXUZIsdqr1Wfnhpf+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			9sjoKpkjY+4T7XOPGUxwoTA3qNLsQl6jmZR/n9iYE7s=
+			U8vBsg5U+Q7CkNPotnuDz0dCzNLb7SlM7BkzQd/8OaE=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lMZVSZeU9Xh3Tp5dcrBwRe4HqJk=
+			PLbxLWKd5qouBakR+/nkATGpVLI=
 			</data>
 			<key>hash2</key>
 			<data>
-			w7lmbroaBvlK3bDfVurEMfa0URfOY1Tt0VmKellYzoI=
+			YhlFE27bUDc7HONwxxZo0pN5VpwdOmwsASXSa5AbxEA=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fHOPXgB9g+/LniC7wSLzzpbWXHo=
+			Rvub9qqFgTqr/lgt/15nROK/ndA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gins1Wn73C7CRvEjKoaYNHaY9J5inWboeCfCQqCBScE=
+			DJJUODkW/pCay/a/571YMPo3w7B4GTXSe6i9cO6a5kI=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -189,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fHOPXgB9g+/LniC7wSLzzpbWXHo=
+			Rvub9qqFgTqr/lgt/15nROK/ndA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gins1Wn73C7CRvEjKoaYNHaY9J5inWboeCfCQqCBScE=
+			DJJUODkW/pCay/a/571YMPo3w7B4GTXSe6i9cO6a5kI=
 			</data>
 		</dict>
 		<key>Modules/ASAPPSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

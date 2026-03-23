@@ -93116,7 +93116,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/SDKSentry.swift",
       "kind": "Dictionary",
-      "offset": 2127,
+      "offset": 2237,
       "length": 3,
       "value": "[]"
     },
@@ -100146,7 +100146,7 @@
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 8,
-      "value": "\"14.1.1\""
+      "value": "\"14.1.2\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -100158,77 +100158,77 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18514,
+      "offset": 18535,
       "length": 16,
       "value": "\"ASAPPResources\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18547,
+      "offset": 18568,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 18969,
+      "offset": 18990,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19070,
+      "offset": 19091,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19285,
+      "offset": 19306,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19295,
+      "offset": 19316,
       "length": 8,
       "value": "\"tablet\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19306,
+      "offset": 19327,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19430,
+      "offset": 19451,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19461,
+      "offset": 19482,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19495,
+      "offset": 19516,
       "length": 1,
       "value": "\"; \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 19518,
+      "offset": 19539,
       "length": 1,
       "value": "\"\""
     },
@@ -104001,14 +104001,14 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 91115,
+      "offset": 91170,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 99526,
+      "offset": 99581,
       "length": 5,
       "value": "false"
     },

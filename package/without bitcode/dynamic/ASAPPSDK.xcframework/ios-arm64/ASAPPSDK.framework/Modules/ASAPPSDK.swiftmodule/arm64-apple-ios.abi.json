@@ -13209,6 +13209,117 @@
           },
           {
             "kind": "Var",
+            "name": "needToDisableLiquidGlassUI",
+            "printedName": "needToDisableLiquidGlassUI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvp",
+            "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvp",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvg",
+                "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvs",
+                "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvs",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvM",
+                "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC26needToDisableLiquidGlassUISbSgvM",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "titleBar",
             "printedName": "titleBar",
             "children": [
@@ -99892,7 +100003,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPCustomViewStyles.swift",
       "kind": "BooleanLiteral",
-      "offset": 12694,
+      "offset": 12860,
       "length": 4,
       "value": "true"
     },
@@ -100174,7 +100285,7 @@
       "kind": "StringLiteral",
       "offset": 2200,
       "length": 8,
-      "value": "\"14.1.6\""
+      "value": "\"14.1.7\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -104015,28 +104126,28 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 46433,
+      "offset": 47299,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 51275,
+      "offset": 52141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 91170,
+      "offset": 92036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 99581,
+      "offset": 100447,
       "length": 5,
       "value": "false"
     },

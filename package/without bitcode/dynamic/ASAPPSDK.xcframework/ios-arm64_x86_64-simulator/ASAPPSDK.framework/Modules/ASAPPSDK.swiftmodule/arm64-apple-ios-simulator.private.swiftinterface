@@ -486,13 +486,13 @@ public class OptionalViewTypeConfig {
   @objc public class func createChatViewControllerForPushing(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?, themeData: ASAPPSDK.ASAPP? = nil) -> UIKit.UIViewController?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public class func createChatViewControllerForPushing(withIntent intent: [Swift.String : Any]) -> UIKit.UIViewController?
+  @objc public class func createChatViewControllerForPushing(withIntent intent: [Swift.String : Any], genAgentTaskName: Swift.String? = nil, genAgentInputVariables: [Swift.String : Any]? = nil, gacsBranch: Swift.String? = nil) -> UIKit.UIViewController?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func createChatViewControllerForPresenting(fromNotificationWith userInfo: [Swift.AnyHashable : Any]?) -> UIKit.UIViewController?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public class func createChatViewControllerForPresenting(withIntent intent: [Swift.String : Any]) -> UIKit.UIViewController?
+  @objc public class func createChatViewControllerForPresenting(withIntent intent: [Swift.String : Any], genAgentTaskName: Swift.String? = nil, genAgentInputVariables: [Swift.String : Any]? = nil, gacsBranch: Swift.String? = nil) -> UIKit.UIViewController?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public class func createChatViewControllerForPresentingFromChatInstead() -> UIKit.UIViewController?
@@ -510,6 +510,8 @@ public class OptionalViewTypeConfig {
   @objc(enablePushNotificationsWithUUID:) public class func enablePushNotifications(with uuid: Swift.String)
   @objc public class func disablePushNotifications(failure: @escaping ASAPPSDK.ASAPP.FailureHandler)
   @objc public class func skipToBottom()
+  @objc @discardableResult
+  public class func closeChat() -> Swift.Bool
   @objc public class func updateCustomerDataInfo(customerParams: [Swift.String : Any])
   public typealias ChatStatusHandler = (_ unread: Swift.Int, _ isLiveChat: Swift.Bool) -> Swift.Void
   public typealias FailureHandler = (_ error: ASAPPSDK.ASAPPError) -> Swift.Void
@@ -653,6 +655,21 @@ public class OptionalViewTypeConfig {
   @objc public var errorMessageInSendPictureMessageAPI: Swift.String
   @objc public var unsupportedFile: Swift.String
   @objc public var fetchingFileMesage: Swift.String
+  @objc public var botVoteUpLabel: Swift.String
+  @objc public var botVoteDownLabel: Swift.String
+  @objc public var botVoteThanks: Swift.String
+  @objc public var botVoteRemoved: Swift.String
+  @objc public var botVoteSheetTitle: Swift.String
+  @objc public var botVoteReasonTitle: Swift.String
+  @objc public var botVoteReasonPlaceholder: Swift.String
+  @objc public var botVoteReasonNotFollowed: Swift.String
+  @objc public var botVoteReasonNotFactual: Swift.String
+  @objc public var botVoteReasonMissed: Swift.String
+  @objc public var botVoteReasonOffTopic: Swift.String
+  @objc public var botVoteDetailsPlaceholder: Swift.String
+  @objc public var botVoteCancel: Swift.String
+  @objc public var botVoteSubmit: Swift.String
+  @objc public var botVoteError: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }

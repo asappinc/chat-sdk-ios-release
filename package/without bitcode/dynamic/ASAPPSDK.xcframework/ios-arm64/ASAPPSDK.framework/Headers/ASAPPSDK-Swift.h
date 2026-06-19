@@ -374,10 +374,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// Creates a chat view controller, ready to be pushed onto a navigation stack. Starts a conversation with the provided intent.
 /// \param intent A dictionary containing intent data
 ///
+/// \param genAgentTaskName (optional) The GenAgent task name to run for this conversation.
+///
+/// \param genAgentInputVariables (optional) Input variables passed to the GenAgent task.
+///
+/// \param gacsBranch (optional) The GACS branch to target for GenAgent. Sent as GenAgentOptions.
+///
 ///
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
-+ (UIViewController * _Nullable)createChatViewControllerForPushingWithIntent:(NSDictionary<NSString *, id> * _Nonnull)intent SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nullable)createChatViewControllerForPushingWithIntent:(NSDictionary<NSString *, id> * _Nonnull)intent genAgentTaskName:(NSString * _Nullable)genAgentTaskName genAgentInputVariables:(NSDictionary<NSString *, id> * _Nullable)genAgentInputVariables gacsBranch:(NSString * _Nullable)gacsBranch SWIFT_WARN_UNUSED_RESULT;
 /// Creates a chat view controller in a navigation controller, ready to be presented modally.
 /// \param userInfo A user info dictionary containing notification metadata
 ///
@@ -388,10 +394,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class) enum ASAPPLogLevel debugLogLev
 /// Creates a chat view controller in a navigation controller, ready to be presented modally. Starts a conversation with the provided intent.
 /// \param intent A dictionary containing intent data
 ///
+/// \param genAgentTaskName (optional) The GenAgent task name to run for this conversation.
+///
+/// \param genAgentInputVariables (optional) Input variables passed to the GenAgent task.
+///
+/// \param gacsBranch (optional) The GACS branch to target for GenAgent. Sent as GenAgentOptions.
+///
 ///
 /// returns:
 /// A <code>UIViewController</code> if <code>ASAPP.config</code> and <code>ASAPP.user</code> are set; otherwise returns <code>nil</code>.
-+ (UIViewController * _Nullable)createChatViewControllerForPresentingWithIntent:(NSDictionary<NSString *, id> * _Nonnull)intent SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nullable)createChatViewControllerForPresentingWithIntent:(NSDictionary<NSString *, id> * _Nonnull)intent genAgentTaskName:(NSString * _Nullable)genAgentTaskName genAgentInputVariables:(NSDictionary<NSString *, id> * _Nullable)genAgentInputVariables gacsBranch:(NSString * _Nullable)gacsBranch SWIFT_WARN_UNUSED_RESULT;
 /// Creates a chat view controller in a navigation controller, ready to be presented modally. Use this method only when opening chat from the Chat Instead menu.
 ///
 /// returns:
@@ -435,6 +447,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable notifi
 + (void)disablePushNotificationsWithFailure:(void (^ _Nonnull)(enum ASAPPError))failure;
 /// Skips to the bottom of the chat such that the latest message is visible.
 + (void)skipToBottom;
+/// Dismisses the active ASAPP chat view controller, if one is being shown.
+///
+/// returns:
+/// <code>true</code> if a chat was being shown and has been dismissed; <code>false</code> if there was no active chat.
++ (BOOL)closeChat;
 /// API to update the customerInfo object at any time. This API is primarily used to send information that is used to show a proactive chat prompt.
 + (void)updateCustomerDataInfoWithCustomerParams:(NSDictionary<NSString *, id> * _Nonnull)customerParams;
 /// Gets the number of messages the user received while offline as well as whether user is currently in a live chat.
@@ -921,7 +938,7 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @interface ASAPPStrings : NSObject
 /// The accessibility label for the close/back button.
 @property (nonatomic, copy) NSString * _Nonnull accessibilityClose;
-/// The accessibiltiy label for the more button.
+/// The accessibility label for the more button.
 @property (nonatomic, copy) NSString * _Nonnull accessibilityMore;
 /// The accessibility label for the send button.
 @property (nonatomic, copy) NSString * _Nonnull accessibilitySend;
@@ -1023,6 +1040,36 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull unsupportedFile;
 /// The text shown for displaying image or downloading PDF when user taps on the uploaded file cell
 @property (nonatomic, copy) NSString * _Nonnull fetchingFileMesage;
+/// The accessibility label for the thumbs-up (good response) feedback button.
+@property (nonatomic, copy) NSString * _Nonnull botVoteUpLabel;
+/// The accessibility label for the thumbs-down (bad response) feedback button.
+@property (nonatomic, copy) NSString * _Nonnull botVoteDownLabel;
+/// The confirmation shown after feedback is submitted.
+@property (nonatomic, copy) NSString * _Nonnull botVoteThanks;
+/// The confirmation shown after a previously-submitted vote is removed (un-voted).
+@property (nonatomic, copy) NSString * _Nonnull botVoteRemoved;
+/// The title of the thumbs-down “Share Feedback” sheet.
+@property (nonatomic, copy) NSString * _Nonnull botVoteSheetTitle;
+/// The prompt above the reason selector in the feedback sheet.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonTitle;
+/// The placeholder shown in the reason selector before a reason is chosen.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonPlaceholder;
+/// Reason: the response did not fully follow the request.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonNotFollowed;
+/// Reason: the response was not factually correct.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonNotFactual;
+/// Reason: the response missed part of the task.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonMissed;
+/// Reason: the response was off-topic.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonOffTopic;
+/// The placeholder for the optional free-text details field in the feedback sheet.
+@property (nonatomic, copy) NSString * _Nonnull botVoteDetailsPlaceholder;
+/// The cancel button in the feedback sheet.
+@property (nonatomic, copy) NSString * _Nonnull botVoteCancel;
+/// The submit button in the feedback sheet.
+@property (nonatomic, copy) NSString * _Nonnull botVoteSubmit;
+/// The error shown when feedback submission fails.
+@property (nonatomic, copy) NSString * _Nonnull botVoteError;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

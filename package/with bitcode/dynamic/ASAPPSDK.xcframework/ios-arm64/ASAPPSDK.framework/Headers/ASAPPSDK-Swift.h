@@ -795,7 +795,7 @@ SWIFT_PROTOCOL("_TtP8ASAPPSDK13ASAPPDelegate_")
 /// Called when certain agreed-upon events occur during a chat.
 - (void)chatViewControllerDidReceiveChatEventWithName:(NSString * _Nonnull)name data:(NSDictionary<NSString *, id> * _Nullable)data;
 @optional
-/// Called when user ends chat, new issue raised and new agent got assigned. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
+/// Called when a custom chat event occurs: user ends chat (<code>issue:end</code>), a new issue is raised (<code>issue:new</code>), a new agent is assigned (<code>agent:assigned</code>), the conversation is transferred externally (<code>external:transfer</code>), or the chat window is fully exited (<code>chat:exited</code>). Inspect the <code>eventName</code> key to distinguish them. Data like issueId, customerId, eventTime and eventId can be accessed by analysing eventData argument content.
 - (void)chatViewControllerDidReceiveChatCustomEventsWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData;
 /// Please use  chatViewControllerDidReceiveChatCustomEvents(eventData: [String: Any]?) method from November 15th 2025 onwards. This method is Called when user ends chat, new issue raised and new agent got assigned.
 - (void)chatViewControllerDidReceiveEndChatEventWithEventData:(NSDictionary<NSString *, id> * _Nullable)eventData SWIFT_DEPRECATED;

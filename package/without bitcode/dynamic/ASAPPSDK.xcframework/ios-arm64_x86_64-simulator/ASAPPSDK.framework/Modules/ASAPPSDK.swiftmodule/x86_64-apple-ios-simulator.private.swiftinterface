@@ -358,6 +358,7 @@ public class ASAPPCustomViewStyles {
   }
   public struct QuickRepliesViewGroup {
     public var container: ASAPPSDK.OptionalViewTypeConfig
+    public var textAlignment: UIKit.NSTextAlignment?
   }
   public struct RestartButtonBar {
     public var primaryText: ASAPPSDK.OptionalButtonTypeConfig?

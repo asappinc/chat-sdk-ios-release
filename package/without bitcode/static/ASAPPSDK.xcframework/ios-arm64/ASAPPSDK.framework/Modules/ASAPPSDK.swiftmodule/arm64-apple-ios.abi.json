@@ -12817,6 +12817,117 @@
                     "accessorKind": "_modify"
                   }
                 ]
+              },
+              {
+                "kind": "Var",
+                "name": "textAlignment",
+                "printedName": "textAlignment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.NSTextAlignment?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSTextAlignment",
+                        "printedName": "UIKit.NSTextAlignment",
+                        "usr": "c:@E@NSTextAlignment"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvp",
+                "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvp",
+                "moduleName": "ASAPPSDK",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.NSTextAlignment?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSTextAlignment",
+                            "printedName": "UIKit.NSTextAlignment",
+                            "usr": "c:@E@NSTextAlignment"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvg",
+                    "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvg",
+                    "moduleName": "ASAPPSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.NSTextAlignment?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSTextAlignment",
+                            "printedName": "UIKit.NSTextAlignment",
+                            "usr": "c:@E@NSTextAlignment"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvs",
+                    "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvs",
+                    "moduleName": "ASAPPSDK",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvM",
+                    "mangledName": "$s8ASAPPSDK21ASAPPCustomViewStylesC012QuickRepliesC5GroupV13textAlignmentSo06NSTextI0VSgvM",
+                    "moduleName": "ASAPPSDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
               }
             ],
             "declKind": "Struct",
@@ -97474,43 +97585,50 @@
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 664,
+      "length": 2,
+      "value": "71"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2385,
+      "offset": 2443,
       "length": 11,
       "value": "\"issue:end\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2417,
+      "offset": 2475,
       "length": 11,
       "value": "\"issue:new\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2454,
+      "offset": 2512,
       "length": 16,
       "value": "\"agent:assigned\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2499,
+      "offset": 2557,
       "length": 19,
       "value": "\"external:transfer\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2916,
+      "offset": 2974,
       "length": 13,
       "value": "\"chat:exited\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "StringLiteral",
-      "offset": 2949,
+      "offset": 3007,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -97538,56 +97656,140 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 381,
-      "length": 6,
-      "value": "\"role\""
+      "offset": 357,
+      "length": 14,
+      "value": "\"transferType\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 417,
-      "length": 9,
-      "value": "\"content\""
+      "offset": 404,
+      "length": 12,
+      "value": "\"intentCode\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 458,
-      "length": 11,
-      "value": "\"timestamp\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
-      "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 447,
       "length": 10,
-      "value": "\"customer\""
+      "value": "\"flowName\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 561,
+      "offset": 497,
+      "length": 19,
+      "value": "\"transferVariables\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 557,
+      "length": 20,
+      "value": "\"referenceVariables\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 689,
+      "length": 9,
+      "value": "\"Trigger\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 731,
+      "length": 12,
+      "value": "\"IntentCode\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 774,
+      "length": 10,
+      "value": "\"FlowName\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 824,
+      "length": 19,
+      "value": "\"TransferVariables\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 20,
+      "value": "\"ReferenceVariables\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 963,
       "length": 7,
       "value": "\"agent\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 826,
+      "offset": 999,
+      "length": 8,
+      "value": "\"system\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 6,
+      "value": "\"role\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1102,
+      "length": 9,
+      "value": "\"content\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1143,
+      "length": 11,
+      "value": "\"timestamp\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1200,
+      "length": 10,
+      "value": "\"customer\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1246,
+      "length": 7,
+      "value": "\"agent\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 1511,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 1576,
       "length": 5,
       "value": "\"UTC\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/TransferEventBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 929,
+      "offset": 1614,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'\""
     },
@@ -101773,7 +101975,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPCustomViewStyles.swift",
       "kind": "BooleanLiteral",
-      "offset": 12860,
+      "offset": 13099,
       "length": 4,
       "value": "true"
     },
@@ -102055,7 +102257,7 @@
       "kind": "StringLiteral",
       "offset": 2413,
       "length": 8,
-      "value": "\"14.2.2\""
+      "value": "\"14.2.6\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -106057,7 +106259,7 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 102541,
+      "offset": 102591,
       "length": 5,
       "value": "false"
     },

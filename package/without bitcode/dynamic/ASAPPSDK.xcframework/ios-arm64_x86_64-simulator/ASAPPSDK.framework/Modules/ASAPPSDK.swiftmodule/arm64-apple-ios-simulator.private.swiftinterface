@@ -663,9 +663,9 @@ public class OptionalViewTypeConfig {
   @objc public var botVoteSheetTitle: Swift.String
   @objc public var botVoteReasonTitle: Swift.String
   @objc public var botVoteReasonPlaceholder: Swift.String
-  @objc public var botVoteReasonNotFollowed: Swift.String
-  @objc public var botVoteReasonNotFactual: Swift.String
-  @objc public var botVoteReasonMissed: Swift.String
+  @objc public var botVoteReasonUnhelpful: Swift.String
+  @objc public var botVoteReasonIncomplete: Swift.String
+  @objc public var botVoteReasonIncorrect: Swift.String
   @objc public var botVoteReasonOffTopic: Swift.String
   @objc public var botVoteDetailsPlaceholder: Swift.String
   @objc public var botVoteCancel: Swift.String

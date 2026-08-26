@@ -28456,8 +28456,8 @@
           },
           {
             "kind": "Var",
-            "name": "botVoteReasonNotFollowed",
-            "printedName": "botVoteReasonNotFollowed",
+            "name": "botVoteReasonUnhelpful",
+            "printedName": "botVoteReasonUnhelpful",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28467,8 +28467,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonNotFollowed",
-            "mangledName": "$s8ASAPPSDK12ASAPPStringsC24botVoteReasonNotFollowedSSvp",
+            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonUnhelpful",
+            "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonUnhelpfulSSvp",
             "moduleName": "ASAPPSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -28492,8 +28492,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonNotFollowed",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC24botVoteReasonNotFollowedSSvg",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonUnhelpful",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonUnhelpfulSSvg",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28519,8 +28519,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonNotFollowed:",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC24botVoteReasonNotFollowedSSvs",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonUnhelpful:",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonUnhelpfulSSvs",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28540,8 +28540,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8ASAPPSDK12ASAPPStringsC24botVoteReasonNotFollowedSSvM",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC24botVoteReasonNotFollowedSSvM",
+                "usr": "s:8ASAPPSDK12ASAPPStringsC22botVoteReasonUnhelpfulSSvM",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonUnhelpfulSSvM",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -28550,8 +28550,8 @@
           },
           {
             "kind": "Var",
-            "name": "botVoteReasonNotFactual",
-            "printedName": "botVoteReasonNotFactual",
+            "name": "botVoteReasonIncomplete",
+            "printedName": "botVoteReasonIncomplete",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28561,8 +28561,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonNotFactual",
-            "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonNotFactualSSvp",
+            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonIncomplete",
+            "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonIncompleteSSvp",
             "moduleName": "ASAPPSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -28586,8 +28586,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonNotFactual",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonNotFactualSSvg",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonIncomplete",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonIncompleteSSvg",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28613,8 +28613,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonNotFactual:",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonNotFactualSSvs",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonIncomplete:",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonIncompleteSSvs",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28634,8 +28634,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8ASAPPSDK12ASAPPStringsC23botVoteReasonNotFactualSSvM",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonNotFactualSSvM",
+                "usr": "s:8ASAPPSDK12ASAPPStringsC23botVoteReasonIncompleteSSvM",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC23botVoteReasonIncompleteSSvM",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -28644,8 +28644,8 @@
           },
           {
             "kind": "Var",
-            "name": "botVoteReasonMissed",
-            "printedName": "botVoteReasonMissed",
+            "name": "botVoteReasonIncorrect",
+            "printedName": "botVoteReasonIncorrect",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -28655,8 +28655,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonMissed",
-            "mangledName": "$s8ASAPPSDK12ASAPPStringsC19botVoteReasonMissedSSvp",
+            "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(py)botVoteReasonIncorrect",
+            "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonIncorrectSSvp",
             "moduleName": "ASAPPSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -28680,8 +28680,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonMissed",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC19botVoteReasonMissedSSvg",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)botVoteReasonIncorrect",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonIncorrectSSvg",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28707,8 +28707,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonMissed:",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC19botVoteReasonMissedSSvs",
+                "usr": "c:@M@ASAPPSDK@objc(cs)ASAPPStrings(im)setBotVoteReasonIncorrect:",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonIncorrectSSvs",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -28728,8 +28728,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8ASAPPSDK12ASAPPStringsC19botVoteReasonMissedSSvM",
-                "mangledName": "$s8ASAPPSDK12ASAPPStringsC19botVoteReasonMissedSSvM",
+                "usr": "s:8ASAPPSDK12ASAPPStringsC22botVoteReasonIncorrectSSvM",
+                "mangledName": "$s8ASAPPSDK12ASAPPStringsC22botVoteReasonIncorrectSSvM",
                 "moduleName": "ASAPPSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -95018,69 +95018,69 @@
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "StringLiteral",
       "offset": 345,
-      "length": 30,
-      "value": "\"did_not_fully_follow_request\""
+      "length": 18,
+      "value": "\"unhelpful_answer\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "StringLiteral",
-      "offset": 444,
+      "offset": 430,
+      "length": 19,
+      "value": "\"incomplete_answer\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
       "length": 23,
-      "value": "\"not_factually_correct\""
+      "value": "\"incorrect_information\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "StringLiteral",
-      "offset": 535,
-      "length": 25,
-      "value": "\"missed_part_of_the_task\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 624,
-      "length": 20,
-      "value": "\"off_topic_response\""
+      "offset": 607,
+      "length": 11,
+      "value": "\"off_topic\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 739,
+      "offset": 713,
       "length": 3,
       "value": "500"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1367,
+      "offset": 1341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3390,
+      "offset": 3364,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3432,
+      "offset": 3406,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3477,
+      "offset": 3451,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3966,
+      "offset": 3940,
       "length": 4,
       "value": "true"
     },
@@ -103683,56 +103683,56 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11152,
-      "length": 30,
-      "value": "\"Did not fully follow request\""
+      "offset": 11131,
+      "length": 18,
+      "value": "\"Unhelpful answer\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11303,
+      "offset": 11259,
+      "length": 19,
+      "value": "\"Incomplete answer\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
+      "kind": "StringLiteral",
+      "offset": 11404,
       "length": 23,
-      "value": "\"Not factually correct\""
+      "value": "\"Incorrect information\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11441,
-      "length": 25,
-      "value": "\"Missed part of the task\""
+      "offset": 11534,
+      "length": 11,
+      "value": "\"Off-topic\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11573,
-      "length": 20,
-      "value": "\"Off-topic response\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
-      "kind": "StringLiteral",
-      "offset": 11748,
+      "offset": 11700,
       "length": 21,
       "value": "\"Optional details…\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11873,
+      "offset": 11825,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 11985,
+      "offset": 11937,
       "length": 8,
       "value": "\"Submit\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPPStrings.swift",
       "kind": "StringLiteral",
-      "offset": 12103,
+      "offset": 12055,
       "length": 40,
       "value": "\"Something went wrong. Try again later.\""
     },

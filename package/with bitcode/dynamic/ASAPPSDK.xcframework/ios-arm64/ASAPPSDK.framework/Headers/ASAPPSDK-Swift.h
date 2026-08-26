@@ -1054,12 +1054,12 @@ SWIFT_CLASS_NAMED("ASAPPStrings")
 @property (nonatomic, copy) NSString * _Nonnull botVoteReasonTitle;
 /// The placeholder shown in the reason selector before a reason is chosen.
 @property (nonatomic, copy) NSString * _Nonnull botVoteReasonPlaceholder;
-/// Reason: the response did not fully follow the request.
-@property (nonatomic, copy) NSString * _Nonnull botVoteReasonNotFollowed;
-/// Reason: the response was not factually correct.
-@property (nonatomic, copy) NSString * _Nonnull botVoteReasonNotFactual;
-/// Reason: the response missed part of the task.
-@property (nonatomic, copy) NSString * _Nonnull botVoteReasonMissed;
+/// Reason: the response was unhelpful.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonUnhelpful;
+/// Reason: the response was incomplete.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonIncomplete;
+/// Reason: the response contained incorrect information.
+@property (nonatomic, copy) NSString * _Nonnull botVoteReasonIncorrect;
 /// Reason: the response was off-topic.
 @property (nonatomic, copy) NSString * _Nonnull botVoteReasonOffTopic;
 /// The placeholder for the optional free-text details field in the feedback sheet.

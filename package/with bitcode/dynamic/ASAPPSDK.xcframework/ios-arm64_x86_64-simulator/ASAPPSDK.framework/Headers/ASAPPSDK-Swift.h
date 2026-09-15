@@ -482,8 +482,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable notifi
 typedef SWIFT_ENUM(NSInteger, ASAPPAllowedOrientations, open) {
 /// Only portrait.
   ASAPPAllowedOrientationsPortraitLocked = 0,
-/// Only portait on iPhone, but allows landscape left/right and portrait on iPad.
+/// Deprecated in favour of <code>.landscapeAllowed</code>, which it now behaves identically to: it no
+/// longer restricts landscape to iPad. For the old iPhone behaviour, use <code>.portraitLocked</code>.
   ASAPPAllowedOrientationsIPadLandscapeAllowed = 1,
+/// Allows landscape left/right and portrait on both iPhone and iPad.
+/// Supersedes <code>.iPadLandscapeAllowed</code>.
+/// Append new cases; the raw values of the existing ones must not change.
+  ASAPPAllowedOrientationsLandscapeAllowed = 2,
 };
 
 /// Used for creating custom banner UI for customers
@@ -1090,7 +1095,13 @@ SWIFT_CLASS_NAMED("ASAPPStyles")
 /// Notes:
 /// <ol>
 ///   <li>
-///     Landscape orientation is not supported on iPhone.
+///     Landscape is opt-in via <code>.landscapeAllowed</code>. <code>.iPadLandscapeAllowed</code> is deprecated
+///     and now behaves identically to it, permitting landscape on iPhone as well as iPad.
+///   </li>
+///   <li>
+///     Only applies to the modal entry points. On <code>createChatViewControllerForPushing</code>,
+///     chat is a child of the host app’s <code>UINavigationController</code>, which does not forward
+///     <code>supportedInterfaceOrientations</code> to it, so the host app’s orientation support governs.
 ///   </li>
 ///   <li>
 ///     With iOS 11+, when the client app is launched in Landscape mode and ASAPP is presented
@@ -1266,6 +1277,14 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 - (void)viewWillLayoutSubviews;
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+@class UIGestureRecognizer;
+@class UITouch;
+@interface ComponentViewController (SWIFT_EXTENSION(ASAPPSDK)) <UIGestureRecognizerDelegate>
+/// Lets taps on a text input through, so tapping a field does not dismiss the keyboard it
+/// just raised.
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
 @end
 
 /// Represents the delegate object of the downloader session.
@@ -1784,8 +1803,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable notifi
 typedef SWIFT_ENUM(NSInteger, ASAPPAllowedOrientations, open) {
 /// Only portrait.
   ASAPPAllowedOrientationsPortraitLocked = 0,
-/// Only portait on iPhone, but allows landscape left/right and portrait on iPad.
+/// Deprecated in favour of <code>.landscapeAllowed</code>, which it now behaves identically to: it no
+/// longer restricts landscape to iPad. For the old iPhone behaviour, use <code>.portraitLocked</code>.
   ASAPPAllowedOrientationsIPadLandscapeAllowed = 1,
+/// Allows landscape left/right and portrait on both iPhone and iPad.
+/// Supersedes <code>.iPadLandscapeAllowed</code>.
+/// Append new cases; the raw values of the existing ones must not change.
+  ASAPPAllowedOrientationsLandscapeAllowed = 2,
 };
 
 /// Used for creating custom banner UI for customers
@@ -2392,7 +2416,13 @@ SWIFT_CLASS_NAMED("ASAPPStyles")
 /// Notes:
 /// <ol>
 ///   <li>
-///     Landscape orientation is not supported on iPhone.
+///     Landscape is opt-in via <code>.landscapeAllowed</code>. <code>.iPadLandscapeAllowed</code> is deprecated
+///     and now behaves identically to it, permitting landscape on iPhone as well as iPad.
+///   </li>
+///   <li>
+///     Only applies to the modal entry points. On <code>createChatViewControllerForPushing</code>,
+///     chat is a child of the host app’s <code>UINavigationController</code>, which does not forward
+///     <code>supportedInterfaceOrientations</code> to it, so the host app’s orientation support governs.
 ///   </li>
 ///   <li>
 ///     With iOS 11+, when the client app is launched in Landscape mode and ASAPP is presented
@@ -2568,6 +2598,14 @@ SWIFT_CLASS("_TtC8ASAPPSDK23ComponentViewController")
 - (void)viewWillLayoutSubviews;
 /// :nodoc:
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@end
+
+@class UIGestureRecognizer;
+@class UITouch;
+@interface ComponentViewController (SWIFT_EXTENSION(ASAPPSDK)) <UIGestureRecognizerDelegate>
+/// Lets taps on a text input through, so tapping a field does not dismiss the keyboard it
+/// just raised.
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldReceiveTouch:(UITouch * _Nonnull)touch SWIFT_WARN_UNUSED_RESULT;
 @end
 
 /// Represents the delegate object of the downloader session.

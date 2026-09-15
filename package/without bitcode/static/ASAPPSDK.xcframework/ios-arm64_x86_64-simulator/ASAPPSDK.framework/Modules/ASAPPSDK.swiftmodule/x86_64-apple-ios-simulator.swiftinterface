@@ -209,15 +209,17 @@ infix operator ←→ : DefaultPrecedence
 }
 @objc public enum ASAPPAllowedOrientations : Swift.Int, Swift.CaseIterable {
   case portraitLocked
+  @available(*, deprecated, message: "Deprecated in favour of .landscapeAllowed, which this now behaves identically to. It no longer restricts landscape to iPad, and will be removed in a future major version.")
   case iPadLandscapeAllowed
+  case landscapeAllowed
+  public static var allCases: [ASAPPSDK.ASAPPAllowedOrientations] {
+    get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
   #endif
   public typealias AllCases = [ASAPPSDK.ASAPPAllowedOrientations]
   public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [ASAPPSDK.ASAPPAllowedOrientations] {
-    get
-  }
   public var rawValue: Swift.Int {
     get
   }
@@ -294,6 +296,9 @@ internal protocol _AnyEncodable {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
   #endif
+}
+extension ASAPPSDK.ComponentViewController : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
 }
 public enum ButtonWidthType : CoreFoundation.CGFloat {
   case wrapContent

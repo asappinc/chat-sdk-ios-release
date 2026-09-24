@@ -95085,42 +95085,42 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 592,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "IntegerLiteral",
-      "offset": 603,
+      "offset": 641,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "FloatLiteral",
-      "offset": 664,
+      "offset": 702,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1120,
+      "offset": 1158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1151,
+      "offset": 1189,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1188,
+      "offset": 1226,
       "length": 5,
       "value": "false"
     },
@@ -95162,35 +95162,35 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1341,
+      "offset": 1382,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3365,
+      "offset": 3425,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3407,
+      "offset": 3467,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3452,
+      "offset": 3512,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/BotMessageVoteFeedbackViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3941,
+      "offset": 4001,
       "length": 4,
       "value": "true"
     },
@@ -96520,945 +96520,945 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2082,
+      "offset": 2118,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2538,
+      "offset": 2574,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3912,
+      "offset": 3948,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "Dictionary",
-      "offset": 4196,
+      "offset": 4232,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4256,
+      "offset": 4292,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4289,
+      "offset": 4325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4335,
+      "offset": 4371,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4397,
+      "offset": 4433,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4407,
+      "offset": 4443,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4418,
+      "offset": 4454,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4429,
+      "offset": 4465,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4473,
+      "offset": 4509,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4524,
+      "offset": 4560,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5129,
+      "offset": 5165,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5463,
+      "offset": 5499,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6174,
+      "offset": 6210,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6180,
+      "offset": 6216,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6425,
+      "offset": 6461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6431,
+      "offset": 6467,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6472,
+      "offset": 6508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6504,
+      "offset": 6540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6586,
+      "offset": 6622,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6654,
+      "offset": 6690,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 6686,
+      "offset": 6722,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 6709,
+      "offset": 6745,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6831,
+      "offset": 6867,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7124,
+      "offset": 7160,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 20400,
+      "offset": 20436,
       "length": 12,
       "value": "\"deleteRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20693,
+      "offset": 20729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 21095,
+      "offset": 21131,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21507,
+      "offset": 21543,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22203,
+      "offset": 22239,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 22396,
+      "offset": 22432,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22622,
+      "offset": 22658,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 22629,
+      "offset": 22665,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 22636,
+      "offset": 22672,
       "length": 16,
       "value": "\"… reloadRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22989,
+      "offset": 23025,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23018,
+      "offset": 23054,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 23222,
+      "offset": 23258,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24780,
+      "offset": 24816,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25142,
+      "offset": 25178,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 25149,
+      "offset": 25185,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 25156,
+      "offset": 25192,
       "length": 16,
       "value": "\"… reloadRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25370,
+      "offset": 25406,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 25697,
+      "offset": 25733,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 25880,
+      "offset": 25916,
       "length": 20,
       "value": "\"removing messages:\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 26106,
+      "offset": 26142,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26288,
+      "offset": 26324,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 26361,
+      "offset": 26397,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26599,
+      "offset": 26635,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 26793,
+      "offset": 26829,
       "length": 12,
       "value": "\"reloadData\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32020,
+      "offset": 32056,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 32036,
+      "offset": 32072,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39285,
+      "offset": 39321,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39344,
+      "offset": 39380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39448,
+      "offset": 39484,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 39525,
+      "offset": 39561,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 39649,
+      "offset": 39685,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 39656,
+      "offset": 39692,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 39663,
+      "offset": 39699,
       "length": 16,
       "value": "\"… endUpdates\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 41796,
+      "offset": 41832,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 41803,
+      "offset": 41839,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 41810,
+      "offset": 41846,
       "length": 29,
       "value": "\"… beginUpdates\/endUpdates\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 42455,
+      "offset": 42491,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 42462,
+      "offset": 42498,
       "length": 5,
       "value": "\"nil\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 42469,
+      "offset": 42505,
       "length": 16,
       "value": "\"… reloadRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 42711,
+      "offset": 42747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 44062,
+      "offset": 44140,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46513,
+      "offset": 46591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 46534,
+      "offset": 46612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 48729,
+      "offset": 48807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 48750,
+      "offset": 48828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 49525,
+      "offset": 49603,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50367,
+      "offset": 50445,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50413,
+      "offset": 50491,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 50609,
+      "offset": 50687,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50777,
+      "offset": 50855,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 50849,
+      "offset": 50927,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51200,
+      "offset": 51278,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 51268,
+      "offset": 51346,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 51370,
+      "offset": 51448,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51396,
+      "offset": 51474,
       "length": 23,
       "value": "\"show typing indicator\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51421,
+      "offset": 51499,
       "length": 16,
       "value": "\"… insertRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 51586,
+      "offset": 51664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51775,
+      "offset": 51853,
       "length": 23,
       "value": "\"hide typing indicator\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51800,
+      "offset": 51878,
       "length": 16,
       "value": "\"… deleteRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51952,
+      "offset": 52030,
       "length": 26,
       "value": "\"updated typing indicator\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 51980,
+      "offset": 52058,
       "length": 16,
       "value": "\"… endUpdates\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 52123,
+      "offset": 52201,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 52136,
+      "offset": 52214,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55545,
+      "offset": 55623,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55591,
+      "offset": 55669,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55653,
+      "offset": 55731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 55822,
+      "offset": 55900,
       "length": 50,
       "value": "\"Failed to add \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 55854,
+      "offset": 55932,
       "length": 8,
       "value": "\" messages to view\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55905,
+      "offset": 55983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55925,
+      "offset": 56003,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55945,
+      "offset": 56023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 55965,
+      "offset": 56043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 56118,
+      "offset": 56196,
       "length": 54,
       "value": "\"Failed to add \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 56150,
+      "offset": 56228,
       "length": 8,
       "value": "\" messages; endUpdates\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56357,
+      "offset": 56435,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 56480,
+      "offset": 56558,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 56955,
+      "offset": 57033,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 57117,
+      "offset": 57195,
       "length": 42,
       "value": "\"remove typing indicator from old section\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 57161,
+      "offset": 57239,
       "length": 16,
       "value": "\"… deleteRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 57423,
+      "offset": 57501,
       "length": 52,
       "value": "\"needNewSections. newPaths: \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 57462,
+      "offset": 57540,
       "length": 1,
       "value": "\". insertRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 57802,
+      "offset": 57880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58052,
+      "offset": 58130,
       "length": 35,
       "value": "\"newPaths: \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58074,
+      "offset": 58152,
       "length": 1,
       "value": "\". insertRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58400,
+      "offset": 58478,
       "length": 35,
       "value": "\"newPaths: \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58422,
+      "offset": 58500,
       "length": 1,
       "value": "\". insertRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58780,
+      "offset": 58858,
       "length": 56,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58798,
+      "offset": 58876,
       "length": 8,
       "value": "\" messages; move typing indicator from\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 58862,
+      "offset": 58940,
       "length": 4,
       "value": "\"to\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 59490,
+      "offset": 59568,
       "length": 74,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 59507,
+      "offset": 59585,
       "length": 1,
       "value": "\" \"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59540,
+      "offset": 59618,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 59547,
+      "offset": 59625,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 59550,
+      "offset": 59628,
       "length": 1,
       "value": "\"\" reloadRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 59936,
+      "offset": 60014,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60109,
+      "offset": 60187,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 60122,
+      "offset": 60200,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 60303,
+      "offset": 60381,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 60321,
+      "offset": 60399,
       "length": 8,
       "value": "\" messages; will scroll\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 60985,
+      "offset": 61063,
       "length": 85,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 61003,
+      "offset": 61081,
       "length": 8,
       "value": "\" messages; \"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "IntegerLiteral",
-      "offset": 61046,
+      "offset": 61124,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 61053,
+      "offset": 61131,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 61056,
+      "offset": 61134,
       "length": 1,
       "value": "\"\" reloadRows\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 67199,
+      "offset": 67277,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "BooleanLiteral",
-      "offset": 67355,
+      "offset": 67433,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 67415,
+      "offset": 67493,
       "length": 13,
       "value": "\"inline form\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesView.swift",
       "kind": "StringLiteral",
-      "offset": 67430,
+      "offset": 67508,
       "length": 12,
       "value": "\"reloadRows\""
     },
@@ -100524,154 +100524,154 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2046,
+      "offset": 2082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2074,
+      "offset": 2110,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2101,
+      "offset": 2137,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "Dictionary",
-      "offset": 2142,
+      "offset": 2178,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3027,
+      "offset": 3063,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3036,
+      "offset": 3072,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3048,
+      "offset": 3084,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 3058,
+      "offset": 3094,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 3924,
+      "offset": 3960,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 3930,
+      "offset": 3966,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3780,
+      "offset": 3816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 3999,
+      "offset": 4035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4048,
+      "offset": 4084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4190,
+      "offset": 4226,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4235,
+      "offset": 4271,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "FloatLiteral",
-      "offset": 4276,
+      "offset": 4312,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4319,
+      "offset": 4355,
       "length": 3,
       "value": "260"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4382,
+      "offset": 4418,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4391,
+      "offset": 4427,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4403,
+      "offset": 4439,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 4413,
+      "offset": 4449,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/ChatMessageCell.swift",
       "kind": "StringLiteral",
-      "offset": 6191,
+      "offset": 6227,
       "length": 16,
       "value": "\"PulseAnimation\""
     },
@@ -106467,14 +106467,14 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 97389,
+      "offset": 97443,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/ChatViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 106446,
+      "offset": 106500,
       "length": 5,
       "value": "false"
     },
@@ -108063,70 +108063,70 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "Array",
-      "offset": 8376,
+      "offset": 8393,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "StringLiteral",
-      "offset": 8655,
+      "offset": 8672,
       "length": 22,
       "value": "\"com.asapp.sdk.events\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8729,
+      "offset": 8746,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8761,
+      "offset": 8778,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10494,
+      "offset": 10511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13405,
+      "offset": 13422,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13469,
+      "offset": 13486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14560,
+      "offset": 14577,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14615,
+      "offset": 14632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 28751,
+      "offset": 28768,
       "length": 1,
       "value": "0"
     },

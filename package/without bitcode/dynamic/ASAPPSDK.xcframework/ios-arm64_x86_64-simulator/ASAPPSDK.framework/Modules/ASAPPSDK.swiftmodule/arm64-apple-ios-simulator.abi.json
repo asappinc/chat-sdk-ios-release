@@ -106992,21 +106992,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Message Input\/ChatInputView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13983,
+      "offset": 14290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Message Input\/ChatInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17134,
+      "offset": 17441,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Message Input\/ChatInputView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17167,
+      "offset": 17474,
       "length": 4,
       "value": "true"
     },

@@ -88712,6 +88712,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ASAPPChannelDelegate",
         "printedName": "ASAPPChannelDelegate",
@@ -95568,21 +95578,21 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Styles\/StringStyles+Helpers.swift",
       "kind": "IntegerLiteral",
-      "offset": 1951,
+      "offset": 3290,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Styles\/StringStyles+Helpers.swift",
       "kind": "IntegerLiteral",
-      "offset": 1984,
+      "offset": 3323,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Styles\/StringStyles+Helpers.swift",
       "kind": "IntegerLiteral",
-      "offset": 2026,
+      "offset": 3365,
       "length": 1,
       "value": "0"
     },
@@ -96316,120 +96326,155 @@
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
+      "kind": "FloatLiteral",
+      "offset": 954,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
+      "kind": "FloatLiteral",
+      "offset": 1000,
+      "length": 4,
+      "value": "0.35"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
+      "kind": "FloatLiteral",
+      "offset": 1045,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2286,
+      "offset": 3046,
       "length": 10,
       "value": "\"document\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2327,
+      "offset": 3087,
       "length": 3,
       "value": "\"p\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2362,
+      "offset": 3122,
       "length": 4,
       "value": "\"em\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2397,
+      "offset": 3157,
       "length": 8,
       "value": "\"strong\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2431,
+      "offset": 3191,
       "length": 3,
       "value": "\"s\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2468,
+      "offset": 3222,
+      "length": 5,
+      "value": "\"sup\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 3255,
+      "length": 5,
+      "value": "\"sub\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
+      "kind": "StringLiteral",
+      "offset": 3294,
       "length": 6,
       "value": "\"link\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2508,
+      "offset": 3334,
       "length": 6,
       "value": "\"list\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
+      "offset": 3375,
       "length": 12,
       "value": "\"blockquote\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2595,
+      "offset": 3421,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2635,
+      "offset": 3461,
       "length": 11,
       "value": "\"codeBlock\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2678,
+      "offset": 3504,
       "length": 4,
       "value": "\"h1\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 3535,
       "length": 4,
       "value": "\"h2\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2740,
+      "offset": 3566,
       "length": 4,
       "value": "\"h3\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2771,
+      "offset": 3597,
       "length": 4,
       "value": "\"h4\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2802,
+      "offset": 3628,
       "length": 4,
       "value": "\"h5\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2833,
+      "offset": 3659,
       "length": 4,
       "value": "\"h6\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Renderer\/AttributedString\/Theme\/AttributedStringTheme.swift",
       "kind": "StringLiteral",
-      "offset": 2869,
+      "offset": 3695,
       "length": 4,
       "value": "\"hr\""
     },
@@ -102388,7 +102433,7 @@
       "kind": "StringLiteral",
       "offset": 2413,
       "length": 8,
-      "value": "\"15.0.0\""
+      "value": "\"15.0.5\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
@@ -102932,42 +102977,42 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3684,
+      "offset": 2571,
       "length": 6,
       "value": "\"Text\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3751,
+      "offset": 2638,
       "length": 13,
       "value": "\"UIMessageID\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "StringLiteral",
-      "offset": 3791,
+      "offset": 2678,
       "length": 12,
       "value": "\"IsRichText\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 6234,
+      "offset": 5121,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 6280,
+      "offset": 5167,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/ChatMessage.swift",
       "kind": "BooleanLiteral",
-      "offset": 6476,
+      "offset": 5363,
       "length": 5,
       "value": "false"
     },
@@ -107557,6 +107602,20 @@
       "value": "\"space\""
     },
     {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Fragments\/Inline\/HTMLTagInlineFragment.swift",
+      "kind": "Dictionary",
+      "offset": 3892,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/Embedded Third-Party Code\/Markdown\/Fragments\/Inline\/HTMLTagInlineFragment.swift",
+      "kind": "Array",
+      "offset": 6028,
+      "length": 236,
+      "value": "[(\"sup\", \"sup\"), (\"sub\", \"sub\"), (\"b\", \"strong\"), (\"strong\", \"strong\"), (\"i\", \"em\"), (\"em\", \"em\")]"
+    },
+    {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/ChatMessagesViewDataSource.swift",
       "kind": "IntegerLiteral",
       "offset": 292,
@@ -107817,78 +107876,64 @@
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
-      "kind": "StringLiteral",
-      "offset": 3822,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
-      "kind": "StringLiteral",
-      "offset": 4042,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4147,
+      "offset": 3854,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5628,
+      "offset": 5335,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6240,
+      "offset": 5947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6280,
+      "offset": 5987,
       "length": 3,
       "value": "260"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6370,
+      "offset": 6077,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6380,
+      "offset": 6087,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6392,
+      "offset": 6099,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6403,
+      "offset": 6110,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/UI\/ChatViewController\/Messages List\/Cells\/Content Views\/ChatTextBubbleView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16906,
+      "offset": 16613,
       "length": 4,
       "value": "true"
     },

@@ -475,7 +475,7 @@ public class OptionalViewTypeConfig {
   }
   @objc weak public static var delegate: (any ASAPPSDK.ASAPPDelegate)?
   @objc public static var config: ASAPPSDK.ASAPPConfig! {
-    get
+    @objc get
   }
   @objc public static var user: ASAPPSDK.ASAPPUser! {
     @objc get
@@ -486,6 +486,12 @@ public class OptionalViewTypeConfig {
   @objc public static var views: ASAPPSDK.ASAPPViews
   @objc public var bannerViews: ASAPPSDK.ASAPPBanner?
   @objc public static var debugLogLevel: ASAPPSDK.ASAPPLogLevel
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var fingerprintScanner: (any ASAPPSDK.ASAPPFingerprintScanning)? {
+    get
+    set
+  }
+  #endif
   @objc public class func initialize(with config: ASAPPSDK.ASAPPConfig)
   @objc public class func initializeConfig(with config: ASAPPSDK.ASAPPConfig, completion: @escaping (Swift.Bool) -> Swift.Void)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -2930,6 +2936,28 @@ public struct ULID : Swift.Hashable, Swift.Equatable, Swift.Comparable, Swift.Cu
 extension ASAPPSDK.ULID : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ASAPPFingerprintScanResult : Swift.Equatable {
+  public let sealedResult: Swift.String
+  public let requestId: Swift.String
+  public init(sealedResult: Swift.String, requestId: Swift.String)
+  public static func == (a: ASAPPSDK.ASAPPFingerprintScanResult, b: ASAPPSDK.ASAPPFingerprintScanResult) -> Swift.Bool
+}
+public struct ASAPPFingerprintScanConfiguration : Swift.Hashable {
+  public let apiKey: Swift.String?
+  public let endpoint: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(apiKey: Swift.String? = nil, endpoint: Swift.String? = nil)
+  #endif
+  public static func == (a: ASAPPSDK.ASAPPFingerprintScanConfiguration, b: ASAPPSDK.ASAPPFingerprintScanConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ASAPPFingerprintScanning : AnyObject {
+  typealias Completion = (Swift.Result<ASAPPSDK.ASAPPFingerprintScanResult, any Swift.Error>) -> Swift.Void
+  func scan(configuration: ASAPPSDK.ASAPPFingerprintScanConfiguration, completion: @escaping Self.Completion)
 }
 extension ASAPPSDK.ThemeBannerStyle : Swift.Equatable {}
 extension ASAPPSDK.ThemeBannerStyle : Swift.Hashable {}

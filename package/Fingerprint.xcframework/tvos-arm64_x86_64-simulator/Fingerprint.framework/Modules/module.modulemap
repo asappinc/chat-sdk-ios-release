@@ -1,0 +1,4 @@
+framework module Fingerprint {
+  header "Fingerprint-Swift.h"
+  requires objc
+}

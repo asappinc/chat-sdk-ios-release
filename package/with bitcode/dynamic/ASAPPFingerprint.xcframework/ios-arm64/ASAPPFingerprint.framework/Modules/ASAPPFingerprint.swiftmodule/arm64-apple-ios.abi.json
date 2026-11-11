@@ -1,0 +1,195 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ASAPPFingerprint",
+    "printedName": "ASAPPFingerprint",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPFingerprint",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ASAPPSDK",
+        "printedName": "ASAPPSDK",
+        "declKind": "Import",
+        "moduleName": "ASAPPFingerprint"
+      },
+      {
+        "kind": "Import",
+        "name": "Fingerprint",
+        "printedName": "Fingerprint",
+        "declKind": "Import",
+        "moduleName": "ASAPPFingerprint",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPFingerprint",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ASAPPSDK",
+        "printedName": "ASAPPSDK",
+        "declKind": "Import",
+        "moduleName": "ASAPPFingerprint"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASAPP",
+        "printedName": "ASAPP",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "enableFingerprintScanner",
+            "printedName": "enableFingerprintScanner()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ASAPPFingerprint@ASAPPSDK@objc(cs)ASAPP(cm)enableFingerprintScanner",
+            "mangledName": "$s8ASAPPSDK5ASAPPC16ASAPPFingerprintE24enableFingerprintScanneryyFZ",
+            "moduleName": "ASAPPFingerprint",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ASAPPSDK@objc(cs)ASAPP",
+        "mangledName": "$s8ASAPPSDK5ASAPPC",
+        "moduleName": "ASAPPSDK",
+        "objc_name": "ASAPP",
+        "declAttributes": [
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPPFingerprint\/FingerprintSDKScanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1241,
+      "length": 22,
+      "value": "\"wWAKxi9ElYTK2xu1rSTW\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPPFingerprint\/FingerprintSDKScanner.swift",
+      "kind": "StringLiteral",
+      "offset": 1287,
+      "length": 27,
+      "value": "\"https:\/\/metrics.asapp.com\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPPFingerprint\/FingerprintSDKScanner.swift",
+      "kind": "Array",
+      "offset": 1347,
+      "length": 23,
+      "value": "[\"https:\/\/api.fpjs.io\"]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPPFingerprint\/FingerprintSDKScanner.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1792,
+      "length": 2,
+      "value": "10"
+    }
+  ]
+}

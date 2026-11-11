@@ -17984,6 +17984,126 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "fingerprintScanner",
+            "printedName": "fingerprintScanner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any ASAPPSDK.ASAPPFingerprintScanning)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ASAPPFingerprintScanning",
+                    "printedName": "any ASAPPSDK.ASAPPFingerprintScanning",
+                    "usr": "s:8ASAPPSDK24ASAPPFingerprintScanningP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvpZ",
+            "mangledName": "$s8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvpZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ASAPPSDK.ASAPPFingerprintScanning)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ASAPPFingerprintScanning",
+                        "printedName": "any ASAPPSDK.ASAPPFingerprintScanning",
+                        "usr": "s:8ASAPPSDK24ASAPPFingerprintScanningP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvgZ",
+                "mangledName": "$s8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvgZ",
+                "moduleName": "ASAPPSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ASAPPSDK.ASAPPFingerprintScanning)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ASAPPFingerprintScanning",
+                        "printedName": "any ASAPPSDK.ASAPPFingerprintScanning",
+                        "usr": "s:8ASAPPSDK24ASAPPFingerprintScanningP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvsZ",
+                "mangledName": "$s8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvsZ",
+                "moduleName": "ASAPPSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvMZ",
+                "mangledName": "$s8ASAPPSDK5ASAPPC18fingerprintScannerAA24ASAPPFingerprintScanning_pSgvMZ",
+                "moduleName": "ASAPPSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize(with:)",
@@ -90271,6 +90391,630 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASAPPFingerprintScanResult",
+        "printedName": "ASAPPFingerprintScanResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sealedResult",
+            "printedName": "sealedResult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD0SSvp",
+            "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD0SSvp",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD0SSvg",
+                "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD0SSvg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestId",
+            "printedName": "requestId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV9requestIdSSvp",
+            "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV9requestIdSSvp",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV9requestIdSSvg",
+                "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV9requestIdSSvg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sealedResult:requestId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanResult",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanResult",
+                "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD09requestIdACSS_SStcfc",
+            "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV06sealedD09requestIdACSS_SStcfc",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanResult",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanResult",
+                "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanResult",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanResult",
+                "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV2eeoiySbAC_ACtFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV",
+        "mangledName": "$s8ASAPPSDK26ASAPPFingerprintScanResultV",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASAPPFingerprintScanConfiguration",
+        "printedName": "ASAPPFingerprintScanConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "apiKey",
+            "printedName": "apiKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKeySSSgvp",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKeySSSgvp",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKeySSSgvg",
+                "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKeySSSgvg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endpoint",
+            "printedName": "endpoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV8endpointSSSgvp",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV8endpointSSSgvp",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV8endpointSSSgvg",
+                "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV8endpointSSSgvg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(apiKey:endpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanConfiguration",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanConfiguration",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKey8endpointACSSSg_AFtcfc",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV6apiKey8endpointACSSSg_AFtcfc",
+            "moduleName": "ASAPPSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV9hashValueSivp",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV9hashValueSivp",
+            "moduleName": "ASAPPSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV9hashValueSivg",
+                "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV9hashValueSivg",
+                "moduleName": "ASAPPSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV4hash4intoys6HasherVz_tF",
+            "moduleName": "ASAPPSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanConfiguration",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanConfiguration",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanConfiguration",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanConfiguration",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV2eeoiySbAC_ACtFZ",
+            "moduleName": "ASAPPSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV",
+        "mangledName": "$s8ASAPPSDK33ASAPPFingerprintScanConfigurationV",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ASAPPFingerprintScanning",
+        "printedName": "ASAPPFingerprintScanning",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "scan",
+            "printedName": "scan(configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASAPPFingerprintScanConfiguration",
+                "printedName": "ASAPPSDK.ASAPPFingerprintScanConfiguration",
+                "usr": "s:8ASAPPSDK33ASAPPFingerprintScanConfigurationV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<ASAPPSDK.ASAPPFingerprintScanResult, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<ASAPPSDK.ASAPPFingerprintScanResult, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ASAPPFingerprintScanResult",
+                        "printedName": "ASAPPSDK.ASAPPFingerprintScanResult",
+                        "usr": "s:8ASAPPSDK26ASAPPFingerprintScanResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8ASAPPSDK24ASAPPFingerprintScanningP4scan13configuration10completionyAA0B17ScanConfigurationV_ys6ResultOyAA0bgI0Vs5Error_pGctF",
+            "mangledName": "$s8ASAPPSDK24ASAPPFingerprintScanningP4scan13configuration10completionyAA0B17ScanConfigurationV_ys6ResultOyAA0bgI0Vs5Error_pGctF",
+            "moduleName": "ASAPPSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : ASAPPSDK.ASAPPFingerprintScanning>",
+            "sugared_genericSig": "<Self where Self : ASAPPSDK.ASAPPFingerprintScanning>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:8ASAPPSDK24ASAPPFingerprintScanningP",
+        "mangledName": "$s8ASAPPSDK24ASAPPFingerprintScanningP",
+        "moduleName": "ASAPPSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ASAPPSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "ASAPPSDK"
       },
       {
@@ -97662,6 +98406,13 @@
       "value": "21"
     },
     {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EphemeralEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 412,
+      "length": 2,
+      "value": "27"
+    },
+    {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Data Models\/Chat Message\/Event\/EventType.swift",
       "kind": "IntegerLiteral",
       "offset": 199,
@@ -102466,84 +103217,84 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "BooleanLiteral",
-      "offset": 14257,
+      "offset": 17367,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 20402,
+      "offset": 23512,
       "length": 16,
       "value": "\"ASAPPResources\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 20435,
+      "offset": 23545,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22521,
+      "offset": 25631,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22622,
+      "offset": 25732,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22833,
+      "offset": 25943,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22843,
+      "offset": 25953,
       "length": 8,
       "value": "\"tablet\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22854,
+      "offset": 25964,
       "length": 8,
       "value": "\"mobile\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 22974,
+      "offset": 26084,
       "length": 89,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 23005,
+      "offset": 26115,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 23039,
+      "offset": 26149,
       "length": 1,
       "value": "\"; \""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/ASAPP.swift",
       "kind": "StringLiteral",
-      "offset": 23062,
+      "offset": 26172,
       "length": 1,
       "value": "\"\""
     },
@@ -104048,128 +104799,135 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4358,
+      "offset": 6886,
       "length": 32,
       "value": "\"ASAPPNotificationsPermissionUI\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4423,
+      "offset": 6951,
       "length": 24,
       "value": "\"GlobalRequestTimeoutMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4495,
+      "offset": 7023,
       "length": 33,
       "value": "\"ShowSendingIndicatorThresholdMS\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4566,
+      "offset": 7094,
       "length": 17,
       "value": "\"BlockingMessage\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4614,
+      "offset": 7142,
       "length": 16,
       "value": "\"RedactionRules\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4671,
+      "offset": 7199,
       "length": 26,
       "value": "\"IsClientRedactionEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4737,
+      "offset": 7265,
       "length": 25,
       "value": "\"IsPhotoUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4805,
+      "offset": 7333,
       "length": 28,
       "value": "\"IsDocumentUploadingEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4874,
+      "offset": 7402,
       "length": 26,
       "value": "\"SupportedUploadMIMETypes\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 4949,
+      "offset": 7477,
       "length": 25,
       "value": "\"IsDuplicateEventHandled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5011,
+      "offset": 7539,
       "length": 22,
       "value": "\"HistoryDurationHours\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5066,
+      "offset": 7594,
       "length": 18,
       "value": "\"ShowAutocomplete\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5134,
+      "offset": 7662,
       "length": 35,
       "value": "\"ShowAutocompleteInGenerativeAgent\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5207,
+      "offset": 7735,
       "length": 23,
       "value": "\"IsV2FileUploadEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5262,
+      "offset": 7790,
       "length": 17,
       "value": "\"IsSentryEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5317,
+      "offset": 7845,
       "length": 23,
       "value": "\"IsThumbsUpDownEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5365,
+      "offset": 7893,
       "length": 10,
       "value": "\"Features\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
       "kind": "StringLiteral",
-      "offset": 5405,
+      "offset": 7933,
       "length": 15,
       "value": "\"PrivacyNotice\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/Settings.swift",
+      "kind": "StringLiteral",
+      "offset": 7979,
+      "length": 25,
+      "value": "\"isFraudDetectionEnabled\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/PrivacyNotice.swift",
@@ -108143,42 +108901,77 @@
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10511,
+      "offset": 11584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13422,
+      "offset": 14495,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13486,
+      "offset": 14559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14577,
+      "offset": 15650,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14632,
+      "offset": 15705,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 29682,
+      "length": 24,
+      "value": "\"customer\/updateSession\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 29735,
+      "length": 9,
+      "value": "\"Context\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 29876,
+      "length": 14,
+      "value": "\"SealedResult\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 29921,
+      "length": 11,
+      "value": "\"RequestId\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
+      "kind": "StringLiteral",
+      "offset": 29964,
+      "length": 12,
+      "value": "\"RegionCode\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/ConversationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 28768,
+      "offset": 31454,
       "length": 1,
       "value": "0"
     },
@@ -108289,71 +109082,78 @@
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
+      "kind": "StringLiteral",
+      "offset": 4834,
+      "length": 30,
+      "value": "\"Failed to construct request.\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 4983,
+      "offset": 5374,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 5500,
+      "offset": 5891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 5548,
+      "offset": 5939,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 13865,
+      "offset": 15178,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 14431,
+      "offset": 15929,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 14993,
+      "offset": 16561,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 15733,
+      "offset": 17301,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "Dictionary",
-      "offset": 16481,
+      "offset": 18248,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 18123,
+      "offset": 19960,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/HTTP\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 18556,
+      "offset": 20393,
       "length": 4,
       "value": "true"
     },
@@ -108657,6 +109457,48 @@
       "offset": 381,
       "length": 1,
       "value": "8"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/ASAPPFingerprintScanning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3414,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/ASAPPFingerprintScanning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3419,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/API\/ASAPPFingerprintScanning.swift",
+      "kind": "Dictionary",
+      "offset": 3899,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/FingerprintReporter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1660,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/FingerprintReporter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1857,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/output\/SDK\/ASAPP\/ASAPP\/Networking\/Content Managers\/FingerprintReporter.swift",
+      "kind": "Dictionary",
+      "offset": 8416,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ASAPPSDK-fwpnfnyflrucjwceedgxnnogkcpw\/Build\/Intermediates.noindex\/ASAPPSDK.build\/Release-iphoneos\/ASAPPSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",

@@ -1,0 +1,4 @@
+framework module ASAPPFingerprint {
+  header "ASAPPFingerprint-Swift.h"
+  requires objc
+}
